@@ -36,6 +36,12 @@
     transform: rotate(360deg);
   }
 }
+*{
+  font-family: 'Markazi Text';
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 2fr 1fr;
+}
 div {
   display: grid;
   grid-template-columns: 100px 100px 100px;
