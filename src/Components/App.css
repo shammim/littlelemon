@@ -1,0 +1,220 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 2fr 1fr;
+}
+h1 {
+  background-size: contain;
+  text-align: left;
+  font-size: 64px;
+  color: #F4CE14;
+  font-weight:bold;
+}
+h2 {
+color: white;
+ font-size: 40px;
+ text-align: left;
+ font-weight: normal;
+}
+h3 {
+color: #333;
+text-align: left;
+font-size: 18pt;
+font-weight: bold;
+
+}
+h4{
+color: white;
+font-weight: bold;
+font-size: 16pt;
+padding-left: 20px;
+}
+ul {
+ background-size: cover;
+}
+
+header > img {
+  padding-top: 10px;
+  display:flex;
+  align-items:left;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav ul {
+padding-top: 10px;
+padding-bottom: 10px;
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+nav ul a {
+color:black;
+text-decoration: none;
+}
+nav ul a:active {
+text-decoration: underline;
+}
+nav ul a:hover {
+text-decoration: underline;
+text-decoration-thickness: 0.1rem;
+}
+nav li {
+  display: inline-block;
+  align-items:left;
+}
+
+/* Header slide*/
+
+.active, .dot:hover {
+background-color: #a9bbb5;
+border-radius: 15px;
+}
+
+section  {
+padding-top: 3%;
+display: flex;
+color: #333 ;
+gap: 4rem 4rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+padding-left: 2%;
+}
+.Hero {
+padding-left: 20px;
+display: flex;
+border-radius: 10px;
+color: #333 ;
+gap: 2rem 2rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+background-color: #495E57;
+padding-bottom: 30px;
+}
+.Hero_subtitle{
+color: white;
+margin-top: -20;
+}
+.Heropara{
+color: white;
+font-size: 16px;
+font-weight:normal;
+}
+.box{
+display: flex;
+flex-flow: column;
+}
+button{
+width:max-content;
+background-color: #F4CE14;
+border-radius: 16px;
+text-decoration-style: bold;
+padding: 10px;
+color: #333;
+display: inline;
+font-size: 18px;
+font-weight: bold;
+
+}
+p{
+font-size: 16pt;
+font-weight: normal;
+line-height: 1.5;
+max-width: 65ch;
+overflow: hidden;
+}
+article > img {
+align-items: center;
+max-width: 80%;
+margin-top: 20px;
+}
+article {
+flex: 1;
+padding-bottom: 20px;
+}
+article ul {
+list-style: none;
+}
+.Testimonials{
+background-color: #495E57;
+color: #FFF;
+}
+.Review{
+color: white;
+}
+a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: .3em;
+  color: #333;
+  text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a:hover {
+text-decoration: underline;
+color: rgb(50, 50, 45);
+border-width: 2px;
+}
+.Menulogo{
+max-width: 80%
+}
+.link {
+color: black ;
+background-color: white;
+border-width: 1px;
+text-align: center;
+
+}
+.link:hover {
+background-color:white;
+color: rosybrown;
+border: salmon;
+}
+
+footer {
+  margin-top: 3%;
+  display: flex;
+}
+footer img {
+max-width: 100%;
+}
+footer > article{
+flex: 3;
+}
