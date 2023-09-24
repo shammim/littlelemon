@@ -35,7 +35,6 @@ function Nav(props){
               </Routes>
             </ul>
      </nav>
-    
     );
 }
 export default Nav;
