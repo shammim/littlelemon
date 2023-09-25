@@ -4,6 +4,7 @@ import Highlights from './Highlights'
 import Testimonials from './Testimonials'
 import About from './About'
 import Footer from './Footer'
+import Form from './Form'
 
 function Home(){
     return(
@@ -14,6 +15,7 @@ function Home(){
              <Testimonials />
              <About />
              <Footer />
+             <Form />
           </div>
         </>
     )

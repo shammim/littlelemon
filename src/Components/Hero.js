@@ -3,7 +3,11 @@ import {Link} from 'react-router-dom';
 import heroImage from "../Images/restauranfood.jpg";
 
 
+<<<<<<< HEAD
 const Hero = (props) =>{
+=======
+const Hero = () =>{
+>>>>>>> main
     return(
        <hero className="hero">
          <section>
