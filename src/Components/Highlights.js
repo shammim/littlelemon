@@ -19,7 +19,7 @@ function Highlights(){
             if (result.isConfirmed) {
               Swal.fire(
                 'Ordered!',
-                'Your order has been processing.',
+                'Your order is placed',
                 'success'
               )
             }

@@ -1,4 +1,3 @@
-
 import {useFormik } from "formik";
 import { basicSchema } from "../schemas";
 const onSubmit= async(values, actions) => {
@@ -105,7 +104,7 @@ const Form =()=> {
              value={values.time}
              onChange={handleChange}
              id="time"
-             type="time" min="17:00" max="23:00" 
+             type="time" min="17:00" max="23:00"
             />
             <br/>
             <label htmlFor="occassion">Occasion</label>
@@ -120,18 +119,10 @@ const Form =()=> {
                     <option value="Birthday" label="Birthday">
                      Birthday
                     </option>
-                    <option value="Engagement" label="Engagement">
-                     Engagement
-                    </option>
-                    <option value="Get-Together" label="Get-Together">
-                     Get-Together
-                    </option>
-                    <option value="Anniversary" label="Anniversary">
-                     Anniversary
-                    </option>
-                    <option value="Meeting" label="Meeting">
-                     Meeting
-                    </option>
+                    <option value="Engagement" label="Engagement"> Engagement</option>
+                    <option value="Get-Together" label="Get-Together"> Get-Together  </option>
+                    <option value="Anniversary" label="Anniversary">Anniversary</option>
+                    <option value="Meeting" label="Meeting">Meeting</option>
               </select>
             <label htmlFor="specialrequest">Special Request</label>
             <input
@@ -139,7 +130,7 @@ const Form =()=> {
                  onChange={handleChange}
                  id="specialrequest"
                  type="text"
-                placeholder="Please mention if any.."
+                placeholder="Please mention if any."
             />
             <br/>
             <br/>

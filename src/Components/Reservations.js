@@ -9,7 +9,7 @@ export default function Reservations(props){
 
     return(
         <>
-        <section className="Reservations-section">
+        <section className="ReservationSection">
          <article>
                <h1>Reservations</h1>
               <Form />

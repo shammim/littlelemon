@@ -8,13 +8,13 @@ export default function Footer(){
     return(
         <>
           <Footer>
-             <section className="btmSection">
+             <section className="footerSection">
                  <article>
                      <a href='/' className='logo'>
                       <img src={logo} alt="Logo" height={"150px"} width={"150px"}/>
                      </a>
                  </article>
-                 <article>
+                 <article className="navItems">
                      <h3>Navigation items</h3>
                      <a href="/">Home</a>
                      <br/>
@@ -22,19 +22,19 @@ export default function Footer(){
                      <br/>
                       <a href="/Highlights">Menu</a>
                  </article>
-                 <article>
+                 <article className="SocialLinks">
                         <h3>Social media Links</h3>
                         <a href='/'className='facebook' ><img src={Facebook} alt="facebookIcon" width={"30px"} height={"30px"}/></a>
                         <a href='/'className='Instagram' ><img src={Instagram} alt="instagramIcon" width={"30px"} height={"30px"}/></a>
                         <a href='/'className='Social' ><img src={Social} alt="SocialIcon" width={"30px"} height={"30px"}/></a>
                  </article>
-                 <article>
+                 <article className="About">
                      <h3>About</h3>
-                     <a href='#'>Address</a>
+                     <p>Address: EatStreet, Newyork, USA.</p>
                      <br/>
-                     <a href='#'>Phone</a>
+                     <p>Phone: +61-498-8484-667</p>
                      <br/>
-                     <a href='#'>Email</a>
+                     <p>Email: littleelemon@gmail.com</p>
                  </article>
              </section>
          </Footer>

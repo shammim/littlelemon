@@ -54,7 +54,7 @@ const Checkout = (id) => {
   }
     return(
         <>
-         <div className="OrderonlineSection">
+         <div className="OrderOnlineSection">
              <section className="greekSaladOrderonline">
                  <article className="greekOrder"> 
                      <img className="img" src={greekSalad} alt="Greeksalad" width={"200px"} height={"150px"} />

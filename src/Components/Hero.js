@@ -2,7 +2,8 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import heroImage from "../Images/restauranfood.jpg";
 
-const Hero = (props) =>{
+
+const Hero = () =>{
     return(
        <hero className="hero">
          <section>
