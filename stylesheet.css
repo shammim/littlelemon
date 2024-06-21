@@ -130,6 +130,7 @@ ul.breadcrumb li a:hover {
 button{
   position: relative;
   width:max-content;
+  border-radius: 10px;
   background-color: #F4CE14;
   text-decoration-style: bold;
   padding: 5px;
