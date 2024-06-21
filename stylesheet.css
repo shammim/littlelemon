@@ -53,7 +53,7 @@ ul {
 }
 .Aboutus_subtitle {
   color: #333;
-  margin-top: -80pt;
+  margin-top: -60pt;
   text-transform: capitalize;
 }
 .Aboutus_subtitle1{
@@ -61,10 +61,34 @@ ul {
   text-transform: capitalize;
 }
 .About_image1 {
-  padding-top: 15% ;
+  padding-left: 32%;
+  padding-top: 20%;
+  margin-left: -65%;
 }
 .About_image2 {
   padding-top: 15%;
+}
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 5px;
+  color: #495E57;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #495E57;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #F4CE14;
+  text-decoration: underline;
 }
 .Hero {
   padding-left: 20px;
@@ -104,24 +128,50 @@ ul {
   flex-flow: column;
 }
 button{
+  position: relative;
   width:max-content;
   background-color: #F4CE14;
-  border-radius: 16px;
   text-decoration-style: bold;
   padding: 5px;
   color: #333;
-  display: inline;
   font-size: 16px;
   font-weight: bold;
   font-family: 'Karla', sans-serif;
+  overflow: hidden;
+  cursor: pointer;
 }
-.reservation-button{
+button :after{
+  content: "";
+  background-color: #495E57;
+  color: white;
+  display: block;
+  position: relative;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120px;
+  opacity: 0;
+  transition: all 0.9s;
+}
+button:active::after{
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+/* .reservation-button{
   background-color: #F4CE14;
-}
+} */
 .Reservation_heading{
   color: #F4CE14;
+  align-items: center;
+  margin-bottom: -50px;
 }
 .seating{
+  margin-top: -30px;
+  margin-left:-10px
+}
+.Meal_types{
   display: inline;
 }
 .specials_heading{
@@ -157,7 +207,7 @@ article ul {
   font-family: 'Markazi Text', serif;
   padding-bottom: 10px;
 }
-.Greeksalad, .Bruchetta, .Lemondessert{
+.Greeksalad, .Bruchetta, .LemonDessert{
   background-color: #EDEFEE;
   border-radius: 16px;
   width: fit-content;
@@ -225,6 +275,7 @@ nav ul a:active {
 nav ul a:hover {
   text-decoration: underline;
   text-decoration-thickness: 0.1rem;
+  color: #F4CE14;
 }
 nav li {
     display: inline-block;
@@ -299,7 +350,6 @@ input{
   border-radius: 4px;
   box-sizing: border-box;
   font-family: 'Karla',sans-serif;
- 
 }
 select{
   width: 90%;
@@ -316,12 +366,18 @@ select{
 .seating{
   display:inline;
 }
+.form{
+  margin-top: -80px;
+}
 .formImages{
   height: 100px;
   width: 100px;
   border-radius: 20px;
   display: inline;
-  margin-top: -10px;
+  margin-top: -30px;
+}
+.button_label{
+  align-items: center;
 }
 .LogIn{
   color: #fff;
