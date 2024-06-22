@@ -23,16 +23,24 @@
      <nav>
          <ul >
              <li><img src="Images/Logo .svg" class="Menulogo" alt="SiteHeaderLogo" width="300px" height="60px"max-width="100%" padding-right="20px" ></li>
-             <li><a class="active" href="index.html">Home</a></li>
-             <li><a href="#About">About</a></li>
-             <li><a href="#Specials">Menu</a></li>
-             <li><a href="Reservation.html">Reservation</a></li>
-             <li><a href="orderonline.html">Order online</a></li>
-             <li><a href ="LogIn.html">LogIn</a></li>
-             <li><img src="Basket.svg"/></li>
+             <li><a class="active" href="index.html" role="navigation">Home</a></li>
+             <li><a href="#About" role="navigation">About</a></li>
+             <li><a href="#Specials" role="navigation">Menu</a></li>
+             <li><a href="Reservation.html" role="navigation">Reservation</a></li>
+             <li><a href="orderonline.html" role="navigation">Order online</a></li>
+             <li><a href ="LogIn.html" role="navigation">LogIn</a></li>
+             <li><img src="Images/basket .svg"/></li>
           </ul>
      </nav>
  </header>
+ <main >
+    <ul class="breadcrumb">
+        <li> 
+            <a href="index.html">Home</a>
+        </li>
+    </ul>
+ </main>
+
  <body class="body">
      <!--Hero section-->
      <section id ="Hero" class="Hero">
@@ -96,11 +104,11 @@
      </div>
      <br>
      <!--Testimonails section-->
-     <div id="Testimonials">
+     <section id="Testimonials">
             <div>
                 <h2 class="testimonial_title">Testimonials</h2>
             </div>
-         <section class="Testimonials">
+         <div class="Testimonials">
              <article class="AndrewHill_Testimonial" style="width: 18rem;">
                  <div class="Review">
                      <img class="card-img" src="Images/AndrewHill.jpg" alt="Testimonials_andrewhill"width="100px", height="100px">
@@ -125,24 +133,25 @@
                      <p class="Review_text">Arranging a get-together with friends at the Little Lemon Restaurant was a delightful experience. The restaurant's lively atmosphere set the perfect mood for our gathering. The menu offered a variety of delectable dishes that catered to everyone's preferences. The attentive staff and vibrant ambiance contributed to a memorable evening of laughter and camaraderie.</p>
                   </div>
               </article>
-         </section>
-        </div>
-      <br>
-      <section>
-        <!--About section-->
-      </section id="About">
-         <div class = "Aboutus-section">
-              <article>
-                  <h1 class="aboutusTitle">Little Lemon</h1>
-                 <h3 class="aboutusSubtitle">Chicago</h3>
-                 <p>Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
-             </article>
-             <article class="About_image">
-                  <img src="Images/Mario and Adrian A.jpg"/>
-                  <img src="Images/Mario and Adrian b.jpg" />
-             </article>
             </div>
         </section>
+      <br>
+       <!--About section-->
+      <div class="Aboutus-section"> 
+         <section id="About">
+             <div>
+                 <article>
+                     <h1 class="aboutusTitle">Little Lemon</h1>
+                     <h3 class="aboutusSubtitle">Chicago</h3>
+                      <p>Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
+                 </article>
+                 <article class="About_image">
+                        <img src="Images/Mario and Adrian A.jpg"/>
+                         <img src="Images/Mario and Adrian b.jpg" />
+                 </article>
+             </div>
+          </section>
+      </div>
         <!--Footer section-->
      <footer>
          <section id="footer">

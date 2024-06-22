@@ -49,11 +49,10 @@ ul {
 .Aboutus_title{
   margin-top: -40pt;
   font-family: 'Markazi Text', serif;
-
 }
-.Aboutus-section {
+.About-section {
   color: #333;
-  margin-top: 0;
+  margin-top: 10;
   flex: 2;
 }
 .About_image {
@@ -63,7 +62,7 @@ ul {
 ul.breadcrumb {
   padding: 8px 16px;
   list-style: none;
-  background-color: #eee;
+  background-color: #f1dddd;
 }
 ul.breadcrumb li {
   display: inline;
