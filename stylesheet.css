@@ -62,7 +62,7 @@ ul {
 ul.breadcrumb {
   padding: 8px 16px;
   list-style: none;
-  background-color: #f1dddd;
+  background-color: #eee;
 }
 ul.breadcrumb li {
   display: inline;
