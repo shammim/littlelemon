@@ -6,7 +6,7 @@
      <title> Little Lemon </title>
      <meta property="og:title" content="Our Menu">
      <meta property="og:type" content="website">
-     <meta property="og:image" content="logo.png">
+     <meta property="og:image" content="logo.svg">
      <meta property="og.url" content="https://littlelemon">
      <meta property="og:description" content="Little Lemon is a family-owned Mediterrian restrauant, focussed on traditional recipes served with a modern twist">
      <meta property="og:locale" content="en_US">
@@ -22,10 +22,10 @@
  <header>
      <nav>
          <ul >
-             <li><img src="Images/Asset 16@4x.png" class="Menulogo" alt="SiteHeaderLogo" width="300px" height="60px"max-width="100%" padding-right="20px" ></li>
+             <li><img src="Images/Logo .svg" class="Menulogo" alt="SiteHeaderLogo" width="300px" height="60px"max-width="100%" padding-right="20px" ></li>
              <li><a class="active" href="index.html">Home</a></li>
-             <li><a href="About.html">About</a></li>
-             <li><a href="Menu.html">Menu</a></li>
+             <li><a href="#About">About</a></li>
+             <li><a href="#Specials">Menu</a></li>
              <li><a href="Reservation.html">Reservation</a></li>
              <li><a href="orderonline.html">Order online</a></li>
              <li><a href ="LogIn.html">LogIn</a></li>
@@ -33,19 +33,21 @@
           </ul>
      </nav>
  </header>
- <body>
-     <section class="Hero">
+ <body class="body">
+    <!--Hero section-->
+     <section id ="Hero" class="Hero">
          <article>
              <h1 class="Hero_title">Little Lemon</h1>
              <h2 class="Hero_subtitle">Chicago</h2>
              <p class="Heropara">We are a family owned mediterrian restrauant focussed on traditional with a modern twist.</p>
              <button >Reserve a Table</button>
-        </article>
-        <article class="Hero_img">
-            <img src="Images/restauranfood.jpg" height="200px" width="200px"/>
-        </article>
+         </article>
+         <article class="Hero_img">
+             <img src="Images/restauranfood.jpg" height="200px" width="200px"/>
+         </article>
      </section>
-     <div class="Specials">
+     <!--Weekend Specials section-->
+     <div id="Specials" class="Specials">
          <section class="specials_heading">
              <article>
                   <h3>This Week Specials!</h3>
@@ -93,8 +95,9 @@
          </section>
      </div>
      <br>
-     <div>
-            <div>
+     <!--Testimonails section-->
+     <section id="Testimonials">
+            <div i>
                 <h2 class="testimonial_title">Testimonials</h2>
             </div>
          <section class="Testimonials">
@@ -123,10 +126,12 @@
                   </div>
               </article>
          </section>
-      </div>
+     </section>
       <br>
-      <div>
-         <section class = "Aboutus-section">
+      <section>
+        <!--About section-->
+      </section id="About">
+         <div class = "Aboutus-section">
               <article>
                   <h1 class="aboutusTitle">Little Lemon</h1>
                  <h3 class="aboutusSubtitle">Chicago</h3>
@@ -135,10 +140,11 @@
              <article class="About_image">
                   <img src="Images/Mario and Adrian A.jpg"/><img src="Images/Mario and Adrian B.jpg"/>
              </article>
-         </section>
-      </div>
+            </div>
+        </section>
+        <!--Footer section-->
      <footer>
-         <section class="footer">
+         <section id="footer">
              <article>
                   <img src="Images/Asset 20@4x.png" class="Logo" />
              </article>
