@@ -54,10 +54,11 @@ ul {
   color: #333;
   margin-top: 10;
   flex: 2;
+  gap: 30px;
 }
 .About_image {
-  padding-left: 30px;
-  padding-top: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
 }
 ul.breadcrumb {
   padding: 8px 16px;
@@ -154,7 +155,8 @@ button:active::after{
 /* .reservation-button{
   background-color: #F4CE14;
 } */
-.Reservation_heading{
+.Reservation_heading 
+{
   color: #F4CE14;
   align-items: center;
   margin-bottom: -50px;
@@ -194,6 +196,7 @@ article {
 }
 article ul {
   list-style: none;
+  color: #fff;
 }
 .specials_heading {
   font-family: 'Markazi Text', serif;
@@ -291,13 +294,15 @@ section  {
   padding-left: 2%;
 }
 
-a {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: .3em;
-    color: #333;
-    text-align: left;
-    font-family: 'Karla', sans-serif;
+a 
+{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: .3em;
+  color: #333;
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+
  }
  a:hover {
   text-decoration: underline;
@@ -379,8 +384,10 @@ select{
   gap: 20px;
 }
 footer {
+  background: #495E57;
   margin-top: 3%;
   display: flex;
+  color: #fff;
   font-family: 'Karla', sans-serif;
 }
 footer img {
@@ -394,10 +401,11 @@ footer > article{
  .btmnav {
 padding-top: 20px;
 padding-inline: 30px;
+color: #fff;
 }
 
 .LLcopyright{
+  padding-top: 20px;
   align-items: center;
- padding-inline-start: 20px;
-  color: #495E57;
+  color: #fff;
 }
