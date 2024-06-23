@@ -188,7 +188,6 @@ article > img {
  margin-top: 20px;
  height: 200px;
  width: 200px;
- border-radius: 20px;
 }
 article {
   flex: 1;
@@ -202,7 +201,7 @@ article ul {
   font-family: 'Markazi Text', serif;
   padding-bottom: 10px;
 }
-.Greeksalad, .Bruchetta, .Lemondessert{
+.dish{
   background-color: #EDEFEE;
   border-radius: 16px;
   width: fit-content;
@@ -214,14 +213,14 @@ article ul {
   padding-top: 11px;
   padding-left: 70px;
 }
-.geeksalad_link,.bruchetta_link, .lemondessert_link{
+.dish_link{
   margin-left: 10px;
 }
-.title_Geeksalad, .title_Bruchetta, .title_Lemon{
+.dish_title{
   display: flex;
   flex: 2;
 }
-.Greek_salad_des, .Bruchetta_des, .Lemondessert{
+.dish_des{
   padding-left: 25px;
 }
 .imgtop{
@@ -384,7 +383,7 @@ select{
   gap: 20px;
 }
 footer {
-  background: #F6C619;
+  background: #eee;
   margin-top: 3%;
   display: flex;
   color: #fff;
@@ -401,11 +400,10 @@ footer > article{
  .btmnav {
 padding-top: 20px;
 padding-inline: 30px;
-background: #F6C619
 }
 
 .LLcopyright{
-  padding-top: 20px;
+  padding-top: 40px;
   align-items: center;
   color: #fff;
 }
