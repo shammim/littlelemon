@@ -204,7 +204,7 @@ article ul {
 .dish{
   background-color: #EDEFEE;
   border-radius: 16px;
-  width: fit-content;
+ 
 }
 .price{
   color: #ee9972;
@@ -224,8 +224,11 @@ article ul {
   padding-left: 25px;
 }
 .imgtop{
-  border-radius: 16px;
-  padding-inline-start: 50px;
+  align-items: center;
+  padding-left: 50px;
+}
+.dish_text{
+  margin-right: 10px;
 }
 .delivery_icon{
   transform: rotate(180);
