@@ -384,7 +384,7 @@ select{
   gap: 20px;
 }
 footer {
-  background: #495E57;
+  background: #F6C619;
   margin-top: 3%;
   display: flex;
   color: #fff;
@@ -401,7 +401,7 @@ footer > article{
  .btmnav {
 padding-top: 20px;
 padding-inline: 30px;
-color: #fff;
+background: #F6C619
 }
 
 .LLcopyright{

@@ -18,6 +18,11 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+      <script>
+         function showReservationForm() {
+            document.getElementById('reservation-form').style.display = 'block';
+        }
+     </script>
   </head>
  <header>
      <nav>
@@ -138,8 +143,8 @@
         </div>
       <br>
        <!--About section-->
-      <div class="Aboutus-section"> 
-         <section id="About">
+      <section class="Aboutus-section"> 
+         <div id="About">
              <div>
                  <article>
                      <h1 class="aboutusTitle">Little Lemon</h1>
@@ -151,13 +156,13 @@
                          <img src="Images/Mario and Adrian b.jpg" />
                  </article>
              </div>
-          </section>
-      </div>
+          </div>
+      </section>
         <!--Footer section-->
      <footer>
          <section id="footer">
              <article>
-                  <img src="Images/Asset 20@4x.png" class="Logo" />
+                  <img src="Images/Asset 20@4x.png" class="Logo" width="304px" height="334px"/>
              </article>
              <article class="btmnav">
                     <ul>
@@ -171,15 +176,19 @@
              </article>
               <article class="btmnav">
                     <ul>
-                        <li><a href="About.html">Melbourne, Australia </a></li>
+                        <li><a href="#"><img src="Images/heart.png" width="8px" height ="10px"/></a></li>
+                        <li><a href="#"><img src="Images/instagram.png" width="8px" height ="10px"/></a></li>
+                        <li><a href="#"><img src="Images/facebook.png" width="8px" height ="10px"/></a></li>
+                        <li><a href="About.html">Address:  Melbourne, Australia </a></li>
                         <li><a href="About.html">About</a></li>
                         <li><a href="0430590800">📞Phone </a></li>
                         <li><a href="sshammim@gmail.com">💌Email</a></li>
                  </ul>
                 </article>
                 <article class="LLcopyright">
-                    <a href="#"> &copy Little Lemon</a> 
-                    <br>
+                    <a href="#"> &copy Little Lemon</a>
+                </article>
+                <article>
                     <a href ="#">All rights reserved</a>
                 </article>
          </section>
