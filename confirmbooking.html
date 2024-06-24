@@ -2,79 +2,80 @@
 <html lang="en">
 <head>
   <title>Little Lemon</title>
-
   <meta property="og:title" content="Our Menu">
-  <meta property="og:type"  content="website">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="logo.png">
-  <meta property="og:url"   content="https://littlelemon/">
+  <meta property="og:url" content="https://littlelemon/">
   <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Little Lemon">
-  <link rel="icon" href="Asset 9@4x.png" type="image" height="6px" width="4px">
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="Asset 9@4x.png" type="image" sizes="6x4">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<header>
-  <nav>
-      <ul>
-          <li><img src="Asset 16@4x.png" class="Menulogo" alt="SiteHeaderLogo" width="300px" height="60px"max-width="100%" padding-right="20px" ></li>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Menu.html">Menu</a></li>
-          <li><a href="Reservation.html">Reservation</a></li>
-          <li><a href="orderonline.html">Order online</a></li>
-          <li><a href ="LogIn.html">LogIn</a></li>
-          <li> <img src="search-interface-symbol.png" width="30px" height="30px"/></li>
-          <li> <img src="shopping-cart.png" width="30px" height="30px"/></li>
-          <li> <img src="heart.png" width="30px" height="30px"/></li>
-          <li> <img src="user.png" width="30px" height="30px" href="Signin.html" /></li>
-       </ul>
+<body class="font-sans antialiased text-gray-900">
+<header class="bg-white shadow">
+  <nav class="container mx-auto p-4">
+    <ul class="flex items-center justify-between space-x-4">
+      <li>
+        <img src="Images/Logo.svg" class="w-72 h-auto" alt="Site Header Logo">
+      </li>
+      <li><a href="index.html" class="text-gray-800 hover:text-gray-600">Home</a></li>
+      <li><a href="About.html" class="text-gray-800 hover:text-gray-600">About</a></li>
+      <li><a href="Menu.html" class="text-gray-800 hover:text-gray-600">Menu</a></li>
+      <li><a href="Reservation.html" class="text-gray-800 hover:text-gray-600">Reservation</a></li>
+      <li><a href="orderonline.html" class="text-gray-800 hover:text-gray-600">Order online</a></li>
+      <li><a href="LogIn.html" class="text-gray-800 hover:text-gray-600">LogIn</a></li>
+      <li><img src="search-interface-symbol.png" class="w-8 h-8" alt="Search"></li>
+      <li><img src="shopping-cart.png" class="w-8 h-8" alt="Cart"></li>
+      <li><img src="heart.png" class="w-8 h-8" alt="Favorites"></li>
+      <li><a href="Signin.html"><img src="user.png" class="w-8 h-8" alt="User"></a></li>
+    </ul>
   </nav>
 </header>
-<br/>
-<main>
-   <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Reservation.html">Reservation</a></li>
-          <li><a href="confirmbooking.html">Confirm</a></li>
-    </ul>
+<main class="container mx-auto my-8">
+  <ul class="flex space-x-4 text-gray-600">
+    <li><a href="index.html" class="hover:underline">Home</a></li>
+    <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+    <li><a href="confirmbooking.html" class="hover:underline">Confirm</a></li>
+  </ul>
+  <section class="my-8">
+    <img src="Images/Logo.svg" class="mx-auto mb-4">
+    <h1 class="text-3xl font-bold text-center">The Booking is <span class="text-green-600">Confirmed!</span></h1>
+  </section>
 </main>
-<body>
-  <header>
-    <img src="logo.jpg">
-  </header>
-  <main>
-     <h1> The Booking is <span>Confirmed!</span></h1>
-  </main>
-  <footer>
-    <section class="footer">
-        <article>
-             <img src="Images/Asset 20@4x.png" class="Logo" />
-        </article>
-        <article class="btmnav">
-               <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="About.html">About</a></li>
-                   <li><a href="menu.html">Menu</a></li>
-                   <li><a href="Reservation.html">Reservation</a></li>
-                   <li><a href="orderonline.html">Order online</a></li>
-                   <li><a href="LogIn.html"> LogIn</a></li>
-             </ul>
-        </article>
-         <article class="btmnav">
-               <ul>
-                   <li><a href="About.html">Melbourne, Australia </a></li>
-                   <li><a href="About.html">About</a></li>
-                   <li><a href="0430590800">📞Phone </a></li>
-                   <li><a href="sshammim@gmail.com">💌Email</a></li>
-            </ul>
-           </article>
-    </section>
- </footer>
- <section class = "LLcopyright">
-   <p> @Little Lemon</p>
-   <p>All rights reserved</p>
- </section>
 
- </body>
-
+<br>
+<br>
+<footer class="bg-[#eee] text-white py-8">
+  <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="mb-6 md:mb-0">
+      <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
+    </div>
+    <div class="mb-6 md:mb-0">
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="About.html" class="hover:underline">About</a></li>
+        <li><a href="menu.html" class="hover:underline">Menu</a></li>
+        <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+        <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+        <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-400">
+        <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart"></a></li>
+        <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram"></a></li>
+        <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook"></a></li>
+        <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
+        <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+        <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center mt-6 text-gray-500">
+    <p>&copy; Little Lemon</p>
+    <p>All rights reserved</p>
+  </div>
+</footer>
+</body>
 </html>

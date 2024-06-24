@@ -14,12 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body class="bg-gray-200 p-8">
     <header class="mb-8">
         <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
             <ul class="flex justify-between items-center">
-                <li><img src="Images/Asset 16@4x.png" class="h-16" alt="SiteHeaderLogo"></li>
+                <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
                 <li><a href="index.html" class="mx-4">Home</a></li>
                 <li><a href="About.html" class="mx-4">About</a></li>
                 <li><a href="Menu.html" class="mx-4">Menu</a></li>
@@ -41,7 +42,16 @@
           <li class="inline mx-2 text-gray-500">/</li>
           <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Reservation</a></li>
         </ul>
-      </main>
+    </main>
+    <section class="bg-yellow-200 items-center">
+        <article>
+            <a href="Signup.html"><button class="button">Sign up</button></a>
+        </article>
+        <article>
+            <a href="LogIn.html"><button class="button">Log In</button></a>
+        </article>
+    </section>
+    <br>
     <section class="bg-[#495E57] text-white p-8 rounded-xl mb-8">
         <h2 class="text-3xl font-bold text-yellow-400 mb-6">Reservations</h2>
         <form class="space-y-4">
@@ -96,5 +106,36 @@
             <img src="Images/restauranfood.jpg" alt="food image" class="w-full h-64 object-cover rounded-lg">
         </div>
     </section>
+    <footer class="bg-gray-300 text-white py-8">
+        <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <img src="Images/Asset 20@4x.png" class="w-10 h-22" alt="Logo" />
+            </div>
+            <div class="mb-6 md:mb-0">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="About.html" class="hover:underline">About</a></li>
+                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                    <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+                    <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+                    <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center">
+                    <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart" /></a></li>
+                    <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram" /></a></li>
+                    <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook" /></a></li>
+                    <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
+                    <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+                    <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-6">
+            <p>&copy; Little Lemon</p>
+            <p>All rights reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

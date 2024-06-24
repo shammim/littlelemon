@@ -13,6 +13,7 @@
     content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Little Lemon">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
   <link rel="icon" href="Asset 9@4x.png" type="image/png" height="6px" width="4px">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +25,10 @@
   <header class="bg-white">
     <nav class="text-center py-2">
       <ul class="flex justify-center items-center space-x-5">
-        <li><img src="Images/Asset 16@4x.png" alt="SiteHeaderLogo" class="max-w-full pr-20" width="300px" height="60px"></li>
+        <li><img src="Images/Logo .svg" alt="SiteHeaderLogo" class="max-w-full pr-20" width="300px" height="60px"></li>
         <li><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500 px-1">Home</a></li>
         <li><a href="About.html" class="text-gray-900 hover:underline hover:text-yellow-500 px-1">About</a></li>
-        <li><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500 px-1">Menu</a></li>
+        <li><a href="Menu.html"  class="text-gray-900 hover:underline hover:text-yellow-500 px-1 active">Menu</a></li>
         <li><a href="Reservation.html" class="text-gray-900 hover:underline hover:text-yellow-500 px-1">Reservation</a>
         </li>
         <li><a href="orderonline.html" class="text-gray-900 hover:underline hover:text-yellow-500 px-1">Order online</a>
@@ -44,7 +45,6 @@
   <main>
     <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
       <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-      <li class="inline mx-2 text-gray-500">/</li>
       <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a></li>
     </ul>
   </main>
@@ -58,27 +58,13 @@
             class="bg-yellow-500 text-gray-900 font-bold rounded px-4 py-2">Order online</button></a>
       </article>
     </section>
-    <section class="grid grid-cols-3 gap-3 bg-gray-100">
-      <article class="breakfast">
-        <a href="Breakfast.html"><button
-            class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2 padding-left: 20px">Breakfast</button></a>
-      </article>
-      <article class="lunch">
-        <a href="Lunch.html"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2">Lunch</button></a>
-      </article>
-      <article class="mains">
-        <a href="Mains.html"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2">Mains</button></a>
-      </article>
-      <article class="alcarte">
-        <a href="Alcarte.html"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2">Al Carte</button></a>
-      </article>
-      <article class="desserts">
-        <a href="Desserts.html"><button
-            class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2">Desserts</button></a>
-      </article>
-      <article class="specials">
-        <a href="Specials.html"><button
-            class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2">Specials</button></a>
+    <section class="grid grid-col-1 gap-2 bg-gray-100">
+      <article class="dishes">
+        <a href="Breakfast.html" class="pr-20 pl-32"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2">Breakfast</button></a>
+        <a href="Lunch.html" class="pr-10"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2 ">Lunch</button></a>
+        <a href="Alcarte.html" class="p-10"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2 ">Al Carte</button></a>
+        <a href="Desserts.html" class="p-10"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2 ">Desserts</button></a>
+        <a href="Specials.html" class="p-5"><button class="bg-yellow-500 text-gray-900 font-bold rounded-full px-4 py-2 ">Specials</button></a>
       </article>
     </section>
   </div>
@@ -100,33 +86,40 @@
       </article>
     </section>
   </div>
-  <footer class="bg-gray-200 mt-12 flex flex-col lg:flex-row items-center text-center lg:text-left">
-    <article class="flex-1">
-      <img src="Images/Asset 20@4x.png" class="max-w-48 max-h-48">
-    </article>
-    <article class="btmnav flex-1 py-5 px-10">
-      <ul>
-        <li><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-        <li><a href="About.html" class="text-gray-900 hover:underline hover:text-yellow-500">About</a></li>
-        <li><a href="menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a></li>
-        <li><a href="Reservation.html" class="text-gray-900 hover:underline hover:text-yellow-500">Reservation</a></li>
-        <li><a href="orderonline.html" class="text-gray-900 hover:underline hover:text-yellow-500">Order online</a></li>
-        <li><a href="LogIn.html" class="text-gray-900 hover:underline hover:text-yellow-500">LogIn</a></li>
-      </ul>
-    </article>
-    <article class="btmnav flex-1 py-5 px-10">
-      <ul>
-        <li><a href="About.html" class="text-gray-900 hover:underline hover:text-yellow-500">Melbourne, Australia </a></li>
-        <li><a href="About.html" class="text-gray-900 hover:underline hover:text-yellow-500">About</a></li>
-        <li><a href="0430590800" class="text-gray-900 hover:underline hover:text-yellow-500">📞Phone </a></li>
-        <li><a href="sshammim@gmail.com" class="text-gray-900 hover:underline hover:text-yellow-500">💌Email</a></li>
-      </ul>
-    </article>
+ <!--Footer section-->
+
+  <footer class="bg-gray-300 text-white py-8">
+    <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center ">
+      <div class="mb-6 md:mb-0">
+        <img src="Images/Asset 20@4x.png" class="w-10 h-22" alt="Logo" />
+      </div>
+      <div class="mb-6 md:mb-0">
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-500">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="About.html" class="hover:underline">About</a></li>
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+          <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+          <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+       </ul>
+      </div>
+
+      <div>
+       <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-500">
+          <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart" /></a></li>
+          <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram" /></a></li>
+          <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook" /></a></li>
+          <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
+          <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+          <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+       </ul>
+     </div>
+   </div>
+    <div class="text-center mt-6 text-gray-500">
+      <p>&copy; Little Lemon</p>
+      <p>All rights reserved</p>
+    </div>
   </footer>
-  <section class="LLcopyright text-center text-gray-900 py-4">
-    <p>@Little Lemon</p>
-    <p>All rights reserved</p>
-  </section>
 </body>
 
 </html>
