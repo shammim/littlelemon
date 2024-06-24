@@ -387,8 +387,8 @@ footer {
   font-family: 'Karla', sans-serif;
 }
 footer img {
-  max-width: fit-content;
-  max-height: fit-content;
+  max-width: 150px;
+  max-height: 150px;
 }
 footer > article{
   flex: 4;
