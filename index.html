@@ -24,35 +24,33 @@
         }
      </script>
   </head>
- 
- <body class="wrapper-main">
-  <header>
-    <nav>
-        <ul >
-            <li><img src="Images/Logo .svg" class="Menulogo" alt="SiteHeaderLogo" width="300px" height="60px"max-width="100%" padding-right="20px" ></li>
-            <li><a class="active" href="index.html" role="navigation">Home</a></li>
-            <li><a href="#About" role="navigation">About</a></li>
-            <li><a href="Menu.html" role="navigation">Menu</a></li>
-            <li><a href="Reservation.html" role="navigation">Reservation</a></li>
-            <li><a href="orderonline.html" role="navigation">Order online</a></li>
-            <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
-            <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
-            <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
-            <li><img src="Images/heart.png" width="30px" height="30px"></li>
-            <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
-           </ul>
-         </ul>
-    </nav>
+ <header>
+     <nav>
+         <ul >
+             <li><img src="Images/Logo .svg" class="Menulogo" alt="SiteHeaderLogo" width="300px" height="60px"max-width="100%" padding-right="20px" ></li>
+             <li><a class="active" href="index.html" role="navigation">Home</a></li>
+             <li><a href="#About" role="navigation">About</a></li>
+             <li><a href="Menu.html" role="navigation">Menu</a></li>
+             <li><a href="Reservation.html" role="navigation">Reservation</a></li>
+             <li><a href="orderonline.html" role="navigation">Order online</a></li>
+             <li><a href ="LogIn.html" role="navigation">LogIn</a></li>
+             <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
+             <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
+             <li><img src="Images/heart.png" width="30px" height="30px"></li>
+             <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
+          </ul>
+     </nav>
  </header>
  <br>
  <main >
-   <ul class="breadcrumb">
-      <li> 
-        <a href="index.html">Home</a>
-      </li>
-   </ul>
-  </main>
-  <br>
+    <ul class="breadcrumb">
+        <li> 
+            <a href="index.html">Home</a>
+        </li>
+    </ul>
+ </main>
+
+ <body class="body">
      <!--Hero section-->
      <section id ="Hero" class="Hero">
          <article>
@@ -86,7 +84,7 @@
                     </div>
                     <p class="text"> The famous greek salad of crispy lettuce,peppers, olives and our chicago style feta, cheese, garnished with crunchy garlic and rosemary croutons</p>
                     <br>
-                    <a class ="dish_link" href="orderonline.html"> <button>Add to Cart</button></a><img src="Images/Delivery.png" alt="delivery_icon"  width="20px" height="20px"; transform(180) /> 
+                    <a class ="dish_link" href="orderonline.html"> Order delivery</a><img src="Images/Delivery.png" alt="delivery_icon"  width="20px" height="20px"; transform(180) /> 
                  </div>
              </article>
              <article class="dish" style="width: 5rem;">
@@ -97,7 +95,7 @@
                         </div>
                         <p class="text">Our Bruschetta is made from grilled bread that has bbeen smeared with garlic and seasoned with salt and olive oil. </p>
                         <br>
-                        <a class ="dish_link" href="orderonline.html"><button>Add to Cart</button></a><img src="Images/Delivery.png" alt="delivery_icon"  width="20px" height="20px"; />
+                        <a class ="dish_link" href="orderonline.html"> Order delivery</a><img src="Images/Delivery.png" alt="delivery_icon"  width="20px" height="20px"; />
                   </div>
              </article>
              <article class="dish" style="width: 5rem;">
@@ -108,7 +106,7 @@
                      </div>
                         <p class="text">This comes straight from grandma's recipe book, every last ingredient has been sourced and is an authentic as can be imagined.</p>
                         <br>
-                        <a class="dish_link" href="orderonline.html"> <button>Add to Cart</button></a> <img src="Images/Delivery.png" alt="delivery_icon"  width="20px" height="20px"; />
+                        <a class="dish_link" href="orderonline.html"> Order delivery</a> <img src="Images/Delivery.png" alt="delivery_icon"  width="20px" height="20px"; />
                   </div>
              </article>
          </section>
@@ -148,25 +146,7 @@
         </div>
       <br>
        <!--About section-->
-       <div>
-        <section class="Aboutus flex flex-col lg:flex-row items-center lg:space-x-4 my-8">
-          <article class="text-left">
-            <h1 class="Aboutus_title text-4xl font-bold text-yellow-500 font-markazi">Little Lemon</h1>
-            <h3 class="Aboutus_subtitle text-xl font-normal text-gray-900 font-markazi">Chicago</h3>
-            <p class="font-normal text-gray-900 font-karla leading-6">Little Lemon is owned by two Italian brothers, Mario and
-              Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. Mario relies on family
-              recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to
-              expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
-          </article>
-          <article class="About_image1">
-            <img src="Images/Mario and Adrian A.jpg" class="max-w-4/5 mt-8 h-52 w-55">
-          </article>
-          <article class="About_image2">
-            <img src="Images/Mario and Adrian b.jpg" class="max-w-4/5 mt-8 h-52 w-55">
-          </article>
-        </section>
-      </div>
-      <!-- <section class="Aboutus-section"> 
+      <section class="Aboutus-section"> 
          <div id="About">
              <div>
                  <article>
@@ -180,39 +160,41 @@
                  </article>
              </div>
           </div>
-      </section> -->
-      <!--Footer section-->
-      <footer class="bg-[#eee] text-white py-8">
-        <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div class="mb-6 md:mb-0">
-            <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
-          </div>
-          <div class="mb-6 md:mb-0">
-            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
-              <li><a href="index.html" class="hover:underline">Home</a></li>
-              <li><a href="About.html" class="hover:underline">About</a></li>
-              <li><a href="menu.html" class="hover:underline">Menu</a></li>
-              <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
-              <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
-              <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-400">
-              <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart"></a></li>
-              <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram"></a></li>
-              <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook"></a></li>
-              <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
-              <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
-              <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-center mt-6 text-gray-500">
-          <p>&copy; Little Lemon</p>
-          <p>All rights reserved</p>
-        </div>
-    </footer>
+      </section>
+        <!--Footer section-->
+     <footer class="">
+         <section id="footer">
+             <article>
+                  <img src="Images/Asset 20@4x.png" class="Logo" width="304px" height="334px" />
+             </article>
+             <article class="btmnav">
+                    <ul>
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="Reservation.html">Reservation</a></li>
+                        <li><a href="orderonline.html">Order online</a></li>
+                        <li><a href="LogIn.html"> LogIn</a></li>
+                  </ul>
+             </article>
+              <article class="btmnav">
+                    <ul>
+                        <li><a href="#"><img src="Images/heart.png" width="20px" height ="20px"/></a></li>
+                        <li><a href="#"><img src="Images/instagram.png" width="20px" height ="20px"/></a></li>
+                        <li><a href="#"><img src="Images/facebook.png" width="20px" height ="20px"/></a></li>
+                        <li><a href="About.html">Melbourne, Australia </a></li>
+                        <li><a href="0430590800">📞Phone </a></li>
+                        <li><a href="sshammim@gmail.com">💌Email</a></li>
+                 </ul>
+                </article>
+                <article class="LLcopyright">
+                    <a href="#"> &copy Little Lemon</a>
+                </article>
+                <article class="LLcopyright">
+                    <a href ="#">All rights reserved</a>
+                </article>
+         </section>
+     </footer>
     
   </body>
 </html>
