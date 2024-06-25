@@ -1,124 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Little Lemon</title>
-        <meta property="og:title" content="Our Menu">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="logo.png">
-        <meta property="og:url" content="https://shammim.github.io/littlelemon">
-        <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:site_name" content="Little Lemon">
-        <link rel="icon" href="Asset 9@4x.png" type="image/png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="stylesheet.css" />
-  </head>
- <body class="mt-8 mb-8 w-fit bg-white text-[#333] font-sans">
-
-      <header class="bg-white text-center py-4">
-         <nav>
-              <ul class="flex justify-between items-center px-6">
-                    <li><img src="Images/Asset 16@4x.png" class="max-w-[20%] pr-10" alt="SiteHeaderLogo"></li>
-                    <li><a href="index.html" class="px-2">Home</a></li>
-                    <li><a href="About.html" class="px-2">About</a></li>
-                    <li><a href="Menu.html" class="px-2">Menu</a></li>
-                    <li><a href="Reservation.html" class="px-2">Reservation</a></li>
-                    <li><a href="orderonline.html" class="px-2">Order online</a></li>
-                    <li><a href="LogIn.html" class="px-2 active">LogIn</a></li>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <meta property="og:title" content="Our Menu">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://shammim.github.io/littlelemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+ </head>
+ <!--body section-->
+ <body class="bg-gray-200 p-8">
+        <header class="header" class="mb-8">
+            <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
+                <ul class="flex justify-between items-center">
+                    <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
+                    <li><a href="index.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4">Home</a></li>
+                    <li><a href="About.html" class="mx-4">About</a></li>
+                    <li><a href="Menu.html" class="mx-4">Menu</a></li>
+                    <li><a class="mx-4" href="Reservation.html">Reservation</a></li>
+                    <li><a href="orderonline.html" class="mx-4">Order online</a></li>
+                    <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
                     <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
                     <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
                     <li><img src="Images/heart.png" width="30px" height="30px"></li>
                     <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
-              </ul>
-         </nav>
-     </header>
-
-        <main class="px-4">
-            <ul class="breadcrumb flex space-x-2 text-lg">
-                <li><a href="index.html" class="text-[#495E57] hover:text-[#F4CE14]">Home</a></li>
-                <li>/</li>
+             </ul>
+            </nav>
+        </header>
+        <br>
+        <main class="breadcrumb">
+            <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
+                <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
                 <li><a href="Reservation.html" class="text-[#495E57] hover:text-[#F4CE14]">Reservation</a></li>
-                <li>/</li>
                 <li><a href="orderonline.html" class="text-[#495E57] hover:text-[#F4CE14]">LogIn</a></li>
             </ul>
-        </main>
+            </main>
 
-        <form class="LogIn bg-[#495E57] text-white p-12 rounded-lg m-8 ">
+        <section class="items-center">
+            <form class=" LogIn bg-[#495E57] text-gray-900 p-12 rounded-lg m-8 w-fit">
+                <article>
+                    <div class="mb-6">
+                        <label for="first_name" class="block mb-2">Firstname</label>
+                        <input type="text" id="first_name" name="user_firstname" required placeholder="Firstname" class="w-full bg-[#EDEFEE] p-3 rounded">
+                    </div>
+                    <div class="mb-6">
+                        <label for="lastname" class="block mb-2">Lastname</label>
+                        <input type="text" id="lastname" name="user_lastname" required placeholder="Lastname" class="w-full bg-[#EDEFEE] p-3 rounded">
+                    </div>
+                    <div class="mb-6">
+                        <label for="user_email" class="block mb-2">Email ID</label>
+                        <input type="email" id="user_email" name="user_email" required placeholder="Enter your Email" class="w-full bg-[#EDEFEE] p-3 rounded">
+                    </div>
+                    <div class="mb-6">
+                        <label for="user_phonenumber" class="block mb-2">Phone number</label>
+                        <input type="tel" id="user_phonenumber" name="user_phonenumber" placeholder="123-4567-8901" required class="w-full bg-[#EDEFEE] p-3 rounded">
+                    </div>
+                    <div class="mb-6">
+                        <label for="booking_date" class="block mb-2">Booking Date</label>
+                        <input type="date" id="booking_date" name="booking_date" class="w-full bg-[#EDEFEE] p-3 rounded">
+                    </div>
+                    <div class="mb-6">
+                        <label for="dinners" class="block mb-2">Dinners</label>
+                        <input type="number" name="dinners" min="1" max="15" aria-required="true" placeholder="1" class="w-full bg-[#EDEFEE] p-3 rounded">
+                    </div>
+                    <div class="mb-6">
+                        <label for="special_request" class="block mb-2">Mention if any special request</label>
+                        <input type="text" id="special_request" name="special_request" maxlength="65" placeholder="Please mention if any special request." class="w-full bg-[#EDEFEE] p-3 rounded">
+                    </div>
+                    <div class="mb-6">
+                        <input type="checkbox" id="cancellation" name="cancellation" class="mr-2">
+                        <label for="cancellation" class="text-sm"> Please agree to our friendly cancellation policy</label>
+                    </div>
+                    <div class="text-center">
+                        <a href="confirmbooking.html" class="bg-[#F4CE14] text-[#333] font-bold p-3 rounded hover:bg-[#333] hover:text-white inline-block">Confirm</a>
+                    </div>
+                </article>
+            </form>   
             <article>
-                <div class="mb-6">
-                    <label for="first_name" class="block mb-2">Firstname</label>
-                    <input type="text" id="first_name" name="user_firstname" required placeholder="Firstname" class="w-full bg-[#EDEFEE] p-3 rounded">
+                <div class="mx-4">
+                    <img src="./Images/Mario and Adrian A.jpg" width="500px" height="500px"/>
                 </div>
-                <div class="mb-6">
-                    <label for="lastname" class="block mb-2">Lastname</label>
-                    <input type="text" id="lastname" name="user_lastname" required placeholder="Lastname" class="w-full bg-[#EDEFEE] p-3 rounded">
+            </article>  
+            <article>
+                <div class="mx-4">
+                    <img src="./Images/restaurant.jpg" width="500px" height="500px"/>
                 </div>
-                <div class="mb-6">
-                    <label for="user_email" class="block mb-2">Email ID</label>
-                    <input type="email" id="user_email" name="user_email" required placeholder="Enter your Email" class="w-full bg-[#EDEFEE] p-3 rounded">
-                </div>
-                <div class="mb-6">
-                    <label for="user_phonenumber" class="block mb-2">Phone number</label>
-                    <input type="tel" id="user_phonenumber" name="user_phonenumber" placeholder="123-4567-8901" required class="w-full bg-[#EDEFEE] p-3 rounded">
-                </div>
-                <div class="mb-6">
-                    <label for="booking_date" class="block mb-2">Booking Date</label>
-                    <input type="date" id="booking_date" name="booking_date" class="w-full bg-[#EDEFEE] p-3 rounded">
-                </div>
-                <div class="mb-6">
-                    <label for="dinners" class="block mb-2">Dinners</label>
-                    <input type="number" name="dinners" min="1" max="15" aria-required="true" placeholder="1" class="w-full bg-[#EDEFEE] p-3 rounded">
-                </div>
-                <div class="mb-6">
-                    <label for="special_request" class="block mb-2">Mention if any special request</label>
-                    <input type="text" id="special_request" name="special_request" maxlength="65" placeholder="Please mention if any special request." class="w-full bg-[#EDEFEE] p-3 rounded">
-                </div>
-                <div class="mb-6">
-                    <input type="checkbox" id="cancellation" name="cancellation" class="mr-2">
-                    <label for="cancellation" class="text-sm"> Please agree to our friendly cancellation policy</label>
-                </div>
-                <div class="text-center">
-                    <a href="confirmbooking.html" class="bg-[#F4CE14] text-[#333] font-bold p-3 rounded hover:bg-[#333] hover:text-white inline-block">Confirm</a>
-                </div>
-            </article>
-        </form>
+            </article> 
+        </section>
+            
 
+        <!--Footer section-->
         <footer class="bg-[#eee] text-white py-8">
             <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
-                </div>
-                <div class="mb-6 md:mb-0">
-                    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
-                            <li><a href="index.html" class="hover:underline">Home</a></li>
-                            <li><a href="About.html" class="hover:underline">About</a></li>
-                            <li><a href="menu.html" class="hover:underline">Menu</a></li>
-                            <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
-                            <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
-                            <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
-                    </ul>
-                </div>
-                <div>
-                        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-400">
-                            <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart"></a></li>
-                            <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram"></a></li>
-                            <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook"></a></li>
-                            <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
-                            <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
-                            <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
-                    </ul>
-                </div>
+            <div class="btmimg" class="mb-6 md:mb-0">
+                <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
+            </div>
+            <div class="mb-6 md:mb-0">
+                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="About.html" class="hover:underline">About</a></li>
+                <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+                <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+                <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+                <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+                <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+                </ul>
+            </div>
             </div>
         </footer>
         <div class="text-center mt-6 text-gray-500">
             <p>&copy; Little Lemon</p>
             <p>All rights reserved</p>
         </div>
+
     </body>
 </html>

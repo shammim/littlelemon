@@ -36,30 +36,32 @@
             </nav>
         </header>
         <!--Breadcrumb section-->
-        <main>
+        <main class="breadcrumb">
             <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
             <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
             <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a></li>
-            <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Reservation</a></li>
+            <li class="inline"><a href="Reservation.html" class="text-gray-900 hover:underline hover:text-yellow-500">Reservation</a></li>
             </ul>
         </main>
         <!--LongiN/SignUp section-->
-        <section class="bg-[#495E57] items-center">
-            <article>
-                <a href="Signup.html"><button class="bg-yellow-500 text-gray-900 font-bold  px-1 py-2 ">Sign up</button></a>
+        <section class=" items-center">
+            <article class="rounded-lg p-4">
+                <div class="mt-4">
+                    <a href="Signup.html"  class="bg-yellow-500 text-gray-900 font-bold"><button>Sign up</button></a>
+                </div>
             </article>
-            <article>
-                <a href="#"> | </a>
-            </article>
-            <article>
-                <a href="LogIn.html"><button class="bg-yellow-500 text-gray-900 font-bold  px-2 py-2 ">Log In</button></a>
+            <article class="rounded-lg p-4">
+                <div class="mt-4">
+                    <a href="LogIn.html" class="bg-yellow-500 text-gray-900 font-bold"><button >Log In</button></a>
+                </div>
+                
             </article>
         </section>
         <br>
         <!--Booking a Reservation-->
         <section class="bg-[#495E57] text-white p-8 rounded-xl mb-8">
             <h2 class="text-3xl font-bold text-yellow-400 mb-6">Reservations</h2>
-            <form class="space-y-4">
+            <form class="space-y-4 ">
                 <div class="flex items-center space-x-4">
                     <label for="outdoor" class="mr-2">Outdoor seating</label>
                     <input type="radio" id="outdoor" name="seating_option" value="Outdoors" checked>
