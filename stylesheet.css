@@ -475,6 +475,12 @@ padding-inline: 30px;
   .Menulogo{
     padding-right: 20%;
   }
+  .breadcrumb{
+    display: none;
+  }
+  .header{
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -502,5 +508,11 @@ padding-inline: 30px;
   }
   .Menulogo{
     padding-right: 10%;
+  }
+  .breadcrumb{
+    display: none;
+  }
+  .btmsm{
+    display: none;
   }
 }

@@ -19,7 +19,7 @@
  <!--body section-->
  <body class="bg-gray-200 p-8">
    <!--Header section-->
-   <header class="mb-8" >
+   <header class="header" class="mb-8" >
       <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
         <ul class="flex justify-between items-center">
          <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
@@ -38,84 +38,98 @@
    </header>
    <br>
    <!--Breadcrumb section-->
-   <main>
+   <main class="breadcrumb">
       <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
         <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
         <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a> </li>
       </ul>
     </main>
-  <div class="Meal_types">
-    <section class="specials_heading mb-16 flex justify-between">
-      <article>
-        <h3 class="font-bold text-xl text-center text-gray-900">Our Menu</h3>
-      </article>
-      <article>
-        <a href="orderonline.html"><button
-            class="bg-yellow-500 text-gray-900 font-bold rounded px-4 py-2">Order online</button></a>
-      </article>
-    </section>
-    <section class="grid grid-col-1 gap-2 bg-gray-100 justify-center">
-      <article class="dishes">
-        <a href="Breakfast.html" class="bg-yellow-500 text-gray-900 rounded font-bold mx-4"><button>Breakfast</button></a>
-        <a href="Lunch.html" class="bg-yellow-500 text-gray-900 rounded font-bold mx-4" ><button>Lunch</button></a>
-        <a href="Alcarte.html" class=" bg-yellow-500 text-gray-900 font-bold  mx-4"><button >Al Carte</button></a>
-        <a href="Desserts.html" class=" bg-yellow-500 text-gray-900 font-bold  mx-4" ><button>Desserts</button></a>
-        <a href="Specials.html" class=" bg-yellow-500 text-gray-900 font-bold  mx-4"><button>Specials</button></a>
-      </article>
-    </section>
-  </div>
-  <div>
-    <section class="Aboutus flex flex-col lg:flex-row items-center lg:space-x-4 my-8">
-      <article class="text-left">
-        <h1 class="Aboutus_title text-4xl font-bold text-yellow-500 font-markazi">Little Lemon</h1>
-        <h3 class="Aboutus_subtitle text-xl font-normal text-gray-900 font-markazi">Chicago</h3>
-        <p class="font-normal text-gray-900 font-karla leading-4">Little Lemon is owned by two Italian brothers, Mario and
-          Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. Mario relies on family
-          recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to
-          expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
-      </article>
-      <article class="About_image1">
-        <img src="Images/Mario and Adrian A.jpg" class="max-w-4/5 mt-8 h-52 w-55">
-      </article>
-      <article class="About_image2">
-        <img src="Images/Mario and Adrian b.jpg" class="max-w-4/5 mt-8 h-52 w-55">
-      </article>
-    </section>
-  </div>
- <!--Footer section-->
-
-  <footer class="bg-gray-300 text-white py-8">
-    <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center ">
-      <div class="mb-6 md:mb-0">
-        <img src="Images/Asset 20@4x.png" class="w-10 h-22" alt="Logo" />
-      </div>
-      <div class="mb-6 md:mb-0">
-        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-500">
-          <li><a href="index.html" class="hover:underline">Home</a></li>
-          <li><a href="About.html" class="hover:underline">About</a></li>
-          <li><a href="menu.html" class="hover:underline">Menu</a></li>
-          <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
-          <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
-          <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
-       </ul>
-      </div>
-
-      <div>
-       <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-500">
-          <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart" /></a></li>
-          <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram" /></a></li>
-          <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook" /></a></li>
-          <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
-          <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
-          <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
-       </ul>
-     </div>
+   <div class="Meal_types">
+      <section class="specials_heading mb-16 flex justify-between">
+        <article>
+          <h3 class="font-bold text-xl text-center text-gray-900">Our Menu</h3>
+        </article>
+        <article>
+          <a href="orderonline.html"><button
+                class="bg-yellow-500 text-gray-900 font-bold rounded px-4 py-2">Order online</button></a>
+        </article>
+     </section>
+     <section class="grid grid-col-1 gap-2 bg-gray-100 justify-center">
+        <article class="dishes">
+          <a href="Breakfast.html" class="bg-yellow-500 text-gray-900 rounded font-bold mx-4"><button>Breakfast</button></a>
+          <a href="Lunch.html" class="bg-yellow-500 text-gray-900 rounded font-bold mx-4" ><button>Lunch</button></a>
+          <a href="Alcarte.html" class=" bg-yellow-500 text-gray-900 font-bold  mx-4"><button >Al Carte</button></a>
+          <a href="Desserts.html" class=" bg-yellow-500 text-gray-900 font-bold  mx-4" ><button>Desserts</button></a>
+          <a href="Specials.html" class=" bg-yellow-500 text-gray-900 font-bold  mx-4"><button>Specials</button></a>
+       </article>
+     </section>
    </div>
-  </footer>
-  <div class="text-center mt-6 text-gray-500">
-    <p>&copy; Little Lemon</p>
-    <p>All rights reserved</p>
+  <!--About Section-->
+  <div id="About" class="About">
+    <section class="flex justify-between items-center mb-8">
+      <h3 class="font-markazi text-4xl text-gray-200 text-left pt-8">Testimonials </h3>
+    </section>
+    <section class="grid md:grid-cols-3 gap-8">
+      <article class="bg-[#EDEFEE] rounded-lg p-4">
+        <div class="mt-4">
+          <div class="flex justify-between items-center">
+            <h1 class="font-markazi mt-4 text-6xl">Little Lemon</h1>
+            <br>
+            <h3 class="font-bold text-lg text-3xl">Chicago</h3>
+          </div>
+          <p class="font-karla mt-2">Little Lemon is owned by two Italian brothers, Mario and Adrian, who moved to the United States to pursue their shared dream of owning a restaurant. Mario relies on family recipes and his experience as a chef in Italy. Adrian does all the marketing for the restaurant and led the effort to expand the menu beyond classic Italian to incorporate additional cuisines from the Mediterranean region.</p>
+        </div>
+      </article>
+      <article class="bg-[#EDEFEE] rounded-lg p-4">
+        <div class="mt-4">
+          <div class="flex justify-between items-center">
+            <img src="Images/Mario and Adrian A.jpg"/>
+          </div>
+        </div>
+      </article>
+      <article class="bg-[#EDEFEE] rounded-lg p-4">
+        <div class="mt-4">
+          <div class="flex justify-between items-center">
+            <img src="Images/Mario and Adrian b.jpg"/>
+          </div>
+        </div>
+      </article>
+    </section>
+   </div>
+  <br>
+
+ <!--Footer section-->
+ <footer class="bg-[#eee] text-white py-8">
+  <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="btmimg" class="mb-6 md:mb-0">
+      <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
+    </div>
+    <div class="mb-6 md:mb-0">
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="About.html" class="hover:underline">About</a></li>
+        <li><a href="menu.html" class="hover:underline">Menu</a></li>
+        <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+        <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+        <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-400">
+        <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart"></a></li>
+        <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram"></a></li>
+        <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook"></a></li>
+        <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
+        <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+        <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+      </ul>
+    </div>
   </div>
+</footer>
+<div class="text-center mt-6 text-gray-500">
+<p>&copy; Little Lemon</p>
+<p>All rights reserved</p>
+</div>
 </body>
 
 </html>
