@@ -1,141 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Lemon</title>
-    <meta property="og:title" content="Our Menu">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="https://shammim.github.io/littlelemon">
-    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="Little Lemon">
-    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="stylesheet.css" />
-</head>
-<body class="bg-gray-200 p-8">
-    <header class="mb-8">
-        <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
-            <ul class="flex justify-between items-center">
-                <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
-                <li><a href="index.html" class="mx-4">Home</a></li>
-                <li><a href="About.html" class="mx-4">About</a></li>
-                <li><a href="Menu.html" class="mx-4">Menu</a></li>
-                <li><a class="mx-4 text-white bg-gray-700 rounded-lg py-2 px-4" href="Reservation.html">Reservation</a></li>
-                <li><a href="orderonline.html" class="mx-4">Order online</a></li>
-                <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
-                <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
-                <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
-                <li><img src="Images/heart.png" width="30px" height="30px"></li>
-                <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Little Lemon</title>
+        <meta property="og:title" content="Our Menu">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="logo.png">
+        <meta property="og:url" content="https://shammim.github.io/littlelemon">
+        <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Little Lemon">
+        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+ <!--body section-->
+ <body class="bg-gray-200 p-8">
+       <header class="mb-8">
+            <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
+                <ul class="flex justify-between items-center">
+                    <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
+                    <li><a href="index.html" class="mx-4">Home</a></li>
+                    <li><a href="About.html" class="mx-4">About</a></li>
+                    <li><a href="Menu.html" class="mx-4">Menu</a></li>
+                    <li><a class="mx-4 text-white bg-gray-700 rounded-lg py-2 px-4" href="Reservation.html">Reservation</a></li>
+                    <li><a href="orderonline.html" class="mx-4">Order online</a></li>
+                    <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
+                    <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
+                    <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
+                    <li><img src="Images/heart.png" width="30px" height="30px"></li>
+                    <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Breadcrumb section-->
+        <main>
+            <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
+            <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
+            <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a></li>
+            <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Reservation</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
-          <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-          <li class="inline mx-2 text-gray-500">/</li>
-          <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a></li>
-          <li class="inline mx-2 text-gray-500">/</li>
-          <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Reservation</a></li>
-        </ul>
-    </main>
-    <section class="bg-[#F4CE14] items-center">
-        <article>
-            <a href="Signup.html"><button class="button">Sign up</button></a>
-        </article>
-        <article>
-            <a href="LogIn.html"><button class="button">Log In</button></a>
-        </article>
-    </section>
-    <br>
-    <section class="bg-[#495E57] text-white p-8 rounded-xl mb-8">
-        <h2 class="text-3xl font-bold text-yellow-400 mb-6">Reservations</h2>
-        <form class="space-y-4">
-            <div class="flex items-center space-x-4">
-                <label for="outdoor" class="mr-2">Outdoor seating</label>
-                <input type="radio" id="outdoor" name="seating_option" value="Outdoors" checked>
-                <label for="indoors" class="ml-4 mr-2">Indoor seating</label>
-                <input type="radio" id="indoors" name="seating_option" value="Indoors">
+        </main>
+        <!--LongiN/SignUp section-->
+        <section class="bg-[#495E57] items-center">
+            <article>
+                <a href="Signup.html"><button class="bg-yellow-500 text-gray-900 font-bold  px-1 py-2 ">Sign up</button></a>
+            </article>
+            <article>
+                <a href="#"> | </a>
+            </article>
+            <article>
+                <a href="LogIn.html"><button class="bg-yellow-500 text-gray-900 font-bold  px-2 py-2 ">Log In</button></a>
+            </article>
+        </section>
+        <br>
+        <!--Booking a Reservation-->
+        <section class="bg-[#495E57] text-white p-8 rounded-xl mb-8">
+            <h2 class="text-3xl font-bold text-yellow-400 mb-6">Reservations</h2>
+            <form class="space-y-4">
+                <div class="flex items-center space-x-4">
+                    <label for="outdoor" class="mr-2">Outdoor seating</label>
+                    <input type="radio" id="outdoor" name="seating_option" value="Outdoors" checked>
+                    <label for="indoors" class="ml-4 mr-2">Indoor seating</label>
+                    <input type="radio" id="indoors" name="seating_option" value="Indoors">
+                </div>
+                <div>
+                    <label for="res-date" class="block mb-2">Date</label>
+                    <input type="date" id="res-date" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
+                </div>
+                <div>
+                    <label for="res-time" class="block mb-2">Time</label>
+                    <select id="res-time" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="guests" class="block mb-2">Dinners</label>
+                    <input type="number" id="guests" name="quantity" min="1" max="15" placeholder="1" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
+                </div>
+                <div>
+                    <label for="occasion" class="block mb-2">Occasion</label>
+                    <select id="occasion" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
+                        <option>No Occasion</option>
+                        <option>Birthday</option>
+                        <option>Anniversary</option>
+                        <option>Engagement</option>
+                        <option>Get-Together</option>
+                        <option>Meetings</option>
+                    </select>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="cancellation" name="cancellation" class="w-4 h-4">
+                    <label for="cancellation">Please agree to cancellation policy</label>
+                </div>
+                <a href="LogIn.html" class="inline-block bg-yellow-400 text-gray-800 font-bold py-3 px-6 rounded-lg">Reserve a Table</a>
+            </form>
+        </section>
+        <section class="space-y-6">
+            <div class="grid grid-cols-3 gap-4">
+                <img src="Images/restaurant.jpg" alt="restaurant" class="w-full h-64 object-cover rounded-lg">
+                <img src="Images/restaurant chef B.jpg" alt="chef" class="w-full h-64 object-cover rounded-lg">
+                <img src="Images/restauranfood.jpg" alt="food image" class="w-full h-64 object-cover rounded-lg">
             </div>
-            <div>
-                <label for="res-date" class="block mb-2">Date</label>
-                <input type="date" id="res-date" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
+        </section>
+        <footer class="bg-gray-300 text-white py-8">
+            <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <img src="Images/Asset 20@4x.png" class="w-10 h-22" alt="Logo" />
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="About.html" class="hover:underline">About</a></li>
+                        <li><a href="menu.html" class="hover:underline">Menu</a></li>
+                        <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+                        <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+                        <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center">
+                        <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart" /></a></li>
+                        <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram" /></a></li>
+                        <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook" /></a></li>
+                        <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
+                        <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+                        <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <label for="res-time" class="block mb-2">Time</label>
-                <select id="res-time" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
-                    <option>17:00</option>
-                    <option>18:00</option>
-                    <option>19:00</option>
-                    <option>20:00</option>
-                    <option>21:00</option>
-                    <option>22:00</option>
-                    <option>23:00</option>
-                </select>
-            </div>
-            <div>
-                <label for="guests" class="block mb-2">Dinners</label>
-                <input type="number" id="guests" name="quantity" min="1" max="15" placeholder="1" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
-            </div>
-            <div>
-                <label for="occasion" class="block mb-2">Occasion</label>
-                <select id="occasion" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
-                    <option>No Occasion</option>
-                    <option>Birthday</option>
-                    <option>Anniversary</option>
-                    <option>Engagement</option>
-                    <option>Get-Together</option>
-                    <option>Meetings</option>
-                </select>
-            </div>
-            <div class="flex items-center space-x-2">
-                <input type="checkbox" id="cancellation" name="cancellation" class="w-4 h-4">
-                <label for="cancellation">Please agree to cancellation policy</label>
-            </div>
-            <a href="LogIn.html" class="inline-block bg-yellow-400 text-gray-800 font-bold py-3 px-6 rounded-lg">Reserve a Table</a>
-        </form>
-    </section>
-    <section class="space-y-6">
-        <div class="grid grid-cols-3 gap-4">
-            <img src="Images/restaurant.jpg" alt="restaurant" class="w-full h-64 object-cover rounded-lg">
-            <img src="Images/restaurant chef B.jpg" alt="chef" class="w-full h-64 object-cover rounded-lg">
-            <img src="Images/restauranfood.jpg" alt="food image" class="w-full h-64 object-cover rounded-lg">
-        </div>
-    </section>
-    <footer class="bg-gray-300 text-white py-8">
-        <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-6 md:mb-0">
-                <img src="Images/Asset 20@4x.png" class="w-10 h-22" alt="Logo" />
-            </div>
-            <div class="mb-6 md:mb-0">
-                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                    <li><a href="index.html" class="hover:underline">Home</a></li>
-                    <li><a href="About.html" class="hover:underline">About</a></li>
-                    <li><a href="menu.html" class="hover:underline">Menu</a></li>
-                    <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
-                    <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
-                    <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center">
-                    <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart" /></a></li>
-                    <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram" /></a></li>
-                    <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook" /></a></li>
-                    <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
-                    <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
-                    <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
-                </ul>
-            </div>
-        </div>
+        </footer>
         <div class="text-center mt-6">
             <p>&copy; Little Lemon</p>
             <p>All rights reserved</p>
         </div>
-    </footer>
-</body>
+  </body>
 </html>
