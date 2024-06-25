@@ -387,12 +387,8 @@ footer {
   font-family: 'Karla', sans-serif;
 }
 footer img {
-  max-width: 150px;
+  max-width: 100px;
   max-height: 150px;
-}
-footer > article{
-  flex: 4;
-  gap: 30px;
 }
  .btmnav {
 padding-top: 20px;
