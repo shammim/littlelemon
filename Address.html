@@ -44,20 +44,14 @@
       </ul>
     </main>
 <body class="bg-gray-800 text-white">
-  <div class="max-w-md mx-auto mt-10 p-4 bg-gray-700 rounded-lg shadow-lg">
+  <div class="max-w-md mx-auto mt-10 p-4 bg-gray-300 rounded-lg shadow-lg">
     <div class="flex items-center justify-between">
       <div class="flex items-center">
         <button class="text-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
         </button>
-        <div class="ml-2 text-lg font-bold">LITTLE LEMON</div>
+        <div class="ml-2 text-4xl font-bold">LITTLE LEMON</div>
       </div>
       <div class="relative">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M9 3v18m6-18v18m-9-9h12" />
-        </svg>
         <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-1">2</span>
       </div>
     </div>
@@ -77,8 +71,8 @@
           <label for="country" class="block text-sm">Country</label>
           <div class="relative">
             <select id="country" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none">
-              <option>United States of America</option>
-              <!-- Add other countries as needed -->
+              <option>Australia</option>
+              <option>India</option>
             </select>
             <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
               <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -104,6 +98,29 @@
         <button type="submit" class="w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold">Done</button>
       </form>
     </div>
-
+    <!--Footer section-->
+    <footer class="bg-[#eee] text-white py-8">
+        <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <div class="btmimg" class="mb-6 md:mb-0">
+            <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
+          </div>
+          <div class="mb-6 md:mb-0">
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+              <li><a href="index.html" class="hover:underline">Home</a></li>
+              <li><a href="About.html" class="hover:underline">About</a></li>
+              <li><a href="menu.html" class="hover:underline">Menu</a></li>
+              <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+              <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+              <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+              <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+              <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+           </ul>
+          </div>
+        </div>
+    </footer>
+    <div class="text-center mt-6 text-gray-500">
+        <p>&copy; Little Lemon</p>
+        <p>All rights reserved</p>
+    </div>       
 </body>
 </html>

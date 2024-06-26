@@ -36,16 +36,61 @@
      </nav>
    </header>
    <br>
-   <main class="breadcrumb">
-      <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
-        <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-        <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a></li>
-        <li class="inline"><a href="Breakfast.html" class="text-gray-900 hover:underline hover:text-yellow-500">Breakfast </a></li>
-      </ul>
-    </main>
+   <section class="grid grid-col-1 gap-2 bg-gray-100 justify-center">
+      <article class="dishes">
+        <a href="Breakfast.html" class="bg-[#495E57] text-yellow-500 rounded font-bold mx-4"><button>Breakfast</button></a>
+          <a href="Lunch.html" class="bg-yellow-500 text-gray-900 rounded font-bold mx-4" ><button>Lunch</button></a>
+          <a href="Alcarte.html" class=" bg-yellow-500 text-gray-900 font-bold  rounded mx-4"><button >Al Carte</button></a>
+          <a href="Desserts.html" class=" bg-yellow-500 text-gray-900 font-bold rounded mx-4" ><button>Desserts</button></a>
+          <a href="Specials.html" class=" bg-yellow-500 text-gray-900 font-bold rounded  mx-4"><button>Specials</button></a>   
+     </article>
+   </section>
     <!--Breakfast Specials section-->
-   <div>
+   <div >
       <!--Breakfast Section-->
+      <section class="grid md:grid-cols-3 gap-8">
+         <article class="bg-[#EDEFEE] rounded-lg p-4">
+             <img class="w-full rounded-lg" src="Images/Breakfast/saccottino.webp" alt="Saccottino" />
+             <div class="mt-4">
+               <div class="flex justify-between items-center">
+                 <h3 class="font-bold text-lg">Saccottino</h3>
+                 <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
+               </div>
+               <p class="mt-2"> Its soft, flaky exterior gives way to a delicious, rich filling, making it a morning treat that’s hard to resist.</p>
+               <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+               </a>
+             </div>
+         </article>
+         <!--Dish 2-->
+         <article class="bg-[#EDEFEE] rounded-lg p-4">
+             <img class="w-full rounded-lg" src="Images/Breakfast/cannoli.jpg" alt="Cannoli" />
+             <div class="mt-4">
+               <div class="flex justify-between items-center">
+                 <h3 class="font-bold text-lg">Cannoli</h3>
+                 <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
+               </div>
+               <p class="mt-2"> A Sicilian pastry known for its crispy shell filled with sweet, creamy ricotta, cannoli.</p>
+               <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+               </a>
+             </div>
+         </article>
+         <article class="bg-[#EDEFEE] rounded-lg p-4">
+             <img class="w-full rounded-lg" src="Images/Breakfast/maritozzi.webp" alt="Maritozzi" />
+             <div class="mt-4">
+               <div class="flex justify-between items-center">
+                 <h3 class="font-bold text-lg">Maritozzi</h3>
+                 <h3 class="text-lg text-yellow-500 font-bold">$15.90</h3>
+               </div>
+               <p class="mt-2"> Maritozzi are sweet buns often filled with whipped cream or custard.</p>
+               <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+               </a>
+             </div>
+         </article>
+      </section>
+      <br>
       <section class="grid md:grid-cols-3 gap-8">
          <article class="bg-[#EDEFEE] rounded-lg p-4">
              <img class="w-full rounded-lg" src="Images/Breakfast/cornetto_and_milk.jpg" alt="Cornetto" />
@@ -55,7 +100,7 @@
                  <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
                </div>
                <p class="mt-2"> Cornetto a delectable type of pastry often filled with cream, jam, chocolate, or even almond paste.</p>
-               <a href="orderonline.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+               <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
                  <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
                </a>
              </div>
@@ -69,7 +114,7 @@
                  <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
                </div>
                <p class="mt-2"> Fette biscottate are thin, crispy slices of bread These scrumptious toasts boast a subtly sweet flavor</p>
-               <a href="orderonline.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+               <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
                  <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
                </a>
              </div>
@@ -82,12 +127,13 @@
                  <h3 class="text-lg text-yellow-500 font-bold">$5.90</h3>
                </div>
                <p class="mt-2"> Bread or toast is generously spread with Nutella, a widely popular chocolate hazelnut spread</p>
-               <a href="orderonline.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+               <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
                  <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
                </a>
              </div>
          </article>
       </section>
+      
   </div>
   <br>
   <!--Testimonials section-->
@@ -131,10 +177,11 @@
       </article>
     </section>
   </div>
+  
     <!--Footer section-->
     <footer class="bg-[#eee] text-white py-8">
       <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-6 md:mb-0">
+        <div class="btmimg" class="mb-6 md:mb-0">
           <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
         </div>
         <div class="mb-6 md:mb-0">
@@ -145,24 +192,16 @@
             <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
             <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
             <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
-          </ul>
-        </div>
-        <div>
-          <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center text-gray-400">
-            <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart"></a></li>
-            <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram"></a></li>
-            <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook"></a></li>
-            <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
             <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
             <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
-          </ul>
+         </ul>
         </div>
       </div>
+      </footer>
       <div class="text-center mt-6 text-gray-500">
         <p>&copy; Little Lemon</p>
         <p>All rights reserved</p>
-      </div>
-  </footer>    
+      </div>  
     
   </body>
 </html>
