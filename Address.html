@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/logo.png">
+    <meta property="og:url" content="https://shammim.github.io/littlelemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+ </head>
+ <!--body section-->
+ <body class="bg-gray-200 p-8">
+   <header class="header" class="mb-8">
+      <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
+        <ul class="flex justify-between items-center">
+         <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
+         <li><a href="index.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4">Home</a></li>
+         <li><a href="About.html" class="mx-4">About</a></li>
+          <li><a href="Menu.html" class="mx-4">Menu</a></li>
+          <li><a class="mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4">Order online</a></li>
+          <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
+          <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
+          <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
+         <li><img src="Images/heart.png" width="30px" height="30px"></li>
+          <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
+       </ul>
+     </nav>
+   </header>
+   <br>
+   <main class="breadcrumb">
+      <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
+        <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
+        <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a></li>
+        <li class="inline"><a href="Alcarte.html" class="text-gray-900 hover:underline hover:text-yellow-500">Alcarte Menu</a></li>
+      </ul>
+    </main>
+<body class="bg-gray-800 text-white">
+  <div class="max-w-md mx-auto mt-10 p-4 bg-gray-700 rounded-lg shadow-lg">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <button class="text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <div class="ml-2 text-lg font-bold">LITTLE LEMON</div>
+      </div>
+      <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18M9 3v18m6-18v18m-9-9h12" />
+        </svg>
+        <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-1">2</span>
+      </div>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="text-lg font-bold text-yellow-500">Address Details:</h2>
+      <form class="mt-4">
+        <div class="mb-4">
+          <label for="street-address" class="block text-sm">Street Address</label>
+          <input id="street-address" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="Street Address">
+        </div>
+        <div class="mb-4">
+          <label for="apartment" class="block text-sm">Apartment, unit, state</label>
+          <input id="apartment" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="Apartment, unit, state">
+        </div>
+        <div class="mb-4">
+          <label for="country" class="block text-sm">Country</label>
+          <div class="relative">
+            <select id="country" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none">
+              <option>United States of America</option>
+              <!-- Add other countries as needed -->
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between mb-4">
+          <div class="w-1/3 mr-2">
+            <label for="city" class="block text-sm">City</label>
+            <input id="city" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="City">
+          </div>
+          <div class="w-1/3 mx-2">
+            <label for="state" class="block text-sm">State</label>
+            <input id="state" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="State">
+          </div>
+          <div class="w-1/3 ml-2">
+            <label for="zip" class="block text-sm">Zip code</label>
+            <input id="zip" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="Zip code">
+          </div>
+        </div>
+        <button type="submit" class="w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold">Done</button>
+      </form>
+    </div>
+
+</body>
+</html>
