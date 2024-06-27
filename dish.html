@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Little Lemon</title>
+        <meta property="og:title" content="Little Lemon">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="Images/logo.png">
+        <meta property="og:url" content="https://shammim.github.io/littlelemon">
+        <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Little Lemon">
+        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="stylesheet.css" />
+ </head>
+
+ <body class="bg-gray-200 p-8">
+     <header class="header" class="mb-8">
+         <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
+             <ul class="flex justify-between items-center">
+                    <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
+                    <li><a href="index.html" class="mx-4 ">Home</a></li>
+                    <li><a href="About.html" class="mx-4">About</a></li>
+                    <li><a href="Menu.html" class="mx-4">Menu</a></li>
+                    <li><a class="mx-4" href="Reservation.html">Reservation</a></li>
+                    <li><a href="orderonline.html" class="mx-4">Order online</a></li>
+                    <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
+                    <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
+                    <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
+                    <li><img src="Images/heart.png" width="30px" height="30px"></li>
+                    <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
+             </ul>
+         </nav>
+     </header>
+     <br>
+<body class="bg-gray-100">
+  <div class="max-w-md mx-auto mt-10 p-4 bg-white rounded-lg shadow-lg">
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-4">
+      <button class="text-gray-800">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      <div class="text-4xl font-bold text-[#F4CE14]">LITTLE LEMON</div>
+      <div class="relative">
+        <img src="Images/basket.png" class="w-4 h-4"/>
+        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-1">1</span>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <img src="Images/greek salad.jpg" alt="Greek Salad" class="w-full h-48 object-cover rounded-lg">
+
+    <!-- Product Details -->
+    <div class="mt-4">
+      <h2 class="text-2xl font-bold text-gray-500">Greek Salad</h2>
+      <div class="text-gray-700 mt-1">$12.99</div>
+      <p class="mt-2 text-gray-600">The famous Greek salad of crispy lettuce, pepper, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+    </div>
+
+    <!-- Delivery Time -->
+    <div class="mt-4 flex items-center justify-between">
+      <div class="flex items-center text-gray-700">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l3-3m0 0l3-3m-3 3h12m0 0l3-3m-3 3l-3 3m0 0l-3 3m0-3h-6m6 0l-3 3" />
+        </svg>
+        <span class="ml-2">Delivery Time: 20 minutes</span>
+      </div>
+      <button class="text-blue-500">change</button>
+    </div>
+
+    <!-- Add Ingredients -->
+    <div class="mt-4">
+      <h3 class="text-lg font-bold">Add</h3>
+      <div class="flex justify-between items-center mt-2">
+        <span>Cucumber</span>
+        <span>$1.00</span>
+      </div>
+      <div class="flex justify-between items-center mt-2">
+        <span>Red Onion</span>
+        <span>$1.00</span>
+      </div>
+      <div class="flex justify-between items-center mt-2">
+        <span>Avocado</span>
+        <span>$1.00</span>
+      </div>
+    </div>
+
+    <!-- Quantity Selector -->
+    <div class="mt-4 flex items-center justify-center">
+      <button class="text-yellow-500 bg-gray-200 p-2 rounded-full">-</button>
+      <span class="mx-4">1</span>
+      <button class="text-yellow-500 bg-gray-200 p-2 rounded-full">+</button>
+    </div>
+    <br>
+    <!-- Add to Cart Button -->
+    <a href="cart.html class=" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold mx-4 items-center"><button>Add for $12.99</button></a>
+  </div>
+</body>
+</html>
