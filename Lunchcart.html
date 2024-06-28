@@ -16,30 +16,305 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="stylesheet.css" />
  </head>
- <!--body section-->
- <body class="bg-gray-200 p-8">
+
+ <body class="p-8">
    <header class="header" class="mb-8">
-      <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
+      <nav class="rounded-xl text-gray-800 py-4">
         <ul class="flex justify-between items-center">
-         <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
-         <li><a href="index.html" class="mx-4">Home</a></li>
-         <li><a href="About.html" class="mx-4">About</a></li>
+          <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
+          <li><a href="index.html" class="mx-4 ">Home</a></li>
+          <li><a href="About.html" class="mx-4">About</a></li>
           <li><a href="Menu.html" class="mx-4">Menu</a></li>
           <li><a class="mx-4" href="Reservation.html">Reservation</a></li>
-          <li><a href="orderonline.html" class="mx-4  text-white bg-[#495E57] rounded-lg py-2 px-4">Order online</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4">Order online</a></li>
           <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
-          <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
-          <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
-         <li><img src="Images/heart.png" width="30px" height="30px"></li>
-          <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
+          <li><img src="Images/search-interface-symbol.png" width="20px" height="20px"></li>
+          <li><img src="Images/shopping-cart.png" width="20px" height="20px"></li>
+          <li><img src="Images/heart.png" width="20px" height="20px"></li>
+          <li><img src="Images/user.png" width="20px" height="20px" href="Signin.html"></li>
        </ul>
-     </nav>
+      </nav>
    </header>
    <br>
-   <main class="breadcrumb">
-      <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
-        <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-        <li class="inline"><a href="orderonline.html" class="text-gray-900 hover:underline hover:text-yellow-500">Order online</a></li>
-        <li class="inline"><a href="Lunchcart.html" class="text-gray-900 hover:underline hover:text-yellow-500">Cart</a></li>
-      </ul>
-    </main>
+   <div>
+     <!--Lunch Section-->
+     <section class="grid md:grid-cols-3 gap-8">
+      <article class="bg-[#495E57] rounded-lg p-4">
+        <img class="w-full rounded-lg pl-28 mb-4" src="Images/greek salad.jpg" alt="Geeksalad" />
+        <div class="mt-4">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-lg text-gray-200">Cream Broccoli Soup</h3>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+           <div class="flex items-center text-gray-700">
+            <img src="Images/delivery-bike.png" width="20px" height="20px">
+            <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
+         </div>
+          <button class="text-[#F4CE14]">change</button>
+        </div>
+        <p class="mt-2 text-gray-200 mx-4">  Cream broccoli soup  a comforting blend of fresh broccoli and rich cream for a nutritious and satisfying bowl.</p>
+        <div class="mt-4">
+         <h3 class="text-lg font-bold text-gray-200">Add</h3>
+         <div class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Sautéed Mushrooms</span>
+            <span>$2.00</span>
+         </div>
+         <div class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Caramelized Onions</span>
+            <span>$1.00</span>
+          </div>
+          <div class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Garlic Bread</span>
+           <span>$3.00</span>
+          </div>
+        </div>
+        <!-- Quantity Selector -->
+        <div class="mt-4 flex items-center justify-center">
+          <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+         <span class="mx-4">1</span>
+          <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+       </div>
+       <br>
+       <!-- Add to Cart Button -->
+       <br>
+       <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $21.99</button></a>
+       </div>
+     </article>
+        <!--Dish 2-->
+        <article class="bg-[#495E57] rounded-lg p-4">
+            <img class="w-full rounded-lg pl-28 mb-4" src="Images/Lunch/Butternut-squash.jpg" alt="Bruchetta" />
+            <div class="mt-4">
+               <div class="flex justify-between items-center">
+                   <h3 class="font-bold text-lg text-gray-200">Butter squash soup</h3>
+               </div>
+               <div class="mt-4 flex items-center justify-between">
+                   <div class="flex items-center text-gray-700">
+                       <img src="Images/delivery-bike.png" width="20px" height="20px">
+                       <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
+                   </div>
+                    <button class="text-[#F4CE14]">change</button>
+               </div>
+               <p class="mt-2 text-gray-200 mx-4"> Creamy Butternut Squash Soup is a velvety blend of sweet butternut squash, aromatic spices, and rich cream or coconut milk. </p>
+               <div class="mt-4">
+                   <h3 class="text-lg font-bold text-gray-200">Add</h3>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span >A Drizzle of Truffle Oil </span>
+                       <span>$3.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span>Focaccia Bread with Rosemary</span>
+                       <span>$3.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span>Crusty Roll with Garlic Butter</span>
+                       <span>$2.00</span>
+                   </div>
+               </div>
+               <div class="mt-4 flex items-center justify-center">
+                   <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+                   <span class="mx-4">1</span>
+                   <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+                </div>
+                 <br>
+                <!-- Add to Cart Button -->
+                 <br>
+                <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $16.99</button></a>
+              </div>
+        </article>
+        <article class="bg-[#495E57] rounded-lg p-4">
+            <img class="w-full rounded-lg pl-28 mb-4" src="Images/Lunch/bro.webp" alt="Pasta alla Crudaiolla" />
+            <div class="mt-4">
+               <div class="flex justify-between items-center">
+                   <h3 class="font-bold text-lg text-gray-200"> Pasta alla Crudaiolla</h3>
+                </div>
+                <div class="mt-4 flex items-center justify-between">
+                   <div class="flex items-center text-gray-700">
+                       <img src="Images/delivery-bike.png" width="20px" height="20px">
+                       <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
+                   </div>
+                   <button class="text-[#F4CE14]">change</button>
+                </div>
+               <p class="mt-2 text-gray-200 mx-4"> Pasta alla Crudaiolla is a vibrant Italian dish featuring pasta tossed with a raw tomato and herb sauce for a fresh and flavorful experience.</p>
+               <div class="mt-4">
+                   <h3 class="text-lg font-bold text-gray-200">Add</h3>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span> Kalamata Olives</span>
+                       <span>$1.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                        <span>Seared Shrimp</span>
+                        <span>$1.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span>Freshly Grated Parmesan Cheese</span>
+                       <span>$1.00</span>
+                   </div>
+               </div>
+             </div>      
+             <!-- Quantity Selector -->
+             <div class="mt-4 flex items-center justify-center">
+                 <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+                 <span class="mx-4">1</span>
+                 <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+             </div>
+             <br>
+             <!-- Add to Cart Button -->
+             <br>
+             <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
+          </div>
+      </article>     
+    </section>
+    <section class="grid md:grid-cols-3 gap-8">
+      <article class="bg-[#495E57] rounded-lg p-4">
+        <img class="w-full rounded-lg pl-28 mb-4" src="Images/Lunch/Asparagus.webp" alt="Quche" />
+        <div class="mt-4">
+          <div class="flex justify-between items-center">
+            <h3 class="font-bold text-lg text-gray-200">Easy Cheese Asparagus Quche</h3>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+           <div class="flex items-center text-gray-700">
+            <img src="Images/delivery-bike.png" width="20px" height="20px">
+            <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
+         </div>
+          <button class="text-[#F4CE14]">change</button>
+        </div>
+        <p class="mt-2 text-gray-200 mx-4"> Easy Cheese Asparagus Quiche is a delightful combination of savory cheese, fresh asparagus, and a buttery crust for a quick and delicious meal </p>
+        <div class="mt-4">
+         <h3 class="text-lg font-bold text-gray-200">Add</h3>
+         <div class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Creamy Mozzarella</span>
+            <span>$1.00</span>
+         </div>
+         <div class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Pinch of Fresh Herbs</span>
+            <span>$1.00</span>
+          </div>
+          <div class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Sautéed Shallotsd</span>
+           <span>$3.00</span>
+          </div>
+        </div>
+        <!-- Quantity Selector -->
+        <div class="mt-4 flex items-center justify-center">
+          <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+         <span class="mx-4">1</span>
+          <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+       </div>
+       <br>
+       <!-- Add to Cart Button -->
+       <br>
+       <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $21.99</button></a>
+       </div>
+     </article>
+        <!--Dish 2-->
+        <article class="bg-[#495E57] rounded-lg p-4">
+            <img class="w-full rounded-lg pl-28 mb-4" src="Images/Lunch/Puff Pastry Caprese Appetizers.jpeg" alt="Bruchetta" />
+            <div class="mt-4">
+               <div class="flex justify-between items-center">
+                   <h3 class="font-bold text-lg text-gray-200">Puff Pastry Caprese Appetizers</h3>
+               </div>
+               <div class="mt-4 flex items-center justify-between">
+                   <div class="flex items-center text-gray-700">
+                       <img src="Images/delivery-bike.png" width="20px" height="20px">
+                       <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
+                   </div>
+                    <button class="text-[#F4CE14]">change</button>
+               </div>
+               <p class="mt-2 text-gray-200 mx-4"> A Sicilian pastry known for its crispy shell filled with sweet, creamy ricotta, cannoli.  A yummy delicacy that has essence og Nediterranean flavours.</p>
+               <div class="mt-4">
+                   <h3 class="text-lg font-bold text-gray-200">Add</h3>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span >A Drizzle of Truffle Oil </span>
+                       <span>$3.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span>Focaccia Bread with Rosemary</span>
+                       <span>$3.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span>Crusty Roll with Garlic Butter</span>
+                       <span>$2.00</span>
+                   </div>
+               </div>
+               <div class="mt-4 flex items-center justify-center">
+                   <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+                   <span class="mx-4">1</span>
+                   <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+                </div>
+                 <br>
+                <!-- Add to Cart Button -->
+                 <br>
+                <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $16.99</button></a>
+              </div>
+        </article>
+        <article class="bg-[#495E57] rounded-lg p-4">
+            <img class="w-full rounded-lg pl-28 mb-4" src="Images/Lunch/bro.webp" alt="Pasta alla Crudaiolla" />
+            <div class="mt-4">
+               <div class="flex justify-between items-center">
+                   <h3 class="font-bold text-lg text-gray-200"> Classic Italian Caprese Salad</h3>
+                </div>
+                <div class="mt-4 flex items-center justify-between">
+                   <div class="flex items-center text-gray-700">
+                       <img src="Images/delivery-bike.png" width="20px" height="20px">
+                       <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
+                   </div>
+                   <button class="text-[#F4CE14]">change</button>
+                </div>
+               <p class="mt-2 text-gray-200 mx-4"> Classic Italian Caprese Salad is  a simple and elegant ensemble of ripe tomatoes, fresh mozzarella, basil leaves, drizzled with olive oil, showcasing the essence of Mediterranean flavors.</p>
+               <div class="mt-4">
+                   <h3 class="text-lg font-bold text-gray-200">Add</h3>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span> Kalamata Olives</span>
+                       <span>$1.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                        <span>Seared Shrimp</span>
+                        <span>$1.00</span>
+                   </div>
+                   <div class="flex justify-between items-center mt-2 text-gray-200">
+                       <span>Freshly Grated Parmesan Cheese</span>
+                       <span>$1.00</span>
+                   </div>
+               </div>
+             </div>      
+             <!-- Quantity Selector -->
+             <div class="mt-4 flex items-center justify-center">
+                 <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+                 <span class="mx-4">1</span>
+                 <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+             </div>
+             <br>
+             <!-- Add to Cart Button -->
+             <br>
+             <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
+          </div>
+      </article>     
+    </section>
+ </div>
+ <br>
+ <!--Footer section-->
+ <footer class="bg-[#eee] text-white py-8">
+    <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div class="btmimg" class="mb-6 md:mb-0">
+        <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
+      </div>
+      <div class="mb-6 md:mb-0">
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="About.html" class="hover:underline">About</a></li>
+          <li><a href="menu.html" class="hover:underline">Menu</a></li>
+          <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+          <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+          <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+          <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+          <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+       </ul>
+      </div>
+    </div>
+    </footer>
+    <div class="text-center mt-6 text-gray-500">
+      <p>&copy; Little Lemon</p>
+      <p>All rights reserved</p>
+    </div>
+    </body>
+</html>

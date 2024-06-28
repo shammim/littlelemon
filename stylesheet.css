@@ -40,7 +40,7 @@ ul {
    background-size: cover;
 }
 .header{
-  row-gap: 10%;
+  row-gap:10px;
 }
 .Aboutus_title{
   margin-top: -40pt;
@@ -89,6 +89,9 @@ ul.breadcrumb li a:hover {
   background-color: #495E57;
   padding-bottom: 30px;
 }
+.group:hover .group-hover\:block {
+  display: block;
+}
 .Hero_title{
   margin-top: -10pt;
   font-family: 'Markazi Text', serif;
@@ -114,6 +117,9 @@ ul.breadcrumb li a:hover {
 .box{
   display: flex;
   flex-flow: column;
+}
+.hidden {
+  display: none;
 }
 button{
   position: relative;
@@ -263,10 +269,10 @@ nav {
   margin-right: 10px;
 }
 nav ul a:active {
-  text-decoration: underline;
+  text-decoration: bold;
 }
 nav ul a:hover {
-  text-decoration: underline;
+  text-decoration: bold;
   text-decoration-thickness: 0.1rem;
   color: #F4CE14;
 }
