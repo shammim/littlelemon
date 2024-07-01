@@ -6,7 +6,7 @@
     <title>Little Lemon-An Italian Restaurant</title>
     <meta property="og:title" content="Little Lemon">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="Assert 9@4x.png" width="5px" height="5px">
+    <meta property="og:image" content="Images/Logo.png">
     <meta property="og:url" content="https://shammim.github.io/littlelemon">
     <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
     <meta property="og:locale" content="en_US">
@@ -18,32 +18,45 @@
  </head>
  <!--body section-->
  <body class="p-8">
-   <!--Header section-->
-   <header class="mb-8" >
-      <nav class="rounded-xl text-gray-800 py-4">
+   <header class="header" id="header">
+      <nav class=" text-gray-800 py-2">
         <ul class="flex justify-between items-center">
          <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
          <li><a href="index.html" class="mx-4 text-lg">Home</a></li>
          <li><a href="About.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4 text-lg">About</a></li>
           <li><a href="Menu.html" class="mx-4 text-lg">Menu</a></li>
           <li><a class="mx-4 text-lg" href="Reservation.html">Reservation</a></li>
-          <li><a href="orderonline.html" class="mx-4 text-lg">Order online</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-lg">Order</a></li>
           <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
           <li><img src="Images/search-interface-symbol.png" width="20px" height="20px"></li>
-          <li><img src="Images/shopping-cart.png" width="20px" height="20px"></li>
-         <li><img src="Images/heart.png" width="20px" height="20px"></li>
-          <li><img src="Images/user.png" width="20px" height="20px" href="Signin.html"></li>
+          <li><a href="cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
+          <li><a  href="Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
        </ul>
      </nav>
-   </header>
+    </header>
+    <button class="toggle-button bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu .png" class="w-4 h-4"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="text-gray-200 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="active text-gray-700 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="orderonline.html">Order online</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
+       </ul>
+      </nav>
+    </div>
    <br>
-   <!--Breadcrumb section-->
+   <!--breadcrumb section-->
    <main class="breadcrumb">
       <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
         <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-        <li class="inline"><a href="About.html" class="text-gray-900 hover:underline hover:text-yellow-500">About</a> </li>
+        <li class="inline"><a href="About.html" class="text-gray-900 hover:underline hover:text-yellow-500">About</a></li>
+        
       </ul>
     </main>
+    <br>
     <!--About Section-->
     <div id="About" class="About">
       <section class="grid md:grid-cols-3 gap-8">
@@ -94,17 +107,13 @@
       </section>
       <section>
         <article class="rounded-xl p-4">
-          <div class="mt-4">
-            <div class="flex justify-between items-center">
-              <a href="Breakfast.html" class="bg-yellow-500 text-gray-900 font-bold mx-4 rounded-xl"><button>Breakfast</button></a>
-              <br>
-              <a href="Lunch.html" class="bg-yellow-500 text-gray-900 font-bold mx-4 rounded-xl"><button>Lunch</button></a>
-              <br>
-              <a href="Alcarte.html" class="bg-yellow-500 text-gray-900 font-bold mx-4 rounded-xl"><button>Al Carte</button></a>
-              <br>
-              <a href="Desserts.html" class="bg-yellow-500 text-gray-900 font-bold mx-4 rounded-xl"><button>Desserts</button></a>
-              <br>
-              <a href="Specials.html" class="bg-yellow-500 text-gray-900 font-bold mx-4 rounded-xl"><button>Specials</button></a>
+          <div class="mt-4 grid sm:grid-cols-3 gap-8">
+            <div class="flex flex-col justify-center items-center space-y-4">
+              <a href="Breakfast.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Breakfast</a>
+              <a href="Lunch.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Lunch</a>
+              <a href="Alcarte.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Al Carte</a>
+              <a href="Desserts.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Desserts</a>
+              <a href="Specials.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Specials</a>
             </div>
           </div>
         </article>
@@ -135,6 +144,7 @@
         <div class="btmimg" class="mb-6 md:mb-0">
           <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
         </div>
+        <br>
         <div class="mb-6 md:mb-0">
           <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
             <li><a href="index.html" class="hover:underline">Home</a></li>
@@ -153,5 +163,11 @@
     <p>&copy; Little Lemon</p>
     <p>All rights reserved</p>
   </div>
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', function(){
+    const sidebar =document.getElementById('sidebar');
+    sidebar.classList.toggle('hidden');
+    });
+  </script>
  </body>
 </html>
