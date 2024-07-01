@@ -517,7 +517,7 @@ h4 {
       flex-direction: column;
   }
   .header{
-    display: none;
+    display: block;
   }
   .About-section {
       flex-direction: column;
