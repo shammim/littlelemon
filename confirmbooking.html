@@ -6,7 +6,7 @@
     <title>Little Lemon-An Italian Restaurant</title>
     <meta property="og:title" content="Little Lemon">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="Images/logo.png">
+    <meta property="og:image" content="Images/Menu.png">
     <meta property="og:url" content="https://shammim.github.io/littlelemon">
     <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
     <meta property="og:locale" content="en_US">
@@ -16,35 +16,46 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="stylesheet.css" />
  </head>
-
- <body class="p-8">
-   <header class="header" class="mb-8">
-      <nav class="rounded-xl text-gray-800 py-4">
+ <!--body section-->
+ <body class="bg-gray-100 font-karla">
+   <header class="header" id="header">
+      <nav class=" text-gray-800 py-2">
         <ul class="flex justify-between items-center">
-          <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
-          <li><a href="index.html" class="mx-4 ">Home</a></li>
-          <li><a href="About.html" class="mx-4">About</a></li>
-          <li><a href="Menu.html" class="mx-4">Menu</a></li>
-          <li><a class="mx-4" href="Reservation.html">Reservation</a></li>
-          <li><a href="orderonline.html" class="mx-4">Order online</a></li>
-          <li><a href="LogIn.html" class="mx-4  text-white bg-[#495E57] rounded-lg py-2 px-4">LogIn</a></li>
-          <li><img src="Images/search-interface-symbol.png" width="20px" height="20px"></li>
-          <li><img src="Images/shopping-cart.png" width="20px" height="20px"></li>
-          <li><img src="Images/heart.png" width="20px" height="20px"></li>
-          <li><img src="Images/user.png" width="20px" height="20px" href="Signin.html"></li>
+         <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
+         <li><a href="index.html" class="mx-4 text-lg">Home</a></li>
+         <li><a href="About.html" class="mx-4 text-lg">About</a></li>
+          <li><a href="Menu.html" class="mx-4 text-lg">Menu</a></li>
+          <li><a class="mx-4 text-lg" href="Reservation.html">Reservation</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-lg text-gray-200 bg-[#495E57] rounded-lg py-2 px-4">Order</a></li>
+          <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
+          <li><a href="cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
+          <li><a  href="Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
+       </ul>
+     </nav>
+    </header>
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu.png" class="w-8 h-8"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="text-yellow-500 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="orderonline.html">Order</a></li>
+          <li><a class="active text-yellow-500 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
        </ul>
       </nav>
-   </header>
+    </div>
    <br>
-        <!--Breadcrumb section-->
-        <main class="breadcrumb">
-            <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
-            <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-            <li class="inline"><a href="LogIn.html" class="text-gray-900 hover:underline hover:text-yellow-500">Login</a></li>
-            <li class="inline"><a href="confirmbooking.html" class="text-gray-900 hover:underline hover:text-yellow-500">Booking Confirmation</a></li>
-            </ul>
-        </main>
-    <section class="flex justify-between items-center mb-8">
+   <!--Breadcrumb section-->
+   <main class="breadcrumb">
+      <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
+        <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
+        <li class="inline"><a href="LogIn.html" class="text-gray-900 hover:underline hover:text-yellow-500">Login</a></li>
+        <li class="inline"><a href="confirmbooking.html" class="text-gray-900 hover:underline hover:text-yellow-500">Booking Confirmation</a></li>
+     </ul>
+   </main>
+    <section class="flex justify-center items-center">
       <article>
         <div class="mx-4">
           <img src="Images/Logo.svg" class="mx-auto mb-4">
@@ -52,12 +63,14 @@
       </article>
       <article>
         <div>
-          <h1 class="text-3xl font-bold text-center">Your Booking is <span class="text-green-600">Confirmed!</span></h1>
+          <h1 class="font-bold text-center">Your Booking is <span class="text-green-600">Confirmed!</span></h1>
         </div>
       </article>
+    </section>
+    <section class=" justify-center">
       <article>
         <div class="mx-4">
-          <a href="index.html" class="bg-yellow-500 rounded mx-4"><button>Return to Home</button></a>
+          <a href="index.html" class=" ml-10 bg-yellow-500 rounded mx-4"><button>Return to Home</button></a>
         </div>
       </article>
     </section>
@@ -87,6 +100,11 @@
         <p>&copy; Little Lemon</p>
         <p>All rights reserved</p>
       </div>
-      
+      <script>
+        document.getElementById('menuBtn').addEventListener('click', function(){
+        const sidebar =document.getElementById('sidebar');
+        sidebar.classList.toggle('hidden');
+        });
+      </script>
   </body>
 </html>

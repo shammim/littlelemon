@@ -6,7 +6,7 @@
     <title>Little Lemon-An Italian Restaurant</title>
     <meta property="og:title" content="Little Lemon">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="Asset 9@4x.png">
+    <meta property="og:image" content="Images/Menu.png">
     <meta property="og:url" content="https://shammim.github.io/littlelemon">
     <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
     <meta property="og:locale" content="en_US">
@@ -17,27 +17,35 @@
     <link rel="stylesheet" href="stylesheet.css" />
  </head>
  <!--body section-->
- <body class=" p-8">
-   <!--Header section-->
-   <header>
-     <nav class="rounded-xl text-gray-800 py-4">
-       <ul class="flex justify-between items-center">
+ <body class="bg-gray-100 font-karla">
+   <header class="header" id="header">
+      <nav class=" text-gray-800 py-2">
+        <ul class="flex justify-between items-center">
          <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
          <li><a href="index.html" class="mx-4 text-lg">Home</a></li>
-          <li><a href="About.html" class="mx-4 text-lg">About</a></li>
-          <li><a href="Menu.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4 text-lg">Menu</a></li>
-            
+         <li><a href="About.html" class="mx-4 text-lg">About</a></li>
+          <li><a href="Menu.html" class="mx-4 text-lg text-gray-200 bg-[#495E57] rounded-lg py-2 px-4  ">Menu</a></li>
           <li><a class="mx-4 text-lg" href="Reservation.html">Reservation</a></li>
-          <li><a href="orderonline.html" class="mx-4 text-lg">Order online</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-lg">Order</a></li>
           <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
-          <li><img src="Images/search-interface-symbol.png" width="20px" height="20px"></li>
-          <li><img src="Images/shopping-cart.png" width="20px" height="20px"></li>
-        <li><img src="Images/heart.png" width="20px" height="20px"></li>
-          <li><img src="Images/user.png" width="20px" height="20px" href="Signin.html"></li>
+          <li><a href="cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
+          <li><a  href="Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
        </ul>
      </nav>
-   </header>
-   
+    </header>
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu.png" class="w-8 h-8"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="text-yellow-500 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class="active text-yellow-500 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="orderonline.html">Order</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
+       </ul>
+      </nav>
+    </div>
    <br>
    <!--Breadcrumb section-->
    <main class="breadcrumb">
@@ -46,6 +54,7 @@
         <li class="inline"><a href="Menu.html" class="text-gray-900 hover:underline hover:text-yellow-500">Menu</a> </li>
       </ul>
     </main>
+    
    <div class="Meal_types">
       <section class="specials_heading mb-16 flex justify-between">
         <article>
@@ -56,128 +65,22 @@
                 class="bg-yellow-500 text-gray-900 font-bold rounded px-4 py-2">Order online</button></a>
         </article>
      </section>
-     <section class="flex flex-col-1 gap-4 bg-gray-100 justify-center">
-        <article class="dishes">
-          
-          <button id="breakfastBtn" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Breakfast</button>
-          <section id="breakfastSection" class="hidden p-6 bg-white shadow-md mt-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="w-20">
-                  <img class="rounded-lg mx-4" src="Images/Breakfast/fette_biscottate.jpg" alt="Fette Biscottate" />                 
-                </div>
-                <div class="w-20"> 
-                  <img class="rounded-lg mx-4" src="Images/Breakfast/cornetto_and_milk.jpg" alt="Cornetto" />
-                </div>
-                <div class="w-20">
-                  <img class="rounded-lg mx-4" src="Images/Breakfast/nutella.jpg" alt="Pane e Nutella" />
-                </div>
-                <div class="w-20">
-                  <img class="rounded-lg mx-4" src="Images/Breakfast/maritozzi.webp" alt="Maritozzi" />
-                </div>
-                <div class="w-20">
-                  <img class="rounded-lg mx-4" src="Images/Breakfast/cannoli.jpg" alt="Cannoli" />
-                </div>
-                <div class="w-20">
-                  <img class="rounded-lg mx-4" src="Images/Breakfast/saccottino.webp" alt="Saccottino" />
-                </div>
+     <section>
+       <article class="flex rounded-xl p-4">
+          <div class="mt-4 grid sm:grid-cols-3 gap-8">
+            <div class="flex flex-col justify-center items-center space-y-4">
+              <a href="Breakfast.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Breakfast</a>
+              <a href="Lunch.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Lunch</a>
+              <a href="Alcarte.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Al Carte</a>
+              <a href="Desserts.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Desserts</a>
+              <a href="Specials.html" class="bg-yellow-500 text-gray-900 font-bold px-4 py-2 rounded-xl">Specials</a>
             </div>
-         </section>
-        
-          <button id="lunchBtn" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Lunch</button>
-          <section id="lunchSection" class="hidden p-6 bg-white shadow-md mt-4">
-           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-             <div class="w-20">
-              <img class="rounded-lg mx-4" src="Images/Lunch/creamy-broccoli-soup_1980x1320-127735-1.jpg" alt="CreamBroccoliSoup" />                 
-             </div>
-             <div class="w-20"> 
-              <img class="rounded-lg mx-4" src="Images/Lunch/Butternut-squash.jpg " alt="Butter_squash" />
-             </div>
-             <div class="w-20">
-              <img class="rounded-lg mx-4" src="Images/Lunch/bro.webp" alt="Pasta-alla-Crudaiolla" />
-             </div>
-             <div class="w-20">
-              <img class="rounded-lg mx-4" src="Images/Lunch/Asparagus.webp" alt="Maritozzi" />
-             </div>
-              <div class="w-20">
-              <img class="rounded-lg mx-4 my-2" src="Images/Lunch/Puff Pastry Caprese Appetizers.jpeg" alt="Cannoli" />
-             </div>
-             <div class="w-20">
-              <img class="rounded-lg mx-4" src="Images/Lunch/pizza-346985_128011-846x474.jpg" alt="Saccottino" />
-             </div>
-           </div>
-          </section>
-         
-          <button id="alcarteBtn" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Alcarte</button>
-          <section id="alcarteSection" class="hidden p-6 bg-white shadow-md mt-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div class="w-20">
-              <img class="rounded-lg mx-4" src="Images/Alcarte/Steekfritters.jpg" alt="Steekfritters" />                 
-              </div>
-              <div class="w-20"> 
-                <img class="rounded-lg mx-4" src="Images/Alcarte/parmesan-roasted-zucchini7-819x1024.jpg" alt="Zucchini" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Alcarte/Buratta.jpg" alt="Buratta" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Alcarte/Asparagus.webp" alt="Charcoalgrilledasparagus" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Alcarte/Salami.jpg" alt="Salamimisti" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Alcarte/Chessy papillons.jpg" alt="papillons" />
-              </div>
-            </div>
-          </section>
-
-          <button id="dessertsBtn" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Desserts </button>
-          <section id="dessertsSection" class="hidden p-6 bg-white shadow-md mt-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div class="w-20">
-              <img class="rounded-lg mx-4" src="Images/Desserts/Orange cake.jpg" alt="Orange Polenta cake" />                 
-              </div>
-              <div class="w-20"> 
-                <img class="rounded-lg mx-4" src="Images/Desserts/Cheesecake.png" alt="Cheesecake" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Desserts/Pandoro.jpg" alt="Pandoro" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Desserts/Vpannacota.jpg" alt="Vanillapannacotta" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Desserts/Vegan-Iced-Coffee-12.jpg" alt="IcedHazelnut" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/Desserts/Vanilla.jpeg" alt="Vanilla" />
-              </div>
-            </div>
-          </section>
-
-          
-          <button id="specialsBtn" class="px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600">Specials</button>
-          <section id="specialsSection" class="hidden p-6 bg-white shadow-md mt-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div class="w-20">
-              <img class="rounded-lg mx-4" src="Images/specials/greek salad.jpg" alt="geeksalad" />                 
-              </div>
-              <div class="w-20"> 
-                <img class="rounded-lg mx-4" src="Images/specials/bruchetta.jpg" alt="bruchetta" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/specials/grilled-fish.jpg" alt="grilledfish" />
-              </div>
-              <div class="w-20">
-                <img class="rounded-lg mx-4" src="Images/specials/lemon dessert.jpg" alt="lemondessert" />
-              </div>
-            </div>
-          </section>
-      </article>
-  </div>
+          </div>
+       </article>
+     </section>
+   </div>
    <!--About Section-->
    <div id="About" class="About">
-     
      <section class="grid md:grid-cols-3 gap-8">
        <article class="bg-[#EDEFEE] rounded-lg p-4">
          <div class="mt-4">
@@ -231,36 +134,11 @@
       <p>All rights reserved</p>
    </div>  
    
-    <script>
-        document.getElementById('breakfastBtn').addEventListener('click', function() {
-            const breakfastSection = document.getElementById('breakfastSection');
-            breakfastSection.classList.toggle('hidden');
-        });
-    </script>
-    <script>
-      document.getElementById('lunchBtn').addEventListener('click', function() {
-           const lunchSection = document.getElementById('lunchSection');
-           lunchSection.classList.toggle('hidden');
-        });
-    </script>
-    <script>
-      document.getElementById('alcarteBtn').addEventListener('click', function() {
-           const alcarteSection = document.getElementById('alcarteSection');
-           lunchSection.classList.toggle('hidden');
-        });
-    </script>
-    <script>
-      document.getElementById('dessertsBtn').addEventListener('click', function(){
-        const dessertsSection =document.getElementById('dessertsSection');
-        dessertsSection.classList.toggle('hidden');
-      });
-    </script>
-    <script>
-      document.getElementById('specialsBtn').addEventListener('click', function(){
-        const specialsSection =document.getElementById('specialsSection');
-        specialsSection.classList.toggle('hidden');
-      });
-    </script>
-   
+   <script>
+    document.getElementById('menuBtn').addEventListener('click', function(){
+    const sidebar =document.getElementById('sidebar');
+    sidebar.classList.toggle('hidden');
+    });
+  </script>
  </body>
 </html>

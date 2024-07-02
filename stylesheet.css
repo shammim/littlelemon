@@ -669,7 +669,7 @@ h4 {
     color: #ffbf00;
   }
   .toggle-button {
-    position: fixed;
+    position: relative;
     top: 20px;
     left: 20px;
     z-index: 1001;

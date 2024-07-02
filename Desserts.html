@@ -6,7 +6,7 @@
     <title>Little Lemon-An Italian Restaurant</title>
     <meta property="og:title" content="Little Lemon">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="Images/logo.png">
+    <meta property="og:image" content="Images/Menu.png">
     <meta property="og:url" content="https://shammim.github.io/littlelemon">
     <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
     <meta property="og:locale" content="en_US">
@@ -17,24 +17,35 @@
     <link rel="stylesheet" href="stylesheet.css" />
  </head>
  <!--body section-->
- <body class="bg-gray-200 p-8">
-   <header class="header" class="mb-8">
-      <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
+ <body class="bg-gray-100 font-karla">
+   <header class="header" id="header">
+      <nav class=" text-gray-800 py-2">
         <ul class="flex justify-between items-center">
-         <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
-         <li><a href="index.html" class="mx-4 ">Home</a></li>
-         <li><a href="About.html" class="mx-4">About</a></li>
-          <li><a href="Menu.html" class="mx-4">Menu</a></li>
-          <li><a class="mx-4" href="Reservation.html">Reservation</a></li>
-          <li><a href="orderonline.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4">Order online</a></li>
-          <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
-          <li><img src="Images/search-interface-symbol.png" width="30px" height="30px"></li>
-          <li><img src="Images/shopping-cart.png" width="30px" height="30px"></li>
-         <li><img src="Images/heart.png" width="30px" height="30px"></li>
-          <li><img src="Images/user.png" width="30px" height="30px" href="Signin.html"></li>
+         <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
+         <li><a href="index.html" class="mx-4 text-gray-200 bg-[#495E57] rounded-lg py-2 px-4 text-lg">Home</a></li>
+         <li><a href="About.html" class="mx-4 text-lg">About</a></li>
+          <li><a href="Menu.html" class="mx-4 text-lg">Menu</a></li>
+          <li><a class="mx-4 text-lg" href="Reservation.html">Reservation</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-lg">Order</a></li>
+          <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
+          <li><a href="cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
+          <li><a  href="Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
        </ul>
      </nav>
-   </header>
+    </header>
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu.png" class="w-8 h-8"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="text-yellow-500 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="active text-yellow-500 hover:underline mx-4" href="orderonline.html">Order</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
+       </ul>
+      </nav>
+    </div>
    <br>
    <section class="grid grid-col-1 gap-2 bg-gray-100 justify-center">
       <article class="dishes">
@@ -62,7 +73,7 @@
                 <h3 class="font-bold text-lg">Orange Polenta cake</h3>
                 <h3 class="text-lg text-yellow-500 font-bold">$16.78</h3>
               </div>
-              <p class="mt-2">Orange Polenta Cake: a moist and citrus-infused dessert featuring the distinctive texture of polenta, creating a delightful balance of sweet and zesty flavors.</p>
+              <p class="mt-2">A moist and citrus-infused dessert featuring the distinctive texture of polenta, creating a delightful balance of sweet and zesty flavors.</p>
               <a href="dessertscart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
               </a>
@@ -118,7 +129,7 @@
                 </a>
               </div>
           </article>
-          <!--Dish 2-->
+          <!--IcedHazelnut-->
           <article class="bg-[#EDEFEE] rounded-lg p-4">
               <img class="w-full rounded-lg pl-28 mb-4" src="Images/Desserts/Vegan-Iced-Coffee-12.jpg" alt="IcedHazelnut" />
               <div class="mt-4">
@@ -213,7 +224,12 @@
     <div class="text-center mt-6 text-gray-500">
       <p>&copy; Little Lemon</p>
       <p>All rights reserved</p>
-    </div>
-  </footer>    
+    </div>  
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', function(){
+    const sidebar =document.getElementById('sidebar');
+    sidebar.classList.toggle('hidden');
+    });
+  </script>  
   </body>
 </html>

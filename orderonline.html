@@ -120,7 +120,7 @@
           <img class="w-full rounded-lg" src="Images/Breakfast/fette_biscottate.jpg" alt="Fette Biscottate" />
           <div class="mt-4">
            <div class="flex justify-between items-center">
-              <h3 class="font-bold text-lg">Cornetto</h3>
+              <h3 class="font-bold text-lg">Fette Biscottate</h3>
               <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
            </div>
             <p class="mt-2"> Fette biscottate are thin, crispy slices of bread These scrumptious toasts boast a subtly sweet flavor</p>
@@ -354,5 +354,36 @@
         <p>&copy; Little Lemon</p>
         <p>All rights reserved</p>
       </div>
+      
+    <script>
+      document.getElementById('breakfastBtn').addEventListener('click', function() {
+          const breakfastSection = document.getElementById('breakfastSection');
+          breakfastSection.classList.toggle('hidden');
+      });
+  </script>
+  <script>
+    document.getElementById('lunchBtn').addEventListener('click', function() {
+         const lunchSection = document.getElementById('lunchSection');
+         lunchSection.classList.toggle('hidden');
+      });
+  </script>
+  <script>
+    document.getElementById('alcarteBtn').addEventListener('click', function() {
+         const alcarteSection = document.getElementById('alcarteSection');
+         lunchSection.classList.toggle('hidden');
+      });
+  </script>
+  <script>
+    document.getElementById('dessertsBtn').addEventListener('click', function(){
+      const dessertsSection =document.getElementById('dessertsSection');
+      dessertsSection.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.getElementById('specialsBtn').addEventListener('click', function(){
+      const specialsSection =document.getElementById('specialsSection');
+      specialsSection.classList.toggle('hidden');
+    });
+  </script>
   </body>
 </html>
