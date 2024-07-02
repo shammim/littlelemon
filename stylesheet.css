@@ -430,9 +430,13 @@ h4 {
 .menuBtn{
   display: none;
 }
+.header{
+  display: block;
 }
 
-@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (max-width: 1200px) {
   .container {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
@@ -456,7 +460,7 @@ h4 {
     display: none
   }
   .header{
-    display: contents;
+    display: block;
   }
 }
 
@@ -491,6 +495,9 @@ h4 {
   }
   .menuBtn{
     display: none
+  }
+  .header{
+    display: block;
   }
 }
 
