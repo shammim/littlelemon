@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Little Lemon-An Italian Restaurant</title>
-        <meta property="og:title" content="Our Menu">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="logo.png">
-        <meta property="og:url" content="https://shammim.github.io/littlelemon">
-        <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:site_name" content="Little Lemon">
-        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="stylesheet.css" />
-    </head>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon-An Italian Restaurant</title>
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/Menu.png">
+    <meta property="og:url" content="https://shammim.github.io/littlelemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+ </head>
  <!--body section-->
- <body class="p-8">
-       <header class="mb-8">
-            <nav class="rounded-xl text-gray-800 py-4">
-                <ul class="flex justify-between items-center">
-                    <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
-                    <li><a href="index.html" class="mx-4 text-lg">Home</a></li>
-                    <li><a href="About.html" class="mx-4 text-lg">About</a></li>
-                    <li><a href="Menu.html" class="mx-4 text-lg">Menu</a></li>
-                    <li><a class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4 text-lg" href="Reservation.html">Reservation</a></li>
-                    <li><a href="orderonline.html" class="mx-4 text-lg">Order online</a></li>
-                    <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
-                    <li><img src="Images/search-interface-symbol.png" width="20px" height="20px"></li>
-                    <li><a href="cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
-                    <li><img src="Images/heart.png" width="20px" height="20px"></li>
-                    <li><a  href="Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
-                </ul>
-            </nav>
-        </header>
+ <body class="bg-gray-100 font-karla">
+   <header class="header" id="header">
+      <nav class=" text-gray-800 py-2">
+        <ul class="flex justify-between items-center">
+         <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
+         <li><a href="index.html" class="mx-4  text-lg">Home</a></li>
+         <li><a href="About.html" class="mx-4  text-lg">About</a></li>
+          <li><a href="Menu.html" class="mx-4 text-lg">Menu</a></li>
+          <li><a class="mx-4  bg-[#495E57] text-gray-200 rounded-lg py-2 px-4 text-lg" href="Reservation.html">Reservation</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-lg">Order</a></li>
+          <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
+          <li><a href="cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
+          <li><a  href="Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
+       </ul>
+     </nav>
+    </header>
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu.png" class="w-8 h-8"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="text-yellow-500 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class=" text-yellow-500 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class="active text-yellow-500 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="orderonline.html">Order online</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
+       </ul>
+      </nav>
+    </div>
+   <br>
         <!--Breadcrumb section-->
         <main class="breadcrumb">
             <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
@@ -59,64 +71,74 @@
         </section>
         <br>
         <!--Booking a Reservation-->
-        <section class="bg-[#495E57] text-white p-8 rounded-xl mb-8 ">
+        <section class="flex bg-[#495E57] text-white p-8 rounded-xl mb-8 ">
             <article>
-                <div>
-                    <h2 class="text-3xl font-bold text-yellow-400 mb-6">Reservations</h2>
+                         
+               <div>
+                <h2 class="text-3xl font-bold text-yellow-400 mb-6">Reservations</h2>
+                <form id="reservation-form" class="space-y-4 mx-2 w-full">
+                    <div class="flex flex-col items-start space-y-2">
+                      <div class="flex items-center">
+                        <label for="outdoor" class="mr-2">Outdoor seating</label>
+                        <input type="radio" id="outdoor" name="seating_option" value="Outdoors" checked class="text-yellow-400">
+                      </div>
+                      <div class="flex items-center">
+                        <label for="indoors" class="mr-2">Indoor seating</label>
+                        <input type="radio" id="indoors" name="seating_option" value="Indoors" class="text-yellow-400">
+                      </div>
+                    </div>
+                    <div>
+                      <label for="res-date" class="block mb-2">Date</label>
+                      <input type="date" id="res-date" name="res_date" required class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                    </div>
+                    <div>
+                      <label for="res-time" class="block mb-2">Time</label>
+                      <select id="res-time" name="res_time" required class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                        <option value="23:00">23:00</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="guests" class="block mb-2">Diners</label>
+                      <input type="number" id="guests" name="guests" min="1" max="15" required placeholder="1" class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                    </div>
+                    <div>
+                      <label for="occasion" class="block mb-2">Occasion</label>
+                      <select id="occasion" name="occasion" class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                        <option value="None">No Occasion</option>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="Engagement">Engagement</option>
+                        <option value="Get-Together">Get-Together</option>
+                        <option value="Meetings">Meetings</option>
+                      </select>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                      <input type="checkbox" id="cancellation" name="cancellation" required class="w-4 h-4 text-yellow-400">
+                      <label for="cancellation">Please agree to the cancellation policy</label>
+                    </div>
+                    <button type="submit" class="inline-block bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded-lg">Reserve a Table</button>
+                  </form>   
                 </div>
-                
-            </article>
-            
-            <article>
-                <div>
-                    <form class="space-y-6 mx-4 w-full">
-                        <div class="flex items-center space-x-4">
-                            <label for="outdoor" class="mr-2">Outdoor seating</label>
-                            <input type="radio" id="outdoor" name="seating_option" value="Outdoors" checked>
-                            <label for="indoors" class="ml-4 mr-2">Indoor seating</label>
-                            <input type="radio" id="indoors" name="seating_option" value="Indoors">
-                        </div>
-                        <div>
-                            <label for="res-date" class="block mb-2">Date</label>
-                            <input type="date" id="res-date" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
-                        </div>
-                        <div>
-                            <label for="res-time" class="block mb-2">Time</label>
-                            <select id="res-time" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
-                                <option>17:00</option>
-                                <option>18:00</option>
-                                <option>19:00</option>
-                                <option>20:00</option>
-                                <option>21:00</option>
-                                <option>22:00</option>
-                                <option>23:00</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="guests" class="block mb-2">Dinners</label>
-                            <input type="number" id="guests" name="quantity" min="1" max="15" placeholder="1" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
-                        </div>
-                        <div>
-                            <label for="occasion" class="block mb-2">Occasion</label>
-                            <select id="occasion" class="w-full p-3 rounded-lg bg-gray-300 text-gray-800">
-                                <option>No Occasion</option>
-                                <option>Birthday</option>
-                                <option>Anniversary</option>
-                                <option>Engagement</option>
-                                <option>Get-Together</option>
-                                <option>Meetings</option>
-                            </select>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <input type="checkbox" id="cancellation" name="cancellation" class="w-4 h-4">
-                            <label for="cancellation">Please agree to cancellation policy</label>
-                        </div>
-                        <a href="LogIn.html" class="inline-block bg-yellow-400 text-gray-800 font-bold py-3 px-6 rounded-lg">Reserve a Table</a>
-                    </form>
-                </div>
-                
-            </article>
+         </article>
         </section>
+        <article class="justify-center">
+            <div id="reservation-details" class="mt-4 hidden">
+              <h3 class="text-xl font-bold mb-4">Reservation Details</h3>
+              <p id="seating-info"></p>
+              <p id="date-info"></p>
+              <p id="time-info"></p>
+              <p id="guests-info"></p>
+              <p id="occasion-info"></p>
+              <p id="cancellation-info"></p>
+            </div>
+        </article>
+        
         <section class="space-y-6">
             <div class="grid grid-cols-3 gap-4">
                 <img src="Images/restaurant.jpg" alt="restaurant" class="w-full h-64 object-cover rounded-lg">
@@ -124,38 +146,57 @@
                 <img src="Images/restauranfood.jpg" alt="food image" class="w-full h-64 object-cover rounded-lg">
             </div>
         </section>
-        <!--Footer section-->
-        <footer class="bg-gray-300 text-white py-8">
-            <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <img src="Images/Asset 20@4x.png" class="w-10 h-22" alt="Logo" />
-                </div>
-                <div class="mb-6 md:mb-0">
-                    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                        <li><a href="index.html" class="hover:underline">Home</a></li>
-                        <li><a href="About.html" class="hover:underline">About</a></li>
-                        <li><a href="menu.html" class="hover:underline">Menu</a></li>
-                        <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
-                        <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
-                        <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center">
-                        <li><a href="#"><img src="Images/heart.png" class="w-5 h-5" alt="Heart" /></a></li>
-                        <li><a href="#"><img src="Images/instagram.png" class="w-5 h-5" alt="Instagram" /></a></li>
-                        <li><a href="#"><img src="Images/facebook.png" class="w-5 h-5" alt="Facebook" /></a></li>
-                        <li><a href="About.html" class="hover:underline">Melbourne, Australia</a></li>
-                        <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
-                        <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-         <!--Copyright section-->
-        <div class="text-center mt-6">
-            <p>&copy; Little Lemon</p>
-            <p>All rights reserved</p>
+       <!--Footer section-->
+    <footer class="bg-[#eee] text-white py-8">
+        <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center rounded">
+          <div class="btmimg" class="mb-6 md:mb-0">
+            <img src="Images/Asset 20@4x.png" class="w-40 h-auto" alt="Logo">
+          </div>
+          <br>
+          <div class="mb-6 md:mb-0">
+            <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+              <li><a href="index.html" class="hover:underline">Home</a></li>
+              <li><a href="About.html" class="hover:underline">About</a></li>
+              <li><a href="menu.html" class="hover:underline">Menu</a></li>
+              <li><a href="Reservation.html" class="hover:underline">Reservation</a></li>
+              <li><a href="orderonline.html" class="hover:underline">Order online</a></li>
+              <li><a href="LogIn.html" class="hover:underline">LogIn</a></li>
+              <li><a href="tel:0430590800" class="hover:underline">📞Phone</a></li>
+              <li><a href="mailto:sshammim@gmail.com" class="hover:underline">💌Email</a></li>
+            </ul>
+          </div>
         </div>
+    </footer>
+    <div class="text-center mt-6 text-gray-500">
+      <p>&copy; Little Lemon</p>
+      <p>All rights reserved</p>
+    </div>
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          const seatingOption = document.querySelector('input[name="seating_option"]:checked').value;
+          const date = document.getElementById('res-date').value;
+          const time = document.getElementById('res-time').value;
+          const guests = document.getElementById('guests').value;
+          const occasion = document.getElementById('occasion').value;
+          const cancellation = document.getElementById('cancellation').checked ? 'Agreed' : 'Not Agreed';
+          
+          document.getElementById('seating-info').textContent = `Seating Option: ${seatingOption}`;
+          document.getElementById('date-info').textContent = `Date: ${date}`;
+          document.getElementById('time-info').textContent = `Time: ${time}`;
+          document.getElementById('guests-info').textContent = `Diners: ${guests}`;
+          document.getElementById('occasion-info').textContent = `Occasion: ${occasion}`;
+          document.getElementById('cancellation-info').textContent = `Cancellation Policy: ${cancellation}`;
+          
+          document.getElementById('reservation-details').classList.remove('hidden');
+        });
+    </script>
+    <script>
+      document.getElementById('menuBtn').addEventListener('click', function(){
+      const sidebar =document.getElementById('sidebar');
+      sidebar.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>

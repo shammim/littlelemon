@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Little Lemon-An Italian Restaurant</title>
-        <meta property="og:title" content="Little Lemon">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="Images/logo.png">
-        <meta property="og:url" content="https://shammim.github.io/littlelemon">
-        <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:site_name" content="Little Lemon">
-        <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="stylesheet.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon-An Italian Restaurant</title>
+    <meta property="og:title" content="Little Lemon">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/Menu.png">
+    <meta property="og:url" content="https://shammim.github.io/littlelemon">
+    <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Little Lemon">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
  </head>
-
- <body class="bg-gray-200 p-8">
-     <header class="header" class="mb-8">
-         <nav class="bg-gray-100 rounded-xl text-gray-800 py-4">
-             <ul class="flex justify-between items-center">
-                    <li><img src="Images/Logo .svg" class="h-16" alt="SiteHeaderLogo"></li>
-                    <li><a href="index.html" class="mx-4 ">Home</a></li>
-                    <li><a href="About.html" class="mx-4">About</a></li>
-                    <li><a href="Menu.html" class="mx-4">Menu</a></li>
-                    <li><a class="mx-4" href="Reservation.html">Reservation</a></li>
-                    <li><a href="orderonline.html" class="mx-4 text-white bg-[#495E57] rounded-lg py-2 px-4">Order online</a></li>
-                    <li><a href="LogIn.html" class="mx-4">LogIn</a></li>
-                    <li><img src="Images/search-interface-symbol.png" width="20px" height="20px"></li>
-                    <li><img src="Images/shopping-cart.png" width="20px" height="20px"></li>
-                    <li><img src="Images/heart.png" width="20px" height="20px"></li>
-                    <li><img src="Images/user.png" width="20px" height="20px" href="Signin.html"></li>
-              </ul>
-         </nav>
-     </header>
-     <br>
+ <!--body section-->
+ <body class="bg-gray-100 font-karla">
+   <header class="header" id="header">
+      <nav class=" text-gray-800 py-2">
+        <ul class="flex justify-between items-center">
+         <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
+         <li><a href="index.html" class="mx-4  text-lg">Home</a></li>
+         <li><a href="About.html" class="mx-4  text-lg">About</a></li>
+          <li><a href="Menu.html" class="mx-4 text-lg  bg-[#495E57] text-gray-200 rounded-lg py-2 px-4 ">Menu</a></li>
+          <li><a class="mx-4 text-lg" href="Reservation.html">Reservation</a></li>
+          <li><a href="orderonline.html" class="mx-4 text-lg">Order</a></li>
+          <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
+          <li><a href="cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
+          <li><a  href="Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
+       </ul>
+     </nav>
+    </header>
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu.png" class="w-8 h-8"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="text-yellow-500 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class=" text-yellow-500 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class=" text-yellow-500 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="active text-yellow-500 hover:underline mx-4" href="orderonline.html">Order</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
+       </ul>
+      </nav>
+    </div>
+   <br>
     
      <div>
          <!--Specials Section-->
@@ -78,7 +89,7 @@
                     <br>
                     <!-- Add to Cart Button -->
                      <br>
-                    <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
+                    <a href="cart.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
                  </div>
               </article>
         <!--Dish 2-->
@@ -119,7 +130,7 @@
                  <br>
                 <!-- Add to Cart Button -->
                  <br>
-                <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
+                <a href="cart.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
               </div>
         </article>
         
@@ -162,7 +173,7 @@
            <br>
            <!-- Add to Cart Button -->
            <br>
-           <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
+           <a href="cart.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
          </div>
       </article> 
       <article class="bg-[#495E57] rounded-lg p-4">
@@ -204,7 +215,7 @@
              <br>
              <!-- Add to Cart Button -->
              <br>
-             <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
+             <a href="cart.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
           </div>
       </article>     
     </section>

@@ -37,11 +37,11 @@
     <div class="hidden" id="sidebar">
       <nav>
         <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
-          <li><a class="active text-yellow-500 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="index.html">Home</a></li>
           <li><a class="text-yellow-500 hover:underline mx-4" href="About.html">About</a></li>
           <li><a class="text-yellow-500 hover:underline mx-4" href="Menu.html">Menu</a></li>
           <li><a class="text-yellow-500 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
-          <li><a class="text-yellow-500 hover:underline mx-4" href="orderonline.html">Order</a></li>
+          <li><a class="active text-yellow-500 hover:underline mx-4" href="orderonline.html">Order</a></li>
           <li><a class="text-yellow-500 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
        </ul>
       </nav>
@@ -55,28 +55,40 @@
     
     <div class="mt-8">
       <h2 class="text-lg font-bold text-yellow-500">Payment Details</h2>
-      <form class="mt-4">
+      <form id="payment-form" class="mt-4" onsubmit="return onSubmit(event)">
         <div class="mb-4">
           <label for="card-number" class="block text-sm">Credit card number</label>
-          <input id="card-number" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="Credit card number">
+          <input id="card-number" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="Credit card number" required>
         </div>
         <div class="flex justify-between mb-4">
           <div class="w-1/2 mr-2">
             <label for="expiry-date" class="block text-sm">Expiry date</label>
-            <input id="expiry-date" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="mm/yyyy">
+            <input id="expiry-date" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="mm/yyyy" required>
           </div>
           <div class="w-1/2 ml-2">
             <label for="cvv" class="block text-sm">CVV Code</label>
-            <input id="cvv" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="CVV Code">
+            <input id="cvv" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="CVV Code" required>
           </div>
         </div>
         <div class="mb-4">
           <label for="postcode" class="block text-sm">Post code</label>
-          <input id="postcode" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="Post code">
+          <input id="postcode" type="text" class="w-full px-3 py-2 text-gray-900 bg-gray-100 rounded-lg focus:outline-none" placeholder="Post code" required>
         </div>
-        <a href="Address.html" class="w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold mx-4 mt-10"><button type="submit" >Submit</button></a>
+        <button type="submit" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold mx-4 mt-10 ">Submit</button>
       </form>
     </div>
+    
+    <!-- Confirmation Overlay -->
+    <div id="confirmation-overlay" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center hidden">
+      <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+        <h2 class="text-lg font-bold text-yellow-500 mb-4">Confirm Details</h2>
+        <p id="confirmation-text" class="text-gray-800 mb-4"></p>
+        <button id="confirm-button" class="bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded-lg">Confirm</button>
+        <button id="cancel-button" class="text-gray-500 ml-4 underline">Cancel</button>
+      </div>
+    </div>
+    
+        
      <!--Footer section-->
      <footer class="bg-[#eee] text-white py-8">
         <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -107,5 +119,46 @@
           sidebar.classList.toggle('hidden');
           });
         </script>
+        <script>
+          // Function to handle form submission
+          function onSubmit(event) {
+            event.preventDefault();
+            
+            // Display confirmation overlay with entered details
+            showConfirmation();
+            
+            // Return false to prevent default form submission
+            return false;
+          }
+          
+          // Function to display confirmation overlay
+          function showConfirmation() {
+            // Get values from form
+            const cardNumber = document.getElementById('card-number').value;
+            const expiryDate = document.getElementById('expiry-date').value;
+            const cvv = document.getElementById('cvv').value;
+            const postcode = document.getElementById('postcode').value;
+            
+            // Update confirmation text
+            const confirmationText = `Credit Card Number: ${cardNumber}<br>Expiry Date: ${expiryDate}<br>CVV Code: ${cvv}<br>Post Code: ${postcode}`;
+            document.getElementById('confirmation-text').innerHTML = confirmationText;
+            
+            // Show overlay
+            document.getElementById('confirmation-overlay').classList.remove('hidden');
+            
+            // Add event listener to confirm button
+            document.getElementById('confirm-button').addEventListener('click', function() {
+              // Navigate to confirmation page
+              window.location.href = 'confirmbooking.html';
+            });
+            
+            // Add event listener to cancel button
+            document.getElementById('cancel-button').addEventListener('click', function() {
+              // Hide overlay
+              document.getElementById('confirmation-overlay').classList.add('hidden');
+            });
+          }
+        </script>
+    
     </body>
 </html>
