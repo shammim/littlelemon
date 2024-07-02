@@ -36,6 +36,21 @@
      </nav>
    </header>
    <br>
+   <button class="toggle-button bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu .png" class="w-4 h-4"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="active text-gray-200 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="orderonline.html">Order online</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
+       </ul>
+      </nav>
+    </div>
+   <br>
+   <br>
    <section class="grid grid-col-1 gap-2 bg-gray-100 justify-center">
     <article class="dishes">
       <a href="Breakfast.html" class="bg-yellow-500 text-gray-900  rounded font-bold mx-4"><button>Breakfast</button></a>
@@ -198,5 +213,11 @@
         <p>&copy; Little Lemon</p>
         <p>All rights reserved</p>
       </div>
+      <script>
+        document.getElementById('menuBtn').addEventListener('click', function(){
+        const sidebar =document.getElementById('sidebar');
+        sidebar.classList.toggle('hidden');
+        });
+      </script>
   </body>
 </html>

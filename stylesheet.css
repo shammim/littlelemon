@@ -479,7 +479,11 @@ h4 {
       font-size: 14pt;
   }
   h4 {
-      font-size: 12pt;
+     
+    font-size: 12pt;
+  }
+  .header{
+    display: contents;
   }
   .Hero {
       flex-direction: column;
@@ -523,6 +527,9 @@ h4 {
   }
   .Hero {
       flex-direction: column;
+  }
+  .header{
+    display: block;
   }
   .About-section {
       flex-direction: column;

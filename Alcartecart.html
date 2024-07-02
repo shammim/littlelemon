@@ -36,49 +36,64 @@
       </nav>
    </header>
    <br>
+   <button class="toggle-button bg-gray-300 text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu .png" class="w-4 h-4"/></button>
+    <div class="hidden" id="sidebar">
+      <nav>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
+          <li><a class="active text-gray-200 hover:underline mx-4" href="index.html">Home</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="About.html">About</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="Menu.html">Menu</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="Reservation.html">Reservation</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="orderonline.html">Order online</a></li>
+          <li><a class="text-gray-700 hover:underline mx-4" href="LogIn.html">LogIn</a></li>
+       </ul>
+      </nav>
+    </div>
+   <br>
    <div>
     <section class="grid md:grid-cols-3 gap-8">
+      <!--Dish 1-->
         <article class="bg-[#495E57] rounded-lg p-4">
            <img class="w-full rounded-lg" src="Images/greek salad.jpg" alt="Geeksalad" />
             <div class="mt-4">
             <div class="flex justify-between items-center">
                <h3 class="font-bold text-lgb text-gray-200">Greek Salad</h3>
             </div>
-                        <div class="mt-4 flex items-center justify-between">
-                            <div class="flex items-center text-gray-700">
-                            <img src="Images/delivery-bike.png" width="20px" height="20px">
-                            <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
-                        </div>
-                        <button class="text-[#F4CE14]">change</button>
-                    </div>
-                   <p class="mt-2 text-gray-200 mx-4"> The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
-                    <div class="mt-4">
-                      <h3 class="text-lg font-bold text-gray-200">Add</h3>
-                      <div class="flex justify-between items-center mt-2 text-gray-200">
-                        <span >Cucumber</span>
-                        <span>$1.00</span>
-                      </div>
-                      <div class="flex justify-between items-center mt-2 text-gray-200">
-                        <span>Red Onion</span>
-                        <span>$1.00</span>
-                      </div>
-                      <div class="flex justify-between items-center mt-2 text-gray-200">
-                        <span>Avocado</span>
-                        <span>$1.00</span>
-                      </div>
-                    </div>
-                    <!-- Quantity Selector -->
-                    <div class="mt-4 flex items-center justify-center">
-                      <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
-                      <span class="mx-4">1</span>
-                      <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
-                    </div>
-                    <br>
-                    <!-- Add to Cart Button -->
-                     <br>
-                    <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
-                 </div>
-              </article>
+            <div class="mt-4 flex items-center justify-between">
+            <div class="flex items-center text-gray-700">
+              <img src="Images/delivery-bike.png" width="20px" height="20px">
+              <span class="ml-2 text-gray-200">Delivery Time: 20 minutes</span>
+            </div>
+            <button class="text-[#F4CE14]">change</button>
+            </div>
+            <p class="mt-2 text-gray-200 mx-4"> The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+            <div class="mt-4">
+            <h3 class="text-lg font-bold text-gray-200">Add</h3>
+            <div class="flex justify-between items-center mt-2 text-gray-200">
+             <span >Cucumber</span>
+             <span>$1.00</span>
+            </div>
+            <div class="flex justify-between items-center mt-2 text-gray-200">
+             <span>Red Onion</span>
+             <span>$1.00</span>
+           </div>
+           <div class="flex justify-between items-center mt-2 text-gray-200">
+             <span>Avocado</span>
+             <span>$1.00</span>
+           </div>
+         </div>
+         <!-- Quantity Selector -->
+          <div class="mt-4 flex items-center justify-center">
+           <button class="text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+           <span class="mx-4">1</span>
+           <button class="text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+         </div>
+          <br>
+          <!-- Add to Cart Button -->
+           <br>
+           <a href="checkout.html" class="w-fit bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold items-center"><button>Add for $12.99</button></a>
+        </div>
+      </article>
         <!--Dish 2-->
         <article class="bg-[#495E57] rounded-lg p-4">
             <img class="w-full rounded-lg" src="Images/bruchetta.jpg" alt="Bruchetta" />
@@ -189,5 +204,11 @@
       <p>&copy; Little Lemon</p>
       <p>All rights reserved</p>
     </div>
+    <script>
+      document.getElementById('menuBtn').addEventListener('click', function(){
+      const sidebar =document.getElementById('sidebar');
+      sidebar.classList.toggle('hidden');
+      });
+    </script>
     </body>
 </html>
