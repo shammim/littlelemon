@@ -33,7 +33,7 @@
        </ul>
      </nav>
     </header>
-   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu.png" class="w-8 h-8"/></button>
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/menu.png" class="w-8 h-8"/></button>
     <div class="hidden" id="sidebar">
       <nav>
         <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
@@ -50,15 +50,221 @@
     <main class="breadcrumb">
       <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
         <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
-        <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Orderonline</a></li>
+        <li class="inline"><a href="orderonline.html" class="text-gray-900 hover:underline hover:text-yellow-500">Orderonline</a></li>
       </ul>
     </main>
     <div id="Specials" class="Specials">
      <section class="flex justify-between items-center mb-4">
           <h3 class="text-2xl font-bold">This Week Specials!</h3>
      </section>
-        <!--Specials sections -->
+      <!--Breakfast Section-->
+      <div>
+        <section class="flex justify-between items-center mb-4">
+          <article>
+            <div>
+              <h3 class="text-2xl font-bold">Breakfast Menu</h3>
+            </div>
+          </article>
+        </section>
+        <section class="grid md:grid-cols-3 gap-8">
+          <article class="bg-[#EDEFEE] rounded-lg p-4">
+            <img class="w-full rounded-lg" src="Images/Breakfast/cornetto_and_milk.jpg" alt="Cornetto" />
+            <div class="mt-4">
+             <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Cornetto</h3>
+                <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
+              </div>
+               <p class="mt-2"> Cornetti a delectable type of pastry often filled with cream, jam, chocolate, or even almond paste.</p>
+               <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                  <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+               </a>
+            </div>
+          </article>
+          <!--Dish 2-->
+          <article class="bg-[#EDEFEE] rounded-lg p-4">
+            <img class="w-full rounded-lg" src="Images/Breakfast/fette_biscottate.jpg" alt="Fette Biscottate" />
+            <div class="mt-4">
+             <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Fette Biscottate</h3>
+                <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
+             </div>
+              <p class="mt-2"> Fette biscottate are thin, crispy slices of bread These scrumptious toasts boast a subtly sweet flavor</p>
+              <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+              </a>
+            </div>
+              </article>
+              <article class="bg-[#EDEFEE] rounded-lg p-4">
+                  <img class="w-full rounded-lg" src="Images/Breakfast/nutella.jpg" alt="Nutella" />
+                  <div class="mt-4">
+                    <div class="flex justify-between items-center">
+                      <h3 class="font-bold text-lg">Pane e Nutella</h3>
+                      <h3 class="text-lg text-yellow-500 font-bold">$5.90</h3>
+                    </div>
+                    <p class="mt-2"> Bread or toast is generously spread with Nutella, a widely popular chocolate hazelnut spread</p>
+                    <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                      <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+                    </a>
+                  </div>
+              </article>
+           </section>
+       </div>    
+       
+       <!--Lunch Menu -->
+       <div>
+         <section class="flex justify-between items-center mb-4">
+           <article>
+             <div>
+               <h3 class="text-2xl font-bold">Lunch Menu</h3>
+             </div>
+           </article>
+         </section>
           <section class="grid md:grid-cols-3 gap-8">
+             <article class="bg-[#EDEFEE] rounded-lg p-4">
+                 <img class="w-full rounded-lg" src="Images/Lunch/Butternut-squash.jpg" alt="Buttersquashsoup" />
+                 <div class="mt-4">
+                   <div class="flex justify-between items-center">
+                     <h3 class="font-bold text-lg">Butter squash soup</h3>
+                     <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
+                   </div>
+                   <p class="mt-2">Creamy Butternut Squash Soup is a velvety blend of sweet butternut squash, aromatic spices, and rich cream or coconut milk. </p>
+                   <a href="Lunchcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                     <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+                   </a>
+                 </div>
+             </article>
+             <!--Dish 2-->
+             <article class="bg-[#EDEFEE] rounded-lg p-4">
+                 <img class="w-full rounded-lg" src="Images/Lunch/creamy-broccoli-soup_1980x1320-127735-1.jpg" alt="CreamBroccoliSoup" />
+                 <div class="mt-4">
+                   <div class="flex justify-between items-center">
+                     <h3 class="font-bold text-lg">Cream Broccoli Soup</h3>
+                     <h3 class="text-lg text-yellow-500 font-bold">$15.90</h3>
+                   </div>
+                   <p class="mt-2"> Cream broccoli soup  a comforting blend of fresh broccoli and rich cream for a nutritious and satisfying bowl.</p>
+                   <a href="Lunchcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                     <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+                   </a>
+                 </div>
+             </article>
+             <article class="bg-[#EDEFEE] rounded-lg p-4">
+                 <img class="w-full rounded-lg" src="Images/Lunch/bro.webp" alt="Pasta alla Crudaiolla" />
+                 <div class="mt-4">
+                   <div class="flex justify-between items-center">
+                     <h3 class="font-bold text-lg">Pasta alla Crudaiolla</h3>
+                     <h3 class="text-lg text-yellow-500 font-bold">$12.00</h3>
+                   </div>
+                   <p class="mt-2">Pasta alla Crudaiolla is a vibrant Italian dish featuring pasta tossed with a raw tomato and herb sauce for a fresh and flavorful experience</p>
+                   <a href="Lunchcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                     <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+                   </a>
+                 </div>
+             </article>
+          </section>
+      </div>
+       <br>
+       <div>
+         <section class="flex justify-between items-center mb-4">
+          <article>
+            <div>
+              <h3 class="text-2xl font-bold">Al-Carte Menu</h3>
+            </div>
+          </article>
+         </section>
+         <section class="grid md:grid-cols-3 gap-8">
+            <article class="bg-[#EDEFEE] rounded-lg p-4">
+                <img class="w-full rounded-lg" src="Images/Alcarte/Steekfritters.jpg" alt="Steekfritters" />
+                <div class="mt-4">
+                  <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-lg">Steak Fritters</h3>
+                    <h3 class="text-lg text-yellow-500 font-bold">$16.78</h3>
+                  </div>
+                  <p class="mt-2">Steak frites is a classic French dish featuring perfectly grilled steak served with crisp and golden fries, offering a delightful combination of flavors and textures.</p>
+                  <a href="Alcartecart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                    <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+                  </a>
+                </div>
+            </article>
+            <!--Dish 2-->
+            <article class="bg-[#EDEFEE] rounded-lg p-4">
+                <img class="w-full rounded-lg" src="Images/Alcarte/parmesan-roasted-zucchini7-819x1024.jpg" alt="Zucchini" />
+                <div class="mt-4">
+                  <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-lg">Zucchini Fries</h3>
+                    <h3 class="text-lg text-yellow-500 font-bold">$15.90</h3>
+                  </div>
+                  <p class="mt-2"> Zucchini fries are crispy and golden-brown slices of zucchini, lightly seasoned and fried to perfection.</p>
+                  <a href="Alcartecart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                    <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+                  </a>
+                </div>
+            </article>
+            <article class="bg-[#EDEFEE] rounded-lg p-4">
+                <img class="w-full rounded-lg" src="Images/Alcarte/Buratta.jpg" alt="Buratta" />
+                <div class="mt-4">
+                  <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-lg">Burrata</h3>
+                    <h3 class="text-lg text-yellow-500 font-bold">$12.00</h3>
+                  </div>
+                  <p class="mt-2">Burrata is a luscious Italian cheese with a creamy, mozzarella shell enfolding a rich, soft center, creating a decadent and indulgent culinary experience.</p>
+                  <a href="Alcartecart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                    <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+                  </a>
+                </div>
+            </article>
+         </section>
+     </div>
+     <br>
+     <div>
+       <section class="flex justify-between items-center mb-4">
+       <article>
+         <div>
+           <h3 class="text-2xl font-bold">Desserts Menu</h3>
+         </div>
+       </article>
+       </section>
+       <section class="grid md:grid-cols-3 gap-8">
+         <article class="bg-[#EDEFEE] rounded-lg p-4">
+             <img class="w-full rounded-lg" src="Images/Desserts/Orange cake.jpg" alt="Orange Polenta cake" />
+             <div class="mt-4">
+               <div class="flex justify-between items-center">
+                 <h3 class="font-bold text-lg">Orange Polenta cake</h3>
+                 <h3 class="text-lg text-yellow-500 font-bold">$16.78</h3>
+               </div>
+               <p class="mt-2">Orange Polenta Cake: a moist and citrus-infused dessert featuring the distinctive texture of polenta, creating a delightful balance of sweet and zesty flavors.</p>
+               <a href="dessertscart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+               </a>
+             </div>
+         </article>
+         <!--Dish 2-->
+         <article class="bg-[#EDEFEE] rounded-lg p-4">
+             <img class="w-full rounded-lg" src="Images/Desserts/Cheesecake.png" alt="Cheesecake" />
+             <div class="mt-4">
+               <div class="flex justify-between items-center">
+                 <h3 class="font-bold text-lg">Amaretti & Sultana cheesecake</h3>
+                 <h3 class="text-lg text-yellow-500 font-bold">$15.90</h3>
+               </div>
+               <p class="mt-2"> Amaretti & Sultana Cheesecake isa decadent dessert harmonizing the rich creaminess of cheesecake with the delightful crunch of amaretti cookies and sweetness of sultanas.</p>
+               <a href="dessertscart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+               </a>
+             </div>
+         </article>
+         <article class="bg-[#EDEFEE] rounded-lg p-4">
+             <img class="w-full rounded-lg" src="Images/Desserts/Pandoro.jpg" alt="Pandoro" />
+             <div class="mt-4">
+               <div class="flex justify-between items-center">
+                 <h3 class="font-bold text-lg">Pandoro</h3>
+                 <h3 class="text-lg text-yellow-500 font-bold">$12.00</h3>
+               </div>
+               <p class="mt-2">Pandoro is a traditional Italian Christmas sweet bread, known for its golden appearance and light, fluffy texture, often dusted with powdered sugar for a festive touch.</p>
+               <a href="dessertscart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
+                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
+               </a>
+             </div>
+      <!--Specials sections -->
+      <section class="grid md:grid-cols-3 gap-8">
            <article class="bg-[#EDEFEE] rounded-lg p-4">
              <img class="w-full rounded-lg" src="Images/greek salad.jpg" alt="Greek Salad" />
              <div class="mt-4">
@@ -103,212 +309,7 @@
           </section>
        </div>
      <div>
-      <!--Breakfast Section-->
-     <div>
-      <section class="flex justify-between items-center mb-4">
-        <article>
-          <div>
-            <h3 class="text-2xl font-bold">Breakfast Menu</h3>
-          </div>
-        </article>
-      </section>
-      <section class="grid md:grid-cols-3 gap-8">
-        <article class="bg-[#EDEFEE] rounded-lg p-4">
-          <img class="w-full rounded-lg" src="Images/Breakfast/cornetto_and_milk.jpg" alt="Cornetto" />
-          <div class="mt-4">
-           <div class="flex justify-between items-center">
-              <h3 class="font-bold text-lg">Cornetto</h3>
-              <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
-            </div>
-             <p class="mt-2"> Cornetti a delectable type of pastry often filled with cream, jam, chocolate, or even almond paste.</p>
-             <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-             </a>
-          </div>
-        </article>
-        <!--Dish 2-->
-        <article class="bg-[#EDEFEE] rounded-lg p-4">
-          <img class="w-full rounded-lg" src="Images/Breakfast/fette_biscottate.jpg" alt="Fette Biscottate" />
-          <div class="mt-4">
-           <div class="flex justify-between items-center">
-              <h3 class="font-bold text-lg">Fette Biscottate</h3>
-              <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
-           </div>
-            <p class="mt-2"> Fette biscottate are thin, crispy slices of bread These scrumptious toasts boast a subtly sweet flavor</p>
-            <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-              <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-            </a>
-          </div>
-            </article>
-            <article class="bg-[#EDEFEE] rounded-lg p-4">
-                <img class="w-full rounded-lg" src="Images/Breakfast/nutella.jpg" alt="Nutella" />
-                <div class="mt-4">
-                  <div class="flex justify-between items-center">
-                    <h3 class="font-bold text-lg">Pane e Nutella</h3>
-                    <h3 class="text-lg text-yellow-500 font-bold">$5.90</h3>
-                  </div>
-                  <p class="mt-2"> Bread or toast is generously spread with Nutella, a widely popular chocolate hazelnut spread</p>
-                  <a href="breakfastcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                    <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-                  </a>
-                </div>
-            </article>
-         </section>
-     </div>    
      
-     <!--Lunch Menu -->
-     <div>
-       <section class="flex justify-between items-center mb-4">
-         <article>
-           <div>
-             <h3 class="text-2xl font-bold">Lunch Menu</h3>
-           </div>
-         </article>
-       </section>
-        <section class="grid md:grid-cols-3 gap-8">
-           <article class="bg-[#EDEFEE] rounded-lg p-4">
-               <img class="w-full rounded-lg" src="Images/Lunch/Butternut-squash.jpg" alt="Buttersquashsoup" />
-               <div class="mt-4">
-                 <div class="flex justify-between items-center">
-                   <h3 class="font-bold text-lg">Butter squash soup</h3>
-                   <h3 class="text-lg text-yellow-500 font-bold">$12.90</h3>
-                 </div>
-                 <p class="mt-2">Creamy Butternut Squash Soup is a velvety blend of sweet butternut squash, aromatic spices, and rich cream or coconut milk. </p>
-                 <a href="Lunchcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                   <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-                 </a>
-               </div>
-           </article>
-           <!--Dish 2-->
-           <article class="bg-[#EDEFEE] rounded-lg p-4">
-               <img class="w-full rounded-lg" src="Images/Lunch/creamy-broccoli-soup_1980x1320-127735-1.jpg" alt="CreamBroccoliSoup" />
-               <div class="mt-4">
-                 <div class="flex justify-between items-center">
-                   <h3 class="font-bold text-lg">Cream Broccoli Soup</h3>
-                   <h3 class="text-lg text-yellow-500 font-bold">$15.90</h3>
-                 </div>
-                 <p class="mt-2"> Cream broccoli soup  a comforting blend of fresh broccoli and rich cream for a nutritious and satisfying bowl.</p>
-                 <a href="Lunchcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                   <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-                 </a>
-               </div>
-           </article>
-           <article class="bg-[#EDEFEE] rounded-lg p-4">
-               <img class="w-full rounded-lg" src="Images/Lunch/bro.webp" alt="Pasta alla Crudaiolla" />
-               <div class="mt-4">
-                 <div class="flex justify-between items-center">
-                   <h3 class="font-bold text-lg">Pasta alla Crudaiolla</h3>
-                   <h3 class="text-lg text-yellow-500 font-bold">$12.00</h3>
-                 </div>
-                 <p class="mt-2">Pasta alla Crudaiolla is a vibrant Italian dish featuring pasta tossed with a raw tomato and herb sauce for a fresh and flavorful experience</p>
-                 <a href="Lunchcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                   <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-                 </a>
-               </div>
-           </article>
-        </section>
-    </div>
-     <br>
-     <div>
-       <section class="flex justify-between items-center mb-4">
-        <article>
-          <div>
-            <h3 class="text-2xl font-bold">Al-Carte Menu</h3>
-          </div>
-        </article>
-       </section>
-       <section class="grid md:grid-cols-3 gap-8">
-          <article class="bg-[#EDEFEE] rounded-lg p-4">
-              <img class="w-full rounded-lg" src="Images/Alcarte/Steekfritters.jpg" alt="Steekfritters" />
-              <div class="mt-4">
-                <div class="flex justify-between items-center">
-                  <h3 class="font-bold text-lg">Steak Fritters</h3>
-                  <h3 class="text-lg text-yellow-500 font-bold">$16.78</h3>
-                </div>
-                <p class="mt-2">Steak frites is a classic French dish featuring perfectly grilled steak served with crisp and golden fries, offering a delightful combination of flavors and textures.</p>
-                <a href="Alcartecart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                  <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-                </a>
-              </div>
-          </article>
-          <!--Dish 2-->
-          <article class="bg-[#EDEFEE] rounded-lg p-4">
-              <img class="w-full rounded-lg" src="Images/Alcarte/parmesan-roasted-zucchini7-819x1024.jpg" alt="Zucchini" />
-              <div class="mt-4">
-                <div class="flex justify-between items-center">
-                  <h3 class="font-bold text-lg">Zucchini Fries</h3>
-                  <h3 class="text-lg text-yellow-500 font-bold">$15.90</h3>
-                </div>
-                <p class="mt-2"> Zucchini fries are crispy and golden-brown slices of zucchini, lightly seasoned and fried to perfection.</p>
-                <a href="Alcartecart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                  <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-                </a>
-              </div>
-          </article>
-          <article class="bg-[#EDEFEE] rounded-lg p-4">
-              <img class="w-full rounded-lg" src="Images/Alcarte/Buratta.jpg" alt="Buratta" />
-              <div class="mt-4">
-                <div class="flex justify-between items-center">
-                  <h3 class="font-bold text-lg">Burrata</h3>
-                  <h3 class="text-lg text-yellow-500 font-bold">$12.00</h3>
-                </div>
-                <p class="mt-2">Burrata is a luscious Italian cheese with a creamy, mozzarella shell enfolding a rich, soft center, creating a decadent and indulgent culinary experience.</p>
-                <a href="Alcartecart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-                  <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-                </a>
-              </div>
-          </article>
-       </section>
-   </div>
-   <br>
-   <div>
-     <section class="flex justify-between items-center mb-4">
-     <article>
-       <div>
-         <h3 class="text-2xl font-bold">Desserts Menu</h3>
-       </div>
-     </article>
-     </section>
-     <section class="grid md:grid-cols-3 gap-8">
-       <article class="bg-[#EDEFEE] rounded-lg p-4">
-           <img class="w-full rounded-lg" src="Images/Desserts/Orange cake.jpg" alt="Orange Polenta cake" />
-           <div class="mt-4">
-             <div class="flex justify-between items-center">
-               <h3 class="font-bold text-lg">Orange Polenta cake</h3>
-               <h3 class="text-lg text-yellow-500 font-bold">$16.78</h3>
-             </div>
-             <p class="mt-2">Orange Polenta Cake: a moist and citrus-infused dessert featuring the distinctive texture of polenta, creating a delightful balance of sweet and zesty flavors.</p>
-             <a href="dessertscart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-               <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-             </a>
-           </div>
-       </article>
-       <!--Dish 2-->
-       <article class="bg-[#EDEFEE] rounded-lg p-4">
-           <img class="w-full rounded-lg" src="Images/Desserts/Cheesecake.png" alt="Cheesecake" />
-           <div class="mt-4">
-             <div class="flex justify-between items-center">
-               <h3 class="font-bold text-lg">Amaretti & Sultana cheesecake</h3>
-               <h3 class="text-lg text-yellow-500 font-bold">$15.90</h3>
-             </div>
-             <p class="mt-2"> Amaretti & Sultana Cheesecake isa decadent dessert harmonizing the rich creaminess of cheesecake with the delightful crunch of amaretti cookies and sweetness of sultanas.</p>
-             <a href="dessertscart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-               <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-             </a>
-           </div>
-       </article>
-       <article class="bg-[#EDEFEE] rounded-lg p-4">
-           <img class="w-full rounded-lg" src="Images/Desserts/Pandoro.jpg" alt="Pandoro" />
-           <div class="mt-4">
-             <div class="flex justify-between items-center">
-               <h3 class="font-bold text-lg">Pandoro</h3>
-               <h3 class="text-lg text-yellow-500 font-bold">$12.00</h3>
-             </div>
-             <p class="mt-2">Pandoro is a traditional Italian Christmas sweet bread, known for its golden appearance and light, fluffy texture, often dusted with powdered sugar for a festive touch.</p>
-             <a href="dessertscart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart
-               <img src="Images/Delivery.png" alt="delivery icon" class="ml-2 delivery_icon" width="20" height="20" />
-             </a>
-           </div>
        </article>
      </section>
    </div>
