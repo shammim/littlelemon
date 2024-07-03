@@ -72,64 +72,64 @@
         <br>
         <!--Booking a Reservation-->
         <section class="flex bg-[#495E57] text-white p-8 rounded-xl mb-8 ">
-            <article>
-                         
+            <article>       
                <div>
                 <h2 class="text-3xl font-bold text-yellow-400 mb-6">Reservations</h2>
                 <form id="reservation-form" class="space-y-4 mx-2 w-full">
-                    <div class="flex flex-col items-start space-y-2">
-                      <div class="flex items-center">
-                        <label for="outdoor" class="mr-2">Outdoor seating</label>
-                        <input type="radio" id="outdoor" name="seating_option" value="Outdoors" checked class="text-yellow-400">
-                      </div>
-                      <div class="flex items-center">
-                        <label for="indoors" class="mr-2">Indoor seating</label>
-                        <input type="radio" id="indoors" name="seating_option" value="Indoors" class="text-yellow-400">
-                      </div>
+                  <div class="flex flex-col items-start space-y-2">
+                    <div class="flex items-center">
+                      <label for="outdoor" class="mr-2">Outdoor seating</label>
+                      <input type="radio" id="outdoor" name="seating_option" value="Outdoors" checked class="text-yellow-400">
                     </div>
-                    <div>
-                      <label for="res-date" class="block mb-2">Date</label>
-                      <input type="date" id="res-date" name="res_date" required class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                    <div class="flex items-center">
+                      <label for="indoors" class="mr-2">Indoor seating</label>
+                      <input type="radio" id="indoors" name="seating_option" value="Indoors" class="text-yellow-400">
                     </div>
-                    <div>
-                      <label for="res-time" class="block mb-2">Time</label>
-                      <select id="res-time" name="res_time" required class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
-                        <option value="17:00">17:00</option>
-                        <option value="18:00">18:00</option>
-                        <option value="19:00">19:00</option>
-                        <option value="20:00">20:00</option>
-                        <option value="21:00">21:00</option>
-                        <option value="22:00">22:00</option>
-                        <option value="23:00">23:00</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label for="guests" class="block mb-2">Diners</label>
-                      <input type="number" id="guests" name="guests" min="1" max="15" required placeholder="1" class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
-                    </div>
-                    <div>
-                      <label for="occasion" class="block mb-2">Occasion</label>
-                      <select id="occasion" name="occasion" class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
-                        <option value="None">No Occasion</option>
-                        <option value="Birthday">Birthday</option>
-                        <option value="Anniversary">Anniversary</option>
-                        <option value="Engagement">Engagement</option>
-                        <option value="Get-Together">Get-Together</option>
-                        <option value="Meetings">Meetings</option>
-                      </select>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                      <input type="checkbox" id="cancellation" name="cancellation" required class="w-4 h-4 text-yellow-400">
-                      <label for="cancellation">Please agree to the cancellation policy</label>
-                    </div>
-                    <button type="submit" class="inline-block bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded-lg">Reserve a Table</button>
-                  </form>   
-                </div>
+                  </div>
+                  <div>
+                    <label for="res-date" class="block mb-2">Date</label>
+                    <input type="date" id="res-date" name="res_date" required class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                  </div>
+                  <div>
+                    <label for="res-time" class="block mb-2">Time</label>
+                    <select id="res-time" name="res_time" required class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                      <option value="17:00">17:00</option>
+                      <option value="18:00">18:00</option>
+                      <option value="19:00">19:00</option>
+                      <option value="20:00">20:00</option>
+                      <option value="21:00">21:00</option>
+                      <option value="22:00">22:00</option>
+                      <option value="23:00">23:00</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="guests" class="block mb-2">Diners</label>
+                    <input type="number" id="guests" name="guests" min="1" max="15" required placeholder="1" class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                  </div>
+                  <div>
+                    <label for="occasion" class="block mb-2">Occasion</label>
+                    <select id="occasion" name="occasion" class="w-full p-2 rounded-lg bg-gray-300 text-gray-800">
+                      <option value="None">No Occasion</option>
+                      <option value="Birthday">Birthday</option>
+                      <option value="Anniversary">Anniversary</option>
+                      <option value="Engagement">Engagement</option>
+                      <option value="Get-Together">Get-Together</option>
+                      <option value="Meetings">Meetings</option>
+                    </select>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <input type="checkbox" id="cancellation" name="cancellation" required class="w-4 h-4 text-yellow-400">
+                    <label for="cancellation">Please agree to the cancellation policy</label>
+                  </div>
+                  <button type="submit" class="inline-block bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded-lg">Reserve a Table</button>
+                </form>  
+              </div>
          </article>
         </section>
-        <article class="justify-center">
-            <div id="reservation-details" class="mt-4 ml-4 hidden">
-              <h3 class="text-xl font-bold mb-4">Reservation Details</h3>
+        <div id="confirmation-overlay" class="fixed-overlay hidden flex justify-center items-center">
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h2 class="text-lg font-bold text-yellow-500 mb-4">Confirm Details</h2>
+            <div id="reservation-details" class="text-gray-800 mb-4">
               <p id="seating-info"></p>
               <p id="date-info"></p>
               <p id="time-info"></p>
@@ -137,7 +137,10 @@
               <p id="occasion-info"></p>
               <p id="cancellation-info"></p>
             </div>
-        </article>
+            <button id="confirm-button" class="bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded-lg">Confirm</button>
+            <button id="cancel-button" class="text-gray-500 ml-4 underline">Cancel</button>
+          </div>
+        </div>
         
         <section class="space-y-6">
             <div class="grid grid-cols-3 gap-4">
@@ -172,25 +175,33 @@
       <p>All rights reserved</p>
     </div>
     <script>
-        document.getElementById('reservation-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-          
-          const seatingOption = document.querySelector('input[name="seating_option"]:checked').value;
-          const date = document.getElementById('res-date').value;
-          const time = document.getElementById('res-time').value;
-          const guests = document.getElementById('guests').value;
-          const occasion = document.getElementById('occasion').value;
-          const cancellation = document.getElementById('cancellation').checked ? 'Agreed' : 'Not Agreed';
-          
-          document.getElementById('seating-info').textContent = `Seating Option: ${seatingOption}`;
-          document.getElementById('date-info').textContent = `Date: ${date}`;
-          document.getElementById('time-info').textContent = `Time: ${time}`;
-          document.getElementById('guests-info').textContent = `Diners: ${guests}`;
-          document.getElementById('occasion-info').textContent = `Occasion: ${occasion}`;
-          document.getElementById('cancellation-info').textContent = `Cancellation Policy: ${cancellation}`;
-          
-          document.getElementById('reservation-details').classList.remove('hidden');
-        });
+      document.getElementById('reservation-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const seatingOption = document.querySelector('input[name="seating_option"]:checked').value;
+        const resDate = document.getElementById('res-date').value;
+        const resTime = document.getElementById('res-time').value;
+        const guests = document.getElementById('guests').value;
+        const occasion = document.getElementById('occasion').value;
+        const cancellation = document.getElementById('cancellation').checked ? 'Agreed' : 'Not Agreed';
+  
+        document.getElementById('seating-info').innerText = `Seating: ${seatingOption}`;
+        document.getElementById('date-info').innerText = `Date: ${resDate}`;
+        document.getElementById('time-info').innerText = `Time: ${resTime}`;
+        document.getElementById('guests-info').innerText = `Diners: ${guests}`;
+        document.getElementById('occasion-info').innerText = `Occasion: ${occasion}`;
+        document.getElementById('cancellation-info').innerText = `Cancellation Policy: ${cancellation}`;
+  
+        document.getElementById('confirmation-overlay').classList.remove('hidden');
+      });
+  
+      document.getElementById('confirm-button').addEventListener('click', function() {
+        window.location.href = 'confirmbooking.html';
+      });
+  
+      document.getElementById('cancel-button').addEventListener('click', function() {
+        document.getElementById('confirmation-overlay').classList.add('hidden');
+      });
     </script>
     <script>
       document.getElementById('menuBtn').addEventListener('click', function(){
