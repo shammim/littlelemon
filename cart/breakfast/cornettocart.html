@@ -21,7 +21,7 @@
    <header class="header" id="header">
       <nav class=" text-gray-800 py-2">
         <ul class="flex justify-between items-center">
-         <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
+         <li><img src="./Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
          <li><a href="index.html" class="mx-4 text-lg">Home</a></li>
          <li><a href="About.html" class="mx-4 text-lg">About</a></li>
           <li><a href="Menu.html" class="mx-4 text-lg">Menu</a></li>
@@ -33,7 +33,8 @@
        </ul>
      </nav>
     </header>
-   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/menu.png" class="w-8 h-8"/></button>
+    <!--Sidebar section-->
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="Images/Menu.png" class="w-8 h-8"/></button>
     <div class="hidden" id="sidebar">
       <nav>
         <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-gray-400">
@@ -47,6 +48,7 @@
       </nav>
     </div>
    <br>
+   <!--Breadcrumb section-->
    <main class="breadcrumb">
       <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
         <li class="inline"><a href="index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
@@ -54,24 +56,27 @@
         <li class="inline"><a href="cart.html" class="text-gray-900 hover:underline hover:text-yellow-500">Cart</a></li>
       </ul>
     </main>
+<!--Cart section-->
   <div class="max-w-md mx-auto mt-10 p-4 bg-[#495E57] rounded-lg shadow-lg">
     <div class="flex items-center justify-between">
-        <br>
-      <div class="text-4xl font-bold text-[#F4CE14] text-center font-markazi mt-10">Little Lemon Cart</div>
+      <a href="breakfastcart.html"><img src=".../Images/previous.png" class="w-6 h-6"></a> <h2 class="text-4xl font-bold text-[#F4CE14] text-center font-markazi">Cart</h2>
       <div class="relative">
         <img src="Images/basket.png" class="w-6 h-6">
         <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-1">1</span>
       </div>
     </div>
+    <div class="mt-4">
+        <img src="Images/Breakfast/cornetto_and_milk.jpg" class=""/>
+    </div>
 
     <div class="mt-4">
       <div class="flex justify-between items-center text-sm">
-        <span class="text-gray-100 pl-4">Delivery Time: 20 minutes</span>
+        <span class="text-gray-100 pl-2">Delivery Time: 20 minutes</span>
         <button class="text-[#F4CE14]">change</button>
       </div>
     </div>
     <div class="mt-2">
-     <div class="ml-2 text-sm text-gray-100">Help reduce plastic waste. Only ask for cutlery if you need it.</div>
+     <div class="ml-2 text-sm text-gray-100">Add Cutlery (Only ask for cutlery if you need it.)</div>
       <label class="inline-flex items-center">
         <input type="radio" class="form-radio text-yellow-500" name="cutlery" value="no">
         <span class="ml-2 text-gray-100">No</span>
@@ -86,8 +91,8 @@
       <h2 class="text-lg font-bold mt-4 text-gray-100">Order Summary</h2>
       <div class="mt-2">
         <div class="flex justify-between">
-          <span class="text-gray-100">1 x Bruschetta</span>
-          <span class="text-gray-100">$12.99</span>
+          <span class="text-gray-100">1 x Cornetto</span>
+          <span class="text-gray-100">$5.99</span>
         </div>
       </div>
     </div>
@@ -96,20 +101,22 @@
       <h2 class="text-lg font-karla mt-4 text-gray-100">Add More To Your Order!</h2>
       <div class="mt-2 flex justify-between">
         <div class="w-1/2 mr-2 p-2 bg-gray-100 rounded-lg">
-          <img src="Images/greek salad.jpg" alt="Greek Salad" class="w-full h-24 object-cover rounded-lg">
-          <div class="mt-2 text-sm">Greek Salad</div>
-          <div class="mt-1 text-xs text-gray-500">The famous Greek salad of crispy lettuce, peppers, olives and our Chicago.</div>
-          <div class="mt-2 font-bold text-gray-400">$12.99<a href="cart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded">Add to cart
+          <img src="Images/Breakfast/fette_biscottate.jpg" alt="Greek Salad" class="w-full h-24 object-cover rounded-lg">
+          <div class="mt-2 text-sm">Fette Biscottate</div>
+          <div class="mt-1 text-xs text-gray-500">Fette biscottate are thin, crispy slices of bread These scrumptious toasts boast a subtly sweet flavor.</div>
+          <div class="mt-2 font-bold text-red-300">$12.90<br>
+            <br>
+            <a href="fettecart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded">Add to cart
              <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a>        
          </div> 
         </div>
         <div class="w-1/2 ml-2 p-2 bg-gray-100 rounded-lg">
-          <img src="Images/grilled-fish.jpg" alt="Grilled Fish" class="w-full h-24 object-cover rounded-lg">
-          <div class="mt-2 text-sm">Grilled Fish</div>
-          <div class="mt-1 text-xs text-gray-500 ">This comes straight from our grill book, every last ingredient.</div>
-          <div class="mt-2 font-bold text-gray-400">$12.99</div>
-          <div class="mt-2"><a href="cart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded">Add to cart
+          <img src="Images/Breakfast/nutella.jpg" alt="Grilled Fish" class="w-full h-24 object-cover rounded-lg">
+          <div class="mt-2 text-sm">Pane e Nutella</div>
+          <div class="mt-1 text-xs text-gray-500 ">Bread or toast is generously spread with Nutella, a widely popular chocolate hazelnut spread.</div>
+          <div class="mt-2 font-bold text-red-300">$5.99</div>
+          <div class="mt-4"><a href="nutellacart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded">Add to cart
                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a> 
           </div>
@@ -120,7 +127,7 @@
     <div class="mt-4 border-t border-gray-600 pt-4">
       <div class="flex justify-between">
         <span class="text-gray-100">Subtotal</span>
-        <span class="text-gray-100">$12.99</span>
+        <span class="text-gray-100">$5.99</span>
       </div>
       <div class="flex justify-between mt-2">
         <span class="text-gray-100">Delivery</span>
@@ -131,12 +138,12 @@
         <span class="text-gray-100">$1.00</span>
       </div>
       <div class="flex justify-between mt-2 font-bold text-lg">
-        <span class="text-gray-100">Total</span>
-        <span class="text-gray-100">$15.99</span>
+        <span class="text-red-300">Total</span>
+        <span class="text-red-300">$8.99</span>
       </div>
     </div>
     <br>
-    <a href="checkout.html" class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold mx-4 justify-center"><button >Checkout</button></a>
+    <a href="checkout.html" class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center"><button>Checkout</button></a>
   </div>
     <!--Footer section-->
     <footer class="bg-[#eee] text-white py-8">
