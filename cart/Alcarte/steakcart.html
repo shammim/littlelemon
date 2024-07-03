@@ -7,6 +7,7 @@
     <meta property="og:title" content="Little Lemon">
     <meta property="og:type" content="website">
     <meta property="og:image" content="../Images/Menu.png">
+    <meta property="og:image" content="../Images/Menu.png">
     <meta property="og:url" content="https://shammim.github.io/littlelemon">
     <meta property="og:description" content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist">
     <meta property="og:locale" content="en_US">
@@ -30,10 +31,21 @@
           <li><a href="../LogIn.html" class="mx-4 text-lg">LogIn</a></li>
           <li><a href="../cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
           <li><a  href="../Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
+         <li><img src="../Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
+         <li><a href="../index.html" class="mx-4 text-lg">Home</a></li>
+         <li><a href="../About.html" class="mx-4 text-lg">About</a></li>
+          <li><a href="../Menu.html" class="mx-4 text-lg">Menu</a></li>
+          <li><a class="mx-4 text-lg" href="../Reservation.html">Reservation</a></li>
+          <li><a href="../orderonline.html" class="mx-4 text-lg text-gray-200 bg-[#495E57] rounded-lg py-2 px-4 ">Order</a></li>
+          <li><a href="../LogIn.html" class="mx-4 text-lg">LogIn</a></li>
+          <li><a href="../cart.html"><img src="Images/shopping-cart.png" width="20px" height="20px"></a></li>
+          <li><a  href="../Signin.html"><img src="Images/user.png" width="20px" height="20px"></a></li>
        </ul>
      </nav>
     </header>
     <!--Sidebar section-->
+   <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="../Images/Menu.png" class="w-8 h-8"/></button>
+    <br>
    <button class="toggle-button bg-[#495E57] text-gray-900 font-bold py-2 px-4 rounded" id="menuBtn"> <img src="../Images/Menu.png" class="w-8 h-8"/></button>
     <div class="hidden" id="sidebar">
       <nav>
@@ -44,13 +56,23 @@
           <li><a class="text-yellow-500 hover:underline mx-4" href="../Reservation.html">Reservation</a></li>
           <li><a class="active text-yellow-500 hover:underline mx-4" href="../orderonline.html">Order</a></li>
           <li><a class="text-yellow-500 hover:underline mx-4" href="../LogIn.html">LogIn</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="../index.html">Home</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="../About.html">About</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="../Menu.html">Menu</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="../Reservation.html">Reservation</a></li>
+          <li><a class="active text-yellow-500 hover:underline mx-4" href="../orderonline.html">Order</a></li>
+          <li><a class="text-yellow-500 hover:underline mx-4" href="../LogIn.html">LogIn</a></li>
        </ul>
       </nav>
     </div>
    <br>
+   <br>
    <!--Breadcrumb section-->
    <main class="breadcrumb">
       <ul class="breadcrumb bg-gray-200 px-4 py-2 text-lg">
+        <li class="inline"><a href="../index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
+        <li class="inline"><a href="../orderonline.html" class="text-gray-900 hover:underline hover:text-yellow-500">Orderonline</a></li>
+        <li class="inline"><a href="../cart.html" class="text-gray-900 hover:underline hover:text-yellow-500">Cart</a></li>
         <li class="inline"><a href="../index.html" class="text-gray-900 hover:underline hover:text-yellow-500">Home</a></li>
         <li class="inline"><a href="../orderonline.html" class="text-gray-900 hover:underline hover:text-yellow-500">Orderonline</a></li>
         <li class="inline"><a href="../cart.html" class="text-gray-900 hover:underline hover:text-yellow-500">Cart</a></li>
@@ -60,13 +82,16 @@
   <div class="max-w-md mx-auto mt-10 p-4 bg-[#495E57] rounded-lg shadow-lg">
     <div class="flex items-center justify-between">
       <a href="../breakfastcart.html"><img src="../Images/previous.png" class="w-6 h-6"></a> <h2 class="text-4xl font-bold text-[#F4CE14] text-center font-markazi">Cart</h2>
+      <a href="../breakfastcart.html"><img src="../Images/previous.png" class="w-6 h-6"></a> <h2 class="text-4xl font-bold text-[#F4CE14] text-center font-markazi">Cart</h2>
       <div class="relative">
+        <img src="../Images/basket.png" class="w-6 h-6">
         <img src="../Images/basket.png" class="w-6 h-6">
         <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-1">1</span>
       </div>
     </div>
     <div class="mt-4">
         <img src="../Images/Alcarte/Steekfritters.jpg" class=""/>
+        <img src="../Images/Breakfast/cornetto_and_milk.jpg" class=""/>
     </div>
 
     <div class="mt-4">
@@ -93,6 +118,8 @@
         <div class="flex justify-between">
           <span class="text-gray-100">1 x Steak Fritters</span>
           <span class="text-gray-100">$16.78</span>
+          <span class="text-gray-100">1 x Steak fritters</span>
+          <span class="text-gray-100">$5.99</span>
         </div>
       </div>
     </div>
@@ -107,6 +134,13 @@
           <div class="mt-10 font-bold text-red-300">$15.90<br>
             <a href="../cart/zuchinicart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mt-2 mb-2">Add to cart
              <img src="../Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
+          <img src="../Images/Alcarte/Salami.jpg" alt="Salami-misti" class="w-full h-24 object-cover rounded-lg">
+          <div class="mt-2 text-sm">Salami Mistri</div>
+          <div class="mt-1 text-xs text-gray-500">Salami Misti is a delectable assortment of mixed Italian cured meats, showcasing a variety of savory flavors and textures in a single, flavorful selection.</div>
+          <div class="mt-2 font-bold text-red-300">$12.90<br>
+            <br>
+            <a href="fettecart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded">Add to cart
+             <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a>        
          </div> 
         </div>
