@@ -617,6 +617,7 @@ h4 {
   .Hero_img{
     display: none;
   }
+  
 }
 @media only screen and (max-width: 600px) {
   .container {
@@ -680,5 +681,11 @@ h4 {
   }
   .Hero_img{
     display: none;
+  }
+
+  .menutype div{
+    flex-direction: column;
+    gap: 1rem;
+    
   }
 }
