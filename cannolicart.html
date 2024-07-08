@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="mt-4">
-        <img src="Images/Breakfast/cannoli.jpg" class=""/>
+        <img src="Images/Breakfast/cannoli.jpg" class="w-full h-60"/>
     </div>
 
     <div class="mt-4">
@@ -93,7 +93,41 @@
         </div>
       </div>
     </div>
-
+    
+    <div class="mt-4">
+      <h3 class="text-lg font-bold text-gray-200">Add</h3>
+      <h3 class="text-lg text-yellow-300">Shell Selection (Choose 1)</h3>
+      <div class="flex flex-col mt-2 justify-between text-gray-200 space-y-2">
+        <label class="flex justify-between items-center mt-2 text-gray-200">
+         <span>Classic Cannoli Shells</span>
+         <span>$0.00</span>
+        </label>
+        <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span>Gluten-Free Cannoli Shells </span>
+          <span>$0.50</span>
+        </label>
+      </div>
+      <br>
+      <h3 class="text-lg text-yellow-300">Ricotta Filling Delight (Choose Up To 2 - Free)</h3>
+      <div class="flex flex-col mt-2 text-gray-200 space-y-2">
+        <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span>Classic Ricotta Cheese Filling </span>
+          <span>$0.00</span>
+        </label>
+        <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span>Chocolate Chip Ricotta</span>
+          <span>$0.00</span>
+        </label>
+       <label class="flex justify-between items-center mt-2 text-gray-200 ">
+          <span>Orange Ricotta</span>
+          <span>$0.00</span>
+        </label>
+        <label class="flex justify-between  items-center mt-2 text-gray-200">
+          <span>Pistachio Ricotta</span>
+          <span>$0.00</span>
+        </label>
+     </div>
+   </div>
     <div class="mt-4 border-t border-gray-600">
       <h2 class="text-lg font-karla mt-4 text-gray-100">Add More To Your Order!</h2>
       <div class="mt-2 flex justify-between">
@@ -102,7 +136,7 @@
           <div class="mt-2 text-sm">Fette Biscottate</div>
           <div class="mt-1 text-xs text-gray-500">Fette biscottate are thin, crispy slices of bread These scrumptious toasts boast a subtly sweet flavor.</div>
           <div class="mt-2 font-bold text-red-300">$12.99<br><a href="fettecart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mt-2 mb-2">Add to cart
-             <img src="./Images/Breakfast/fette_biscottate.jpg" alt="delivery icon" class="ml-2" width="20" height="20" />
+             <img src="./Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a>        
          </div> 
         </div>
@@ -122,7 +156,7 @@
     <div class="mt-4 border-t border-gray-600 pt-4">
       <div class="flex justify-between">
         <span class="text-gray-100">Subtotal</span>
-        <span class="text-gray-100">$12.99</span>
+        <span class="text-gray-100">$6.99</span>
       </div>
       <div class="flex justify-between mt-2">
         <span class="text-gray-100">Delivery</span>
@@ -134,11 +168,21 @@
       </div>
       <div class="flex justify-between mt-2 font-bold text-lg">
         <span class="text-red-300">Total</span>
-        <span class="text-red-300">$15.99</span>
+        <span class="text-red-300">$9.99</span>
       </div>
     </div>
+    <div class="mt-4 flex items-center justify-center quantity-selector">
+      <button class="minus text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+      <span class="quantity mx-4 text-gray-200">1</span>
+      <button class="plus text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+    </div>
     <br>
-    <a href="checkout.html" class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold mx-4 justify-center"><button >Checkout</button></a>
+    <div class="mt-4 flex justify-center total-price">
+      <button class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center">Add for $9.99</button></a>
+    </div>
+    <br>
+    <br>
+    <a href=" checkout.html" class="ml-10 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center"><button>Checkout</button></a>
   </div>
     <!--Footer section-->
     <footer class="bg-[#eee] text-white py-8">
@@ -168,6 +212,42 @@
           document.getElementById('menuBtn').addEventListener('click', function(){
           const sidebar =document.getElementById('sidebar');
           sidebar.classList.toggle('hidden');
+          });
+        </script>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const quantityElements = document.querySelectorAll('.quantity-selector');
+            const totalPriceElements = document.querySelectorAll('.total-price');
+      
+            quantityElements.forEach((selector, index) => {
+              const minusButton = selector.querySelector('.minus');
+              const plusButton = selector.querySelector('.plus');
+              const quantityDisplay = selector.querySelector('.quantity');
+              const addToCartButton = totalPriceElements[index];
+              
+              let quantity = 1;
+      
+              minusButton.addEventListener('click', () => {
+                if (quantity > 1) {
+                  quantity--;
+                  quantityDisplay.textContent = quantity;
+                  updateTotalPrice(addToCartButton, quantity);
+                }
+              });
+      
+              plusButton.addEventListener('click', () => {
+                quantity++;
+                quantityDisplay.textContent = quantity;
+                updateTotalPrice(addToCartButton, quantity);
+              });
+            });
+      
+            function updateTotalPrice(button, quantity) {
+              const price = 9.99; // Base price for one item
+              const totalPrice = price * quantity;
+              button.textContent = `Add for $${totalPrice.toFixed(2)}`;
+            }
+            button.classList.add('w-fit', 'bg-yellow-500', 'text-gray-800', 'py-2', 'rounded-lg', 'font-bold', 'items-center');
           });
         </script>
    </body>
