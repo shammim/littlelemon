@@ -66,7 +66,7 @@
       </div>
     </div>
     <div class="mt-4">
-        <img src=" Images/Alcarte/Steekfritters.jpg" class="w-full h-60"/>
+        <img src="Images/Lunch/Asparagus.webp" class="w-full h-60"/>
     </div>
 
     <div class="mt-4">
@@ -91,8 +91,8 @@
       <h2 class="text-lg font-bold mt-4 text-gray-100">Order Summary</h2>
       <div class="mt-2">
         <div class="flex justify-between">
-          <span class="text-gray-100">1 x Steak Fritters</span>
-          <span class="text-gray-100">$16.78</span>
+          <span class="text-gray-100">1 x Cheese Asparagus Quche</span>
+          <span class="text-gray-100 font-bold">$15.99</span>
         </div>
       </div>
     </div>
@@ -141,6 +141,16 @@
         <span class="text-red-300">$19.78</span>
       </div>
     </div>
+    <div class="mt-4 flex items-center justify-center quantity-selector">
+      <button class="minus text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+      <span class="quantity mx-4 text-gray-200">1</span>
+      <button class="plus text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+    </div>
+    <br>
+    <div class="mt-4 flex justify-center total-price">
+      <button class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center">Add for $19.78</button></a>
+    </div>
+    <br>
     <br>
     <a href="checkout.html" class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center"><button>Checkout</button></a>
   </div>
@@ -173,6 +183,42 @@
           document.getElementById('menuBtn').addEventListener('click', function(){
           const sidebar =document.getElementById('sidebar');
           sidebar.classList.toggle('hidden');
+          });
+        </script>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const quantityElements = document.querySelectorAll('.quantity-selector');
+            const totalPriceElements = document.querySelectorAll('.total-price');
+      
+            quantityElements.forEach((selector, index) => {
+              const minusButton = selector.querySelector('.minus');
+              const plusButton = selector.querySelector('.plus');
+              const quantityDisplay = selector.querySelector('.quantity');
+              const addToCartButton = totalPriceElements[index];
+              
+              let quantity = 1;
+      
+              minusButton.addEventListener('click', () => {
+                if (quantity > 1) {
+                  quantity--;
+                  quantityDisplay.textContent = quantity;
+                  updateTotalPrice(addToCartButton, quantity);
+                }
+              });
+      
+              plusButton.addEventListener('click', () => {
+                quantity++;
+                quantityDisplay.textContent = quantity;
+                updateTotalPrice(addToCartButton, quantity);
+              });
+            });
+      
+            function updateTotalPrice(button, quantity) {
+              const price = 19.78; // Base price for one item
+              const totalPrice = price * quantity;
+              button.textContent = `Add for $${totalPrice.toFixed(2)}`;
+            }
+            button.classList.add('w-fit', 'bg-yellow-500', 'text-gray-800', 'py-2', 'rounded-lg', 'font-bold', 'items-center');
           });
         </script>
    </body>
