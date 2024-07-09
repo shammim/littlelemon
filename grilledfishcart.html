@@ -93,7 +93,7 @@
       <div class="mt-2">
         <div class="flex justify-between">
           <span class="text-gray-100">1 x Grilled Fish</span>
-          <span class="text-red-300 font-bold">$6.78</span>
+          <span class="text-red-300 font-bold">$10.00</span>
         </div>
       </div>
     </div>
@@ -169,8 +169,8 @@
           <img src="Images/specials/bruchetta.jpg" alt="Bruschetta" class="w-full h-24 object-cover rounded-lg">
           <div class="mt-2 text-sm">Bruschetta</div>
           <div class="mt-2 text-xs text-gray-500">Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</div>
-          <div class="mt-6 font-bold text-red-300 ">$12.00<br>
-             <a href="asparaguscart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 rounded mt-8 mb-4">Add to cart
+          <div class="mt-6 font-bold text-red-300 ">$6.78<br>
+             <a href="bruschettacart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 rounded mt-8 mb-4">Add to cart
              <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a>        
          </div> 
@@ -179,8 +179,8 @@
           <img src="Images/specials/greek salad.jpg" alt="Greeksalad" class="w-full h-24 object-cover rounded-lg">
           <div class="mt-2 text-sm">Greek Salad</div>
           <div class="mt-1 text-xs text-gray-500 ">The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese, garnished with crunchy garlic and rosemary croutons.</div>
-          <div class="mt-10 font-bold text-red-300">$12.99</div>
-          <div class="mt-2"><a href="cart/burratacart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mb-2">Add to cart
+          <div class="mt-4 font-bold text-red-300">$10.99</div>
+          <div class="mt-2"><a href="geeksaladcart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mb-2">Add to cart
                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a> 
           </div>
@@ -191,7 +191,7 @@
     <div class="mt-4 border-t border-gray-600 pt-4">
       <div class="flex justify-between">
         <span class="text-gray-100">Subtotal</span>
-        <span class="text-gray-100">$6.78</span>
+        <span class="text-gray-100">$10.00</span>
       </div>
       <div class="flex justify-between mt-2">
         <span class="text-gray-100">Delivery</span>
@@ -203,7 +203,7 @@
       </div>
       <div class="flex justify-between mt-2 font-bold text-lg">
         <span class="text-red-300">Total</span>
-        <span class="text-red-300">$9.78</span>
+        <span class="text-red-300">$13.00</span>
       </div>
     </div>
     <div class="mt-4 flex items-center justify-center quantity-selector">
@@ -213,7 +213,7 @@
     </div>
     <br>
     <div class="mt-4 flex justify-center total-price">
-      <button class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center">Add for $9.78</button></a>
+      <button class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center">Add for $13.00</button></a>
     </div>
     <br>
     <br>
@@ -281,7 +281,7 @@
         });
   
         function updateTotalPrice(button, quantity) {
-          const price = 9.78; // Base price for one item
+          const price = 13.00; // Base price for one item
           const totalPrice = price * quantity;
           button.textContent = `Add for $${totalPrice.toFixed(2)}`;
         }

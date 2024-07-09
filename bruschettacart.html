@@ -89,10 +89,10 @@
     </div>
 
     <div class="mt-4 border-t border-gray-600">
-      <h2 class="text-lg font-bold mt-4 text-gray-100">Order Summary</h2>
+      <h2 class="text-xl mt-4 text-gray-100">Order Summary</h2>
       <div class="mt-2">
         <div class="flex justify-between">
-          <span class="text-gray-100">1 x Charcoal grilled asparagus</span>
+          <span class="text-gray-100">1 x Bruschetta</span>
           <span class="text-red-300 font-bold">$6.78</span>
         </div>
       </div>
@@ -145,31 +145,31 @@
          </label>
    </div>
    </div> 
-    <div class="mt-4 border-t border-gray-600">
-      <h2 class="text-lg font-karla mt-4 text-gray-100">Add More To Your Order!</h2>
-      <div class="mt-2 flex justify-between">
-        <div class="w-1/2 mr-2 p-2 bg-gray-100 rounded-lg">
-          <img src="Images/Alcarte/Chessy papillons.jpg" alt="CheesyAsparagus" class="w-full h-24 object-cover rounded-lg">
-          <div class="mt-2 text-sm">Chessy papillons</div>
-          <div class="mt-2 text-xs text-gray-500">They puff up to huge, glorious, crispy, salty, cheesy Everests.</div>
-          <div class="mt-6 font-bold text-red-300 ">$12.00<br>
-             <a href="asparaguscart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 rounded mt-8 mb-4">Add to cart
-             <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
-             </a>        
-         </div> 
-        </div>
-        <div class="w-1/2 ml-2 p-2 bg-gray-100 rounded-lg">
-          <img src="Images/Alcarte/Buratta.jpg" alt="Grilled Fish" class="w-full h-24 object-cover rounded-lg">
-          <div class="mt-2 text-sm">Buratta</div>
-          <div class="mt-1 text-xs text-gray-500 ">Burrata is a luscious Italian cheese with a creamy, mozzarella shell enfolding a rich, soft center, creating a decadent and indulgent culinary experience.</div>
-          <div class="mt-10 font-bold text-red-300">$5.99</div>
-          <div class="mt-2"><a href="cart/burratacart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mb-2">Add to cart
-                <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
-             </a> 
-          </div>
+   <div class="mt-4 border-t border-gray-600">
+    <h2 class="text-lg font-karla mt-4 text-gray-100">Add More To Your Order!</h2>
+    <div class="mt-2 flex justify-between">
+      <div class="w-1/2 mr-2 p-2 bg-gray-100 rounded-lg">
+        <img src="Images/specials/grilled-fish.jpg" alt="grilled-fish" class="w-full h-24 object-cover rounded-lg">
+        <div class="mt-2 text-sm">Grilled Fish</div>
+        <div class="mt-1 text-xs text-gray-500">Our grilled fish is a  kiss of the grill adds a delightful depth of flavor, making grilled fish a healthy and delicious option for any seafood lover.</div>
+        <div class="mt-4 font-bold text-red-300">$10.00<br>
+          <a href="bruschettacart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mt-2 mb-2">Add to cart
+           <img src=" Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
+           </a>        
+       </div> 
+      </div>
+      <div class="w-1/2 ml-2 p-2 bg-gray-100 rounded-lg">
+        <img src="Images/specials/greek salad.jpg" alt="Greeksalad" class="w-full h-24 object-cover rounded-lg">
+        <div class="mt-2 text-sm">Greek Salad</div>
+        <div class="mt-1 text-xs text-gray-500 ">The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese, garnished with crunchy garlic and rosemary croutons.</div>
+        <div class="mt-2 font-bold text-red-300">$10.99</div>
+        <div class="mt-2"><a href="geeksaladcart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mb-2">Add to cart
+              <img src=" Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
+           </a> 
         </div>
       </div>
     </div>
+  </div>
 
     <div class="mt-4 border-t border-gray-600 pt-4">
       <div class="flex justify-between">
@@ -264,7 +264,7 @@
         });
   
         function updateTotalPrice(button, quantity) {
-          const price = 18.99; // Base price for one item
+          const price = 6.78; // Base price for one item
           const totalPrice = price * quantity;
           button.textContent = `Add for $${totalPrice.toFixed(2)}`;
         }
