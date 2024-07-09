@@ -59,14 +59,14 @@
 <!--Cart section-->
   <div class="max-w-md mx-auto mt-10 p-4 bg-[#495E57] rounded-lg shadow-lg">
     <div class="flex items-center justify-between">
-      <a href=" breakfastcart.html"><img src=" Images/previous.png" class="w-6 h-6"></a> <h2 class="text-4xl font-bold text-[#F4CE14] text-center font-markazi">Cart</h2>
+      <a href="Lunch.html"><img src="Images/previous.png" class="w-6 h-6"></a> <h2 class="text-4xl font-bold text-[#F4CE14] text-center font-markazi">Cart</h2>
       <div class="relative">
-        <img src=" Images/basket.png" class="w-6 h-6">
+        <img src="Images/basket.png" class="w-6 h-6">
         <span class="absolute -top-2 -right-2 bg-red-600 text-white text-xs rounded-full px-1">1</span>
       </div>
     </div>
     <div class="mt-4">
-        <img src="Images/Alcarte/parmesan-roasted-zucchini7-819x1024.jpg" class="w-300 h-100"/>
+        <img src="Images/Alcarte/Zucchini.jpg" class="w-full h-60 rounded"/>
     </div>
 
     <div class="mt-4">
@@ -92,7 +92,7 @@
       <div class="mt-2">
         <div class="flex justify-between">
           <span class="text-gray-100">1 x Zucchini Fries </span>
-          <span class="text-gray-100">$5.90</span>
+          <span class="text-red-300 font-bold">$5.90</span>
         </div>
       </div>
     </div>
@@ -104,7 +104,7 @@
           <img src="Images/Alcarte/Asparagus.webp" alt="Greek Salad" class="w-full h-24 object-cover rounded-lg">
           <div class="mt-2 text-sm">Charcoal grilled asparagus</div>
           <div class="mt-1 text-xs text-gray-500">A Tender, smoky, and sweet, the best grilled asparagus recipe is tossed in olive oil with salt and pepper for the perfect.</div>
-          <div class="mt-10 font-bold text-red-300">$6.78<br>
+          <div class="mt-4 font-bold text-red-300">$6.78<br>
             <a href="charcoalaspcart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mt-2 mb-2">Add to cart
              <img src=" Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a>        
@@ -141,8 +141,18 @@
         <span class="text-red-300">$8.99</span>
       </div>
     </div>
+    <div class="mt-4 flex items-center justify-center quantity-selector">
+      <button class="minus text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+      <span class="quantity mx-4 text-gray-200">1</span>
+      <button class="plus text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+    </div>
     <br>
-    <a href="checkout.html" class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center"><button>Checkout</button></a>
+    <div class="mt-4 flex justify-center total-price">
+      <button class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center">Add for $8.99</button></a>
+    </div>
+    <br>
+    <br>
+    <a href="checkout.html" class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center "><button>Checkout</button></a>
   </div>
     <!--Footer section-->
     <footer class="bg-[#eee] text-white py-8">
@@ -173,6 +183,42 @@
           document.getElementById('menuBtn').addEventListener('click', function(){
           const sidebar =document.getElementById('sidebar');
           sidebar.classList.toggle('hidden');
+          });
+        </script>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const quantityElements = document.querySelectorAll('.quantity-selector');
+            const totalPriceElements = document.querySelectorAll('.total-price');
+      
+            quantityElements.forEach((selector, index) => {
+              const minusButton = selector.querySelector('.minus');
+              const plusButton = selector.querySelector('.plus');
+              const quantityDisplay = selector.querySelector('.quantity');
+              const addToCartButton = totalPriceElements[index];
+              
+              let quantity = 1;
+      
+              minusButton.addEventListener('click', () => {
+                if (quantity > 1) {
+                  quantity--;
+                  quantityDisplay.textContent = quantity;
+                  updateTotalPrice(addToCartButton, quantity);
+                }
+              });
+      
+              plusButton.addEventListener('click', () => {
+                quantity++;
+                quantityDisplay.textContent = quantity;
+                updateTotalPrice(addToCartButton, quantity);
+              });
+            });
+      
+            function updateTotalPrice(button, quantity) {
+              const price = 8.99; // Base price for one item
+              const totalPrice = price * quantity;
+              button.textContent = `Add for $${totalPrice.toFixed(2)}`;
+            }
+            button.classList.add('w-fit', 'bg-yellow-500', 'text-gray-800', 'py-2', 'rounded-lg', 'font-bold', 'items-center');
           });
         </script>
    </body>
