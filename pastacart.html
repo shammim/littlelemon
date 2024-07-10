@@ -91,11 +91,56 @@
       <div class="mt-2">
         <div class="flex justify-between">
           <span class="text-gray-100">1 x Pasta alla Crudaiolla</span>
-          <span class="text-red-300">$12.00</span>
+          <span class="text-red-300 font-bold">$15.00</span>
         </div>
       </div>
     </div>
-
+    <!--Topping selector-->
+    <div class="mt-4">
+      <h3 class="text-lg font-bold text-gray-200">Add</h3>
+      <h3 class="text-lg  text-yellow-200">Pasta Selection (Choose 1)</h3>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span> Classic Spaghetti</span>
+          <span>$0.00</span>
+      </label>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Orecchiette</span>
+           <span>$0.00</span>
+      </label>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span>Fusilli</span>
+          <span>$0.00</span>
+      </label>
+      <br>
+      <h3 class="text-lg  text-yellow-200">Fresh Tomato Symphony</h3>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span> Classic Chopped Tomatoes </span>
+          <span>$0.00</span>
+      </label>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Cherry Tomato Medley</span>
+           <span>$1.00</span>
+      </label>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span>Heirloom Tomato Blend</span>
+          <span>$2.00</span>
+      </label>
+      <br>
+      <h3 class="text-lg  text-yellow-200"> Flavorful Additions(Upto 2 Free)</h3>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span> Fresh Basil Leaves</span>
+          <span>$0.00</span>
+      </label>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+           <span>Thinly Sliced Red Onion</span>
+           <span>$0.00</span>
+      </label>
+      <label class="flex justify-between items-center mt-2 text-gray-200">
+          <span>Chopped Garlic</span>
+          <span>$0.00</span>
+      </label>
+    </div>
+    <br>
     <div class="mt-4 border-t border-gray-600">
       <h2 class="text-lg font-karla mt-4 text-gray-100">Add More To Your Order!</h2>
       <div class="mt-2 flex justify-between">
@@ -109,10 +154,10 @@
          </div> 
         </div>
         <div class="w-1/2 ml-2 p-2 bg-gray-100 rounded-lg">
-          <img src="Images/Lunch/creamy-broccoli-soup_1980x1320-127735-1.jpg" alt="Grilled Fish" class="w-full h-24 object-cover rounded-lg">
-          <div class="mt-2 text-sm">Cream Broccoli Soup</div>
-          <div class="mt-1 text-xs text-gray-500 "> Cream broccoli soup  a comforting blend of fresh broccoli and rich cream for a nutritious and satisfying bowl.</div>
-          <div class="mt-2 font-bold text-red-300 ">$15.99</div>        
+          <img src="Images/Lunch/Puff.jpg" alt="Pestopuff" class="w-full h-24 object-cover rounded-lg">
+          <div class="mt-2 text-sm">Pesto Caprese Puff Pastries</div>
+          <div class="mt-1 text-xs text-gray-500 "> A Sicilian pastry known for its crispy shell filled with sweet, creamy ricotta, cannoli.  A yummy delicacy that has essence og Nediterranean flavours.</div>
+          <div class="mt-2 font-bold text-red-300 ">$16.90</div>        
           <div class="mt-2 mb-2"><a href="broccolicart.html" class="inline-flex items-center bg-yellow-500 font-bold text-gray-900 rounded mx-4">Add to cart
                 <img src="Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
              </a> 
@@ -124,7 +169,7 @@
     <div class="mt-4 border-t border-gray-600 pt-4">
       <div class="flex justify-between">
         <span class="text-gray-100">Subtotal</span>
-        <span class="text-gray-100">$12.99</span>
+        <span class="text-gray-100">$15.00</span>
       </div>
       <div class="flex justify-between mt-2">
         <span class="text-gray-100">Delivery</span>
@@ -136,9 +181,19 @@
       </div>
       <div class="flex justify-between mt-2 font-bold text-lg">
         <span class="text-red-300">Total</span>
-        <span class="text-red-300">$15.99</span>
+        <span class="text-red-300">$18.00</span>
       </div>
     </div>
+    <div class="mt-4 flex items-center justify-center quantity-selector">
+      <button class="minus text-gray-500 bg-gray-200 p-2 rounded-full">-</button>
+      <span class="quantity mx-4 text-gray-200">1</span>
+      <button class="plus text-gray-500 bg-gray-200 p-2 rounded-full">+</button>
+    </div>
+    <br>
+    <div class="mt-4 flex justify-center total-price">
+      <button class="mt-6 w-full bg-yellow-500 text-gray-800 py-2 rounded-lg font-bold justify-center">Add for $18.00</button></a>
+    </div>
+    <br>
     <br>
     <a href="checkout.html" class="mt-6 w-full bg-yellow-500 text-gray-900 py-2 rounded-lg mx-4 justify-center "><button>Checkout</button></a>
   </div>
@@ -171,6 +226,42 @@
           document.getElementById('menuBtn').addEventListener('click', function(){
           const sidebar =document.getElementById('sidebar');
           sidebar.classList.toggle('hidden');
+          });
+        </script>
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const quantityElements = document.querySelectorAll('.quantity-selector');
+            const totalPriceElements = document.querySelectorAll('.total-price');
+      
+            quantityElements.forEach((selector, index) => {
+              const minusButton = selector.querySelector('.minus');
+              const plusButton = selector.querySelector('.plus');
+              const quantityDisplay = selector.querySelector('.quantity');
+              const addToCartButton = totalPriceElements[index];
+              
+              let quantity = 1;
+      
+              minusButton.addEventListener('click', () => {
+                if (quantity > 1) {
+                  quantity--;
+                  quantityDisplay.textContent = quantity;
+                  updateTotalPrice(addToCartButton, quantity);
+                }
+              });
+      
+              plusButton.addEventListener('click', () => {
+                quantity++;
+                quantityDisplay.textContent = quantity;
+                updateTotalPrice(addToCartButton, quantity);
+              });
+            });
+      
+            function updateTotalPrice(button, quantity) {
+              const price = 18.00; // Base price for one item
+              const totalPrice = price * quantity;
+              button.textContent = `Add for $${totalPrice.toFixed(2)}`;
+            }
+            button.classList.add('w-fit', 'bg-yellow-500', 'text-gray-800', 'py-2', 'rounded-lg', 'font-bold', 'items-center');
           });
         </script>
    </body>
