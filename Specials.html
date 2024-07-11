@@ -24,7 +24,16 @@
          <li><img src="Images/Logo .svg" class="h-10" alt="SiteHeaderLogo"></li>
          <li><a href="index.html" class="mx-4  text-lg">Home</a></li>
          <li><a href="About.html" class="mx-4  text-lg">About</a></li>
-          <li><a href="Menu.html" class="mx-4 text-lg  bg-[#495E57] text-gray-200 rounded-lg py-2 px-4 ">Menu</a></li>
+         <li class="relative group">
+            <a href="javascript:void(0)" class="mx-4 text-lg">Menu</a>
+            <ul class="absolute hidden group-hover:block bg-white shadow-md rounded-lg mt-1">
+              <li><a href="Breakfast.html" class="block px-6 py-2 text-yellow-400 hover:bg-[#495E57]">Breakfast</a></li>
+              <li><a href="Lunch.html" class="block px-6 py-2 text-yellow-400 hover:bg-[#495E57]">Lunch</a></li>
+              <li><a href="Alcarte.html" class="block px-6 py-2 text-yellow-400 hover:bg-[#495E57]">Al-Carte</a></li>
+              <li><a href="Desserts.html" class="block px-6 py-2 text-yellow-400 hover:bg-[#495E57]">Dinner</a></li>
+              <li><a href="Specials.html" class="block px-6 py-2 text-yellow-400 hover:bg-[#495E57]">Specials</a></li>
+            </ul>
+          </li>
           <li><a class="mx-4 text-lg" href="Reservation.html">Reservation</a></li>
           <li><a href="orderonline.html" class="mx-4 text-lg">Order</a></li>
           <li><a href="LogIn.html" class="mx-4 text-lg">LogIn</a></li>
@@ -59,41 +68,52 @@
       <div>
           <!--Specials Section-->
          <section class="grid md:grid-cols-3 gap-8">
-                <article class="bg-[#EDEFEE] rounded-lg p-4">
-                    <img class="w-full rounded-lg pl-28 mb-4" src="Images/greek salad.jpg" alt="Geeksalad" />
-                    <div class="mt-4">
-                        <div class="flex justify-between items-center">
-                            <h3 class="font-bold text-lg">Greek Salad</h3>
-                            <h3 class="text-lg text-yellow-500 font-bold">$10.99</h3>
-                        </div>
-                        <p class="mt-2"> The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
-                        <a href="geeksaladcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart</a>
-                    </div>
+           <article class="bg-[#EDEFEE] rounded-lg p-4">
+             <img class="w-full rounded-lg pl-28 mb-4" src="Images/greek salad.jpg" alt="Geeksalad" />
+              <div class="mt-4">
+                <div class="flex justify-between items-center">
+                  <h3 class="font-bold text-lg">Greek Salad</h3>
+                  <h3 class="text-lg text-yellow-500 font-bold">$10.99</h3>
+                </div>
+                <p class="mt-2"> The famous Greek salad of crispy lettuce, peppers, olives, and our Chicago-style feta cheese, garnished with crunchy garlic and rosemary croutons.</p>
+                <div class="mt-2"><a href="geeksaladcart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mb-2">Add to cart
+                  <img src=" Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
+                  </a> 
+                </div>   
                 </article>
              <!--Dish 2-->
-                <article class="bg-[#EDEFEE] rounded-lg p-4">
-                    <img class="w-full rounded-lg pl-28 mb-4" src="Images/bruchetta.jpg" alt="Bruchetta" />
-                    <div class="mt-4">
-                        <div class="flex justify-between items-center">
-                        <h3 class="font-bold text-lg">Bruchetta</h3>
-                        <h3 class="text-lg text-yellow-500 font-bold">$6.78</h3>
-                        </div>
-                        <p class="mt-2"> Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
-                        <a href="bruschettacart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart</a>
-                    </div>
-                </article>
-                <article>
-                  <img class="w-full rounded-lg pl-28 mb-4" src="Images/specials/grilled-fish.jpg" alt="grilledfish" />
-                  <div class="mt-4">
-                    <div class="flex justify-between items-center">
-                    <h3 class="font-bold text-lg">Grilled Fish</h3>
-                    <h3 class="text-lg text-yellow-500 font-bold">$10.00</h3>
-                    </div>
-                    <p class="mt-2"> Our grilled fish is a  kiss of the grill adds a delightful depth of flavor, making grilled fish a healthy and delicious option for any seafood lover.</p>
-                    <a href="grilledfishcart.html" class="inline-flex items-center mt-4 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded">Add to cart</a>
+            <article class="bg-[#EDEFEE] rounded-lg p-4">
+              <img class="w-full rounded-lg pl-28 mb-4" src="Images/bruchetta.jpg" alt="Bruchetta" />
+              <div class="mt-4">
+               <div class="flex justify-between items-center">
+                  <h3 class="font-bold text-lg">Bruchetta</h3>
+                  <h3 class="text-lg text-yellow-500 font-bold">$6.78</h3>
+               </div>
+                <p class="mt-2"> Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p>
+                <div class="mt-4 font-bold text-red-300">$10.00<br>
+                  <a href="bruschettacart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mt-2 mb-2">Add to cart
+                   <img src=" Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
+                  </a>        
+                </div> 
+              </div>
+            </article>
+            <!--Dish 3-->
+            <article class="bg-[#EDEFEE] rounded-lg p-4">
+              <img class="w-full rounded-lg pl-28 mb-4" src="Images/specials/grilled-fish.jpg" alt="grilledfish" />
+              <div class="mt-4">
+                <div class="flex justify-between items-center">
+                <h3 class="font-bold text-lg">Grilled Fish</h3>
+                <h3 class="text-lg text-yellow-500 font-bold">$10.00</h3>
                 </div>
-                </article>
-           </section>
+                <p class="mt-2"> Our grilled fish is a  kiss of the grill adds a delightful depth of flavor, making grilled fish a healthy and delicious option for any seafood lover.</p>
+                <div class="mt-10 font-bold text-red-300">$10.00<br>
+                  <a href="grilledfishcart.html" class="inline-flex items-center bg-yellow-500 text-gray-900 font-bold rounded mt-2 mb-2">Add to cart
+                   <img src=" Images/Delivery.png" alt="delivery icon" class="ml-2" width="20" height="20" />
+                   </a>        
+               </div> 
+             </div>
+           </article>   
+          </section>
         </div>
     <!--Testimonials section-->
   <div id="Testimonials" class="Testimonials">
