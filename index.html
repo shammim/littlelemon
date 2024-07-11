@@ -188,6 +188,23 @@
       </section>
     </div>
     <br>
+    <!--Newsletter section-->
+    <section id="Newsletter" class="bg-[#495E57] py-16">
+      <div class="container mx-auto px-6">
+        <div class="text-center text-white mb-8">
+          <h2 class="text-4xl font-bold">Stay Updated</h2>
+          <p class="text-xl">Subscribe to our newsletter for the latest adventures and travel tips</p>
+        </div>
+        <div class="flex justify-center">
+          <form id="newsletterForm" class="w-full max-w-md">
+            <div class="flex flex-col md:flex-row items-center border-b border-b-2 border-white py-2">
+              <input id="emailInput" class="appearance-none bg-transparent border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Your email address" aria-label="Email" required>
+              <button class="bg-white text-yellow-500 my-4 md:my-0 py-2 px-4 rounded hover:bg-gray-100" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>    
     <!--Footer section-->
     <footer class="bg-[#eee] text-white py-8">
       <div id="footer" class="container mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -220,5 +237,6 @@
       sidebar.classList.toggle('hidden');
       });
     </script>
+    
   </body>
 </html>
